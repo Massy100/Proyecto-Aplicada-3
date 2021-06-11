@@ -41,6 +41,7 @@ public class Inicio extends javax.swing.JFrame {
         jDesktopPane5 = new javax.swing.JDesktopPane();
         jDesktopPane6 = new javax.swing.JDesktopPane();
         jDesktopPane7 = new javax.swing.JDesktopPane();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -109,15 +110,25 @@ public class Inicio extends javax.swing.JFrame {
 
         jTabbedPane6.addTab("Método de Newton-Raphson", jDesktopPane6);
 
+        jButton1.setText("Me gustas");
+
+        jDesktopPane7.setLayer(jButton1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
         javax.swing.GroupLayout jDesktopPane7Layout = new javax.swing.GroupLayout(jDesktopPane7);
         jDesktopPane7.setLayout(jDesktopPane7Layout);
         jDesktopPane7Layout.setHorizontalGroup(
             jDesktopPane7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1215, Short.MAX_VALUE)
+            .addGroup(jDesktopPane7Layout.createSequentialGroup()
+                .addGap(177, 177, 177)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(886, Short.MAX_VALUE))
         );
         jDesktopPane7Layout.setVerticalGroup(
             jDesktopPane7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 538, Short.MAX_VALUE)
+            .addGroup(jDesktopPane7Layout.createSequentialGroup()
+                .addGap(165, 165, 165)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(302, Short.MAX_VALUE))
         );
 
         jTabbedPane6.addTab("Método de Müller", jDesktopPane7);
@@ -154,6 +165,7 @@ public class Inicio extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JDesktopPane jDesktopPane2;
     private javax.swing.JDesktopPane jDesktopPane3;
     private javax.swing.JDesktopPane jDesktopPane4;
