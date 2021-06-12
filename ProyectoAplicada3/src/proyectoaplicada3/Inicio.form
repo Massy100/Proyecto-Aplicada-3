@@ -237,6 +237,9 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="BerrorText">
+                      <Events>
+                        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="BerrorTextKeyTyped"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel4">
                       <Properties>
@@ -244,6 +247,9 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="BinferiorText">
+                      <Events>
+                        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="BinferiorTextKeyTyped"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JLabel" name="jLabel5">
                       <Properties>
@@ -251,6 +257,9 @@
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="BsuperiorText">
+                      <Events>
+                        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="BsuperiorTextKeyTyped"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JButton" name="BlimpiarButton">
                       <Properties>

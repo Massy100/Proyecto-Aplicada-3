@@ -7,6 +7,7 @@ package proyectoaplicada3;
 
 import java.awt.Graphics;
 import java.awt.Image;
+import java.awt.Toolkit;
 import java.util.regex.Pattern;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
@@ -102,9 +103,27 @@ public class Inicio extends javax.swing.JFrame {
 
         jLabel3.setText("Error absoluto permitido:");
 
+        BerrorText.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                BerrorTextKeyTyped(evt);
+            }
+        });
+
         jLabel4.setText("Limite Inferior:");
 
+        BinferiorText.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                BinferiorTextKeyTyped(evt);
+            }
+        });
+
         jLabel5.setText("Limite Superior:");
+
+        BsuperiorText.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                BsuperiorTextKeyTyped(evt);
+            }
+        });
 
         BlimpiarButton.setText("LIMPIAR");
         BlimpiarButton.addActionListener(new java.awt.event.ActionListener() {
@@ -324,15 +343,24 @@ public class Inicio extends javax.swing.JFrame {
 
     private void BenviarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BenviarButtonActionPerformed
         funcion=BfuncionText.getText();
-        errorPermitido= Double.parseDouble(BerrorText.getText());
-        inferior = Double.parseDouble(BinferiorText.getText());
-        superior = Double.parseDouble(BsuperiorText.getText());
-
-        if (funcion.contains("x")) {
+        String errorRestriccion =BerrorText.getText();
+        String inferiorRestriccion=BinferiorText.getText();
+        String superiorRestriccion=BsuperiorText.getText();
+        if(funcion.isEmpty()||errorRestriccion.isEmpty()||inferiorRestriccion.isEmpty()||superiorRestriccion.isEmpty()){
+            JOptionPane.showMessageDialog(null, "No dejes casillas vacias");//Mensaje casilla vacia
+        }else{
+            if (funcion.contains("x")) {
+            errorPermitido= Double.parseDouble(BerrorText.getText());
+            inferior = Double.parseDouble(BinferiorText.getText());
+            superior = Double.parseDouble(BsuperiorText.getText());
             String nuevaFuncion = funcion.replace("x", String.valueOf(inferior));
-           double resultado= Double.parseDouble(nuevaFuncion);
-            System.out.println("+"+resultado);
+            //double resultado= Double.parseDouble(nuevaFuncion);
+            System.out.println("+"+nuevaFuncion);
+            }
         }
+        
+        
+        
 
     }//GEN-LAST:event_BenviarButtonActionPerformed
 
@@ -347,6 +375,36 @@ public class Inicio extends javax.swing.JFrame {
         BinferiorText.setText("");
         BsuperiorText.setText("");
     }//GEN-LAST:event_BlimpiarButtonActionPerformed
+
+    private void BerrorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BerrorTextKeyTyped
+        //Combinacion de que la tecla se presione y se suelte
+        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
+        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
+            evt.consume();//el evento no permite seguir escribiendo
+            Toolkit.getDefaultToolkit().beep();//sonido de error
+            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
+        }
+    }//GEN-LAST:event_BerrorTextKeyTyped
+
+    private void BinferiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BinferiorTextKeyTyped
+        //Combinacion de que la tecla se presione y se suelte
+        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
+        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
+            evt.consume();//el evento no permite seguir escribiendo
+            Toolkit.getDefaultToolkit().beep();//sonido de error
+            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
+        }
+    }//GEN-LAST:event_BinferiorTextKeyTyped
+
+    private void BsuperiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BsuperiorTextKeyTyped
+        //Combinacion de que la tecla se presione y se suelte
+        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
+        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
+            evt.consume();//el evento no permite seguir escribiendo
+            Toolkit.getDefaultToolkit().beep();//sonido de error
+            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
+        }
+    }//GEN-LAST:event_BsuperiorTextKeyTyped
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BenviarButton;
