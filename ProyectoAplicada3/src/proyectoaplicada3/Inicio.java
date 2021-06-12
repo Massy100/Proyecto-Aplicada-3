@@ -107,6 +107,11 @@ public class Inicio extends javax.swing.JFrame {
 
         jLabel4.setText("Limite Inferior:");
 
+        BinferiorText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BinferiorTextActionPerformed(evt);
+            }
+        });
         BinferiorText.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 BinferiorTextKeyTyped(evt);
@@ -327,7 +332,14 @@ public class Inicio extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BenviarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BenviarButtonActionPerformed
-        double resultados;
+        double resultadoValorConX;
+        double resultadoValorExponente = 0;
+        double funcionFA;
+        double funcionFR;
+        double valorR;
+        double valorFAxFR;
+        double valorTotalFA = 0;
+        double valorTotalFR = 0;
         String valorPrueba = "";
         int indicador = 1;
         String errorRestriccion =BerrorText.getText();
@@ -339,18 +351,35 @@ public class Inicio extends javax.swing.JFrame {
             errorPermitido= Double.parseDouble(BerrorText.getText());
             inferior = Double.parseDouble(BinferiorText.getText());
             superior = Double.parseDouble(BsuperiorText.getText());
+            valorR=(inferior+superior)/2;
             try{
                 indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
                 try{
                     while(indicador==1){
-                        JOptionPane.showInputDialog("Ingresa valor");
-                
-                        resultados=Double.parseDouble(JOptionPane.showInputDialog(null, "ingresa numero", valorPrueba));
-                    System.out.println(""+resultados);
+                        resultadoValorExponente=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el exponente que tiene tu x", valorPrueba));   
+                        funcionFA=Math.pow(inferior, resultadoValorExponente);
+                        funcionFR=Math.pow(valorR, resultadoValorExponente);
+                        resultadoValorConX=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el valor de la constante que acompaña a la X", valorPrueba));           
+                        indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
+                        valorTotalFA=valorTotalFA+resultadoValorConX*(funcionFA);
+                        valorTotalFR=valorTotalFR+resultadoValorConX*(funcionFR);
                     }
                     if (indicador==2){     
                         JOptionPane.showMessageDialog(null, "Funcion grabada");
-                    }       
+                        
+                        valorFAxFR=valorTotalFA*valorTotalFR;
+                        System.out.println("Xa"+inferior+
+                                            "\n Xb"+superior+
+                                            "\n Xr"+valorR+
+                                            "\n f(a)"+valorTotalFA+
+                                            "\n f(r)"+valorTotalFR+
+                                            "\n f(a)*f(r)"+valorFAxFR);
+                        
+                    }
+                    if (indicador!=2&indicador!=1){
+                        JOptionPane.showMessageDialog(null, "Error escribe valor válido");
+                        indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
+                    }
                 }catch(Exception e){
                     JOptionPane.showMessageDialog(null, "Error escribe valor válido");
                     indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
@@ -404,6 +433,10 @@ public class Inicio extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
         }
     }//GEN-LAST:event_BsuperiorTextKeyTyped
+
+    private void BinferiorTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BinferiorTextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BinferiorTextActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BenviarButton;
