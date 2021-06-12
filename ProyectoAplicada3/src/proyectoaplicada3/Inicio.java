@@ -47,8 +47,6 @@ public class Inicio extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         BenviarButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        BfuncionText = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         BerrorText = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
@@ -90,7 +88,7 @@ public class Inicio extends javax.swing.JFrame {
 
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        BenviarButton.setText("ENVIAR");
+        BenviarButton.setText("Ingresar Funcion");
         BenviarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BenviarButtonActionPerformed(evt);
@@ -98,8 +96,6 @@ public class Inicio extends javax.swing.JFrame {
         });
 
         jLabel1.setText("Ingrese los siguientes datos");
-
-        jLabel2.setText("Funcion:");
 
         jLabel3.setText("Error absoluto permitido:");
 
@@ -137,61 +133,50 @@ public class Inicio extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(BfuncionText, javax.swing.GroupLayout.DEFAULT_SIZE, 152, Short.MAX_VALUE)
-                            .addComponent(BerrorText)
-                            .addComponent(BinferiorText)
-                            .addComponent(BsuperiorText))
-                        .addGap(87, 87, 87))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(BenviarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(42, 42, 42)
-                        .addComponent(BlimpiarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(56, Short.MAX_VALUE))))
-            .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(88, 88, 88)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(BenviarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(BlimpiarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel5))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(BerrorText)
+                            .addComponent(BinferiorText)
+                            .addComponent(BsuperiorText, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
+                .addGap(27, 27, 27)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(BerrorText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(BinferiorText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(46, 46, 46)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel2)
-                            .addComponent(BfuncionText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
-                            .addComponent(BerrorText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4)
-                            .addComponent(BinferiorText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5)
-                            .addComponent(BsuperiorText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(47, 179, Short.MAX_VALUE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(BlimpiarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(BenviarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(69, 69, 69))))
+                    .addComponent(jLabel5)
+                    .addComponent(BsuperiorText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BenviarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BlimpiarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(140, 140, 140))
         );
 
         jDesktopPane2.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 46, 377, -1));
@@ -342,65 +327,41 @@ public class Inicio extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BenviarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BenviarButtonActionPerformed
-        funcion=BfuncionText.getText();
+        double resultados;
+        String valorPrueba = "";
+        int indicador = 1;
         String errorRestriccion =BerrorText.getText();
         String inferiorRestriccion=BinferiorText.getText();
         String superiorRestriccion=BsuperiorText.getText();
-        if(funcion.isEmpty()||errorRestriccion.isEmpty()||inferiorRestriccion.isEmpty()||superiorRestriccion.isEmpty()){
+        if(errorRestriccion.isEmpty()||inferiorRestriccion.isEmpty()||superiorRestriccion.isEmpty()){
             JOptionPane.showMessageDialog(null, "No dejes casillas vacias");//Mensaje casilla vacia
         }else{
-            if (funcion.contains("x")) {
             errorPermitido= Double.parseDouble(BerrorText.getText());
             inferior = Double.parseDouble(BinferiorText.getText());
             superior = Double.parseDouble(BsuperiorText.getText());
-            String nuevaFuncion = funcion.replace("x", String.valueOf(inferior));
-            //double resultado= Double.parseDouble(nuevaFuncion);
-            System.out.println("+"+nuevaFuncion);
-            String operacion = nuevaFuncion;//22.0+1
-            int tam = operacion.length();
-            String A[] = new String[100];
-            //Array para almacenar operadores.
-            String operaciones[] = new String[100];
-            int pos = 0;
-            double sum = 0;
-            String aux = "";
-
-            //inicializa primer operador.
-            operaciones[0] = "+";
-            int index_operacion = 1;
-            for (int i = 1; i < tam; i++) {
-                if (operacion.charAt(i) == '+' || operacion.charAt(i) == '-') {
-                    A[pos] = aux;
-                    operaciones[index_operacion] = String.valueOf(operacion.charAt(i));
-                    pos++;
-                    index_operacion++;
-                    aux = "";
-                } else {
-                    aux = aux + operacion.charAt(i);
+            try{
+                indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
+                try{
+                    while(indicador==1){
+                        JOptionPane.showInputDialog("Ingresa valor");
+                
+                        resultados=Double.parseDouble(JOptionPane.showInputDialog(null, "ingresa numero", valorPrueba));
+                    System.out.println(""+resultados);
+                    }
+                    if (indicador==2){     
+                        JOptionPane.showMessageDialog(null, "Funcion grabada");
+                    }       
+                }catch(Exception e){
+                    JOptionPane.showMessageDialog(null, "Error escribe valor válido");
+                    indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
                 }
+                                                  
+            }catch(Exception e){
+                JOptionPane.showMessageDialog(null, "Error escribe valor válido");
+                indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
             }
-            A[pos] = aux;
-            pos++;
-
-            for (int i = 0; i < pos; i++) {
-                //Determina la operación a realizar.         
-                if (operaciones[i].equals("+")) {
-                    sum = sum + Integer.parseInt(A[i]);
-                } else if (operaciones[i].equals("-")) {
-                    sum = sum - Integer.parseInt(A[i]);
-                }
-
-            }
-            System.out.println("=  " + sum);
-
-            //double resultado= Double.parseDouble(nuevaFuncion);
-            //System.out.println(nuevaFuncion);
-            }
+            
         }
-        
-        
-        
-
     }//GEN-LAST:event_BenviarButtonActionPerformed
 
     private void SalirDelSistemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalirDelSistemaActionPerformed
@@ -409,7 +370,6 @@ public class Inicio extends javax.swing.JFrame {
     }//GEN-LAST:event_SalirDelSistemaActionPerformed
 
     private void BlimpiarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BlimpiarButtonActionPerformed
-        BfuncionText.setText("");
         BerrorText.setText("");
         BinferiorText.setText("");
         BsuperiorText.setText("");
@@ -448,7 +408,6 @@ public class Inicio extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BenviarButton;
     private javax.swing.JTextField BerrorText;
-    private javax.swing.JTextField BfuncionText;
     private javax.swing.JTextField BinferiorText;
     private javax.swing.JButton BlimpiarButton;
     private javax.swing.JTextField BsuperiorText;
@@ -463,7 +422,6 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JDesktopPane jDesktopPane6;
     private javax.swing.JDesktopPane jDesktopPane7;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
