@@ -7,6 +7,7 @@ package proyectoaplicada3;
 
 import java.awt.Graphics;
 import java.awt.Image;
+import java.util.regex.Pattern;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -98,8 +99,6 @@ public class Inicio extends javax.swing.JFrame {
         jLabel1.setText("Ingrese los siguientes datos");
 
         jLabel2.setText("Funcion:");
-
-        BfuncionText.setText("2x^2+2");
 
         jLabel3.setText("Error absoluto permitido:");
 
@@ -326,13 +325,15 @@ public class Inicio extends javax.swing.JFrame {
     private void BenviarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BenviarButtonActionPerformed
         funcion=BfuncionText.getText();
         errorPermitido= Double.parseDouble(BerrorText.getText());
-        inferior= Double.parseDouble(BinferiorText.getText());
-        superior= Double.parseDouble(BsuperiorText.getText());
-        
+        inferior = Double.parseDouble(BinferiorText.getText());
+        superior = Double.parseDouble(BsuperiorText.getText());
+
         if (funcion.contains("x")) {
-            //funcion.substring("x");
+            String nuevaFuncion = funcion.replace("x", String.valueOf(inferior));
+           double resultado= Double.parseDouble(nuevaFuncion);
+            System.out.println("+"+resultado);
         }
-        
+
     }//GEN-LAST:event_BenviarButtonActionPerformed
 
     private void SalirDelSistemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalirDelSistemaActionPerformed
