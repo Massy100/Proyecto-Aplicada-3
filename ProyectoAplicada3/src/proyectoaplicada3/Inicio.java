@@ -5,14 +5,20 @@
  */
 package proyectoaplicada3;
 
+import java.awt.BorderLayout;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.regex.Pattern;
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
 
 /**
  *
@@ -20,14 +26,23 @@ import javax.swing.JPanel;
  */
 public class Inicio extends javax.swing.JFrame {
 
-    String funcion="";
-    double errorPermitido=0;
-    double inferior=0;
-    double superior=0;
-    
+    String funcion = "";
+    double errorPermitido = 0;
+    double inferior = 0;
+    double superior = 0;
+    double valorR;
+    double valorFAxFR;
+    double valorTotalFA = 0;
+    double valorTotalFR = 0;
+    public String[] nombresColumnas;
+    public Object[][] datosFila;
     public Inicio() {
         initComponents();//Iniciamos los componentes del Frame
         this.setLocationRelativeTo(null);//Centramos nuestro frame
+
+        setTitle("Metodo de Biseccion");
+
+        
     }
 
     /**
@@ -336,10 +351,7 @@ public class Inicio extends javax.swing.JFrame {
         double resultadoValorExponente = 0;
         double funcionFA;
         double funcionFR;
-        double valorR;
-        double valorFAxFR;
-        double valorTotalFA = 0;
-        double valorTotalFR = 0;
+        
         String valorPrueba = "";
         int indicador = 1;
         String errorRestriccion =BerrorText.getText();
@@ -391,6 +403,15 @@ public class Inicio extends javax.swing.JFrame {
             }
             
         }
+         String[] nombresColumnas = {"Iteraciones", "xa", "xb", "xr", "f(a)", "f(r)", "f(a)f(r)", "Ea(%)", "Et(%)"};
+         Object[][] datosFila = {
+            {1, superior, inferior, valorR, valorTotalFA, valorTotalFR, valorFAxFR}
+
+        };
+         JTable tabla=new JTable(datosFila, nombresColumnas);
+         tabla=biseccionTable;
+        add(new JScrollPane(tabla), BorderLayout.CENTER);
+        
     }//GEN-LAST:event_BenviarButtonActionPerformed
 
     private void SalirDelSistemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalirDelSistemaActionPerformed
@@ -465,17 +486,5 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane6;
     // End of variables declaration//GEN-END:variables
-    class MarcoTabla extends JFrame{
-        public MarcoTabla(){
-            setTitle("Metodo de Biseccion");
-            setBounds(300,300,400,200);
-        
-        }
-        private String [] nombresColumnas={"Iteraciones","xa","xb","xr","f(a)","f(r)","f(a)f(r)","Ea(%)","Et(%)"};
-        private Object[][] datosFila={
-            {1,}
-        
-        };
-    
-    }
+
 }
