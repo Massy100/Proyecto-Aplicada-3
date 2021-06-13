@@ -33,6 +33,7 @@ public class Inicio extends javax.swing.JFrame {
     double valorR;
     double valorFAxFR;
     double valorTotalFA = 0;
+    double valorTotalFB = 0;
     double valorTotalFR = 0;
     public String[] nombresColumnas;
     public Object[][] datosFila;
@@ -1181,13 +1182,13 @@ public class Inicio extends javax.swing.JFrame {
         double resultadoValorConX = 0;
         double resultadoValorExponente = 0;
         double funcionFA;
-        double funcionFB;
+        double funcionFB = 0;
         double funcionFR;
         double valorR = 0;
         double valorFAxFR = 0;
         double valorTotalFA = 0;
-        double valorTotalFB=0;
-    double valorTotalFR = 0;
+        double valorTotalFB = 0;
+        double valorTotalFR = 0;
         double errorAbsoluto=0;
         double valorAlmacenableR=0;
         int almacenarEXP=0;
@@ -1212,20 +1213,20 @@ public class Inicio extends javax.swing.JFrame {
                     while(indicador==1){
                         resultadoValorExponente=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el exponente que tiene tu x", valorPrueba));   
                         funcionFA=Math.pow(inferior, resultadoValorExponente);
-                        funcionFB=Math.pow(valorR, resultadoValorExponente);
+                        funcionFB=Math.pow(superior, resultadoValorExponente);
                         funcionFR=Math.pow(valorR, resultadoValorExponente);
                         resultadoValorConX=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el valor de la constante que acompaña a la X", valorPrueba));           
                         indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
                         valorTotalFA=valorTotalFA+resultadoValorConX*(funcionFA);
                         valorTotalFB=valorTotalFB+resultadoValorConX*(funcionFB);
-                        valorTotalFR=valorTotalFR+resultadoValorConX*(funcionFR);  
+                        valorTotalFR=valorTotalFR+resultadoValorConX*(funcionFR);
                         almacenarExponente[almacenarEXP]=resultadoValorExponente;
                         almacenarResulX[almacenarEXP]=resultadoValorConX;
                         almacenarEXP++;
                     }
                     if (indicador==2){     
                         JOptionPane.showMessageDialog(null, "Funcion grabada");
-                        
+                        valorR=superior-((valorTotalFB*(superior-inferior))/(valorTotalFB-valorTotalFA));
                         valorFAxFR=valorTotalFA*valorTotalFR;
                         System.out.println("Iteracion: 1"+
                                             "\nXa: "+inferior+
@@ -1241,11 +1242,14 @@ public class Inicio extends javax.swing.JFrame {
                             valorAlmacenableR=valorR;
                             for (int j = 0; j < almacenarEXP; j++) {
                                 funcionFA=Math.pow(inferior, almacenarExponente[j]);
-                                funcionFR=Math.pow(valorR, almacenarExponente[j]);
                                 valorTotalFA=valorTotalFA+almacenarResulX[j]*(funcionFA);
+                                valorTotalFB=valorTotalFB+almacenarResulX[j]*(funcionFB);
+                            }
+                            valorR=superior-((valorTotalFB*(superior-inferior))/(valorTotalFB-valorTotalFA));
+                            for (int j = 0; j < almacenarEXP; j++) {
+                                funcionFR=Math.pow(valorR, almacenarExponente[j]);
                                 valorTotalFR=valorTotalFR+almacenarResulX[j]*(funcionFR);
                             }
-                            valorR=superior;
                             valorFAxFR=valorTotalFA*valorTotalFR;
                             errorAbsoluto=Math.abs((valorR-valorAlmacenableR)/valorR)*100;
                             System.out.println("Iteracion: "+i+
@@ -1253,10 +1257,11 @@ public class Inicio extends javax.swing.JFrame {
                                         "\n Xb: "+superior+
                                         "\n Xr: "+valorR+
                                         "\n f(a): "+valorTotalFA+
+                                        "\n f(b): "+valorTotalFB+
                                         "\n f(r): "+valorTotalFR+
                                         "\n f(a)*f(r): "+valorFAxFR+
                                         "\n Ea% "+errorAbsoluto);  
-                            System.out.println("es negativo izquierdo Xb=Xr\n");
+                            System.out.println("--------------------------\n");
                         }
                         
                     }
