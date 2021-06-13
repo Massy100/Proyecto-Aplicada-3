@@ -29,8 +29,16 @@ public class Inicio extends javax.swing.JFrame {
     String funcion = "";
     double errorPermitido = 0;
     double inferior = 0;
+    double intermedio=0;
     double superior = 0;
     double valorR;
+    double valorHO=0;
+    double valorH1=0;
+    double valorDeltaO=0;
+    double valorDelta1=0;
+    double vA=0;
+    double vB=0;
+    double vC=0;
     double valorFAxFR;
     double valorTotalFA = 0;
     double valorTotalFB = 0;
@@ -102,20 +110,6 @@ public class Inicio extends javax.swing.JFrame {
         FsuperiorText = new javax.swing.JTextField();
         FlimpiarButton = new javax.swing.JButton();
         T3 = new javax.swing.JLabel();
-        jDesktopPane5 = new javax.swing.JDesktopPane();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        puntoFijoTable = new javax.swing.JTable();
-        jPanel5 = new javax.swing.JPanel();
-        PenviarButton = new javax.swing.JButton();
-        Pingreso = new javax.swing.JLabel();
-        Piteraciones = new javax.swing.JLabel();
-        PerrorText = new javax.swing.JTextField();
-        PlimInferior = new javax.swing.JLabel();
-        PinferiorText = new javax.swing.JTextField();
-        PlimSuperior = new javax.swing.JLabel();
-        PsuperiorText = new javax.swing.JTextField();
-        PlimpiarButton = new javax.swing.JButton();
-        T4 = new javax.swing.JLabel();
         jDesktopPane6 = new javax.swing.JDesktopPane();
         jScrollPane5 = new javax.swing.JScrollPane();
         newtonTable = new javax.swing.JTable();
@@ -545,130 +539,6 @@ public class Inicio extends javax.swing.JFrame {
 
         jTabbedPane6.addTab("Método de Falsa Posición", jDesktopPane4);
 
-        jDesktopPane5.setBackground(new java.awt.Color(51, 255, 255));
-        jDesktopPane5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        puntoFijoTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane4.setViewportView(puntoFijoTable);
-
-        jDesktopPane5.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(449, 96, 760, 410));
-
-        jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        PenviarButton.setText("Ingresar Funcion");
-        PenviarButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                PenviarButtonActionPerformed(evt);
-            }
-        });
-
-        Pingreso.setText("Ingrese los siguientes datos");
-
-        Piteraciones.setText("Iteraciones a realizar");
-
-        PerrorText.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                PerrorTextKeyTyped(evt);
-            }
-        });
-
-        PlimInferior.setText("Limite Inferior:");
-
-        PinferiorText.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                PinferiorTextActionPerformed(evt);
-            }
-        });
-        PinferiorText.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                PinferiorTextKeyTyped(evt);
-            }
-        });
-
-        PlimSuperior.setText("Limite Superior:");
-
-        PsuperiorText.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                PsuperiorTextKeyTyped(evt);
-            }
-        });
-
-        PlimpiarButton.setText("LIMPIAR");
-        PlimpiarButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                PlimpiarButtonActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(88, 88, 88)
-                .addComponent(Pingreso, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addComponent(PenviarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(PlimpiarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Piteraciones, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(PlimInferior)
-                            .addComponent(PlimSuperior))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(PerrorText)
-                            .addComponent(PinferiorText)
-                            .addComponent(PsuperiorText, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap())
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Pingreso)
-                .addGap(27, 27, 27)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Piteraciones)
-                    .addComponent(PerrorText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(PlimInferior)
-                    .addComponent(PinferiorText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(PlimSuperior)
-                    .addComponent(PsuperiorText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(PenviarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(PlimpiarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(23, Short.MAX_VALUE))
-        );
-
-        jDesktopPane5.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 377, 270));
-
-        T4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoFijo.png"))); // NOI18N
-        T4.setToolTipText("");
-        jDesktopPane5.add(T4, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 10, 560, 60));
-
-        jTabbedPane6.addTab("Método de Punto Fijo", jDesktopPane5);
-
         jDesktopPane6.setBackground(new java.awt.Color(51, 255, 255));
         jDesktopPane6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -958,149 +828,12 @@ public class Inicio extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void BenviarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BenviarButtonActionPerformed
-        double resultadoValorConX = 0;
-        double resultadoValorExponente = 0;
-        double funcionFA;
-        double funcionFR;
-        double valorR = 0;
-        double valorFAxFR = 0;
-        double valorTotalFA = 0;
-        double valorTotalFR = 0;
-        double errorAbsoluto=0;
-        double valorAlmacenableR=0;
-        int almacenarEXP=0;
-        int iteraciones=0;
-        double almacenarResulX[]=new double[100];
-        double almacenarExponente[] = new double[100];
-        String valorPrueba = "";
-        int indicador = 1;
-        String errorRestriccion =BerrorText.getText();
-        String inferiorRestriccion=BinferiorText.getText();
-        String superiorRestriccion=BsuperiorText.getText();
-        if(errorRestriccion.isEmpty()||inferiorRestriccion.isEmpty()||superiorRestriccion.isEmpty()){
-            JOptionPane.showMessageDialog(null, "No dejes casillas vacias");//Mensaje casilla vacia
-        }else{
-            iteraciones= Integer.parseInt(BerrorText.getText());
-            inferior = Double.parseDouble(BinferiorText.getText());
-            superior = Double.parseDouble(BsuperiorText.getText());
-            valorR=(inferior+superior)/2;
-            try{
-                indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
-                try{
-                    while(indicador==1){
-                        resultadoValorExponente=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el exponente que tiene tu x", valorPrueba));   
-                        funcionFA=Math.pow(inferior, resultadoValorExponente);
-                        funcionFR=Math.pow(valorR, resultadoValorExponente);
-                        resultadoValorConX=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el valor de la constante que acompaña a la X", valorPrueba));           
-                        indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
-                        valorTotalFA=valorTotalFA+resultadoValorConX*(funcionFA);
-                        valorTotalFR=valorTotalFR+resultadoValorConX*(funcionFR);
-                        almacenarExponente[almacenarEXP]=resultadoValorExponente;
-                        almacenarResulX[almacenarEXP]=resultadoValorConX;
-                        almacenarEXP++;
-                    }
-                    if (indicador==2){     
-                        JOptionPane.showMessageDialog(null, "Funcion grabada");
-                        
-                        valorFAxFR=valorTotalFA*valorTotalFR;
-                        System.out.println("Iteracion: 1"+
-                                            "\nXa: "+inferior+
-                                            "\n Xb: "+superior+
-                                            "\n Xr: "+valorR+
-                                            "\n f(a): "+valorTotalFA+
-                                            "\n f(r): "+valorTotalFR+
-                                            "\n f(a)*f(r): "+valorFAxFR);
-                        for (int i = 2; i <= iteraciones; i++) {
-                            if(valorFAxFR<0){
-                                valorTotalFA=0;
-                                valorTotalFR=0;
-                                superior=valorR;
-                                valorAlmacenableR=valorR;
-                                valorR=(inferior+superior)/2;
-                                for (int j = 0; j < almacenarEXP; j++) {
-                                    funcionFA=Math.pow(inferior, almacenarExponente[j]);
-                                    funcionFR=Math.pow(valorR, almacenarExponente[j]);
-                                    valorTotalFA=valorTotalFA+almacenarResulX[j]*(funcionFA);
-                                    valorTotalFR=valorTotalFR+almacenarResulX[j]*(funcionFR);
-                                }
-                                valorFAxFR=valorTotalFA*valorTotalFR;
-                                errorAbsoluto=Math.abs((valorR-valorAlmacenableR)/valorR)*100;
-                                System.out.println("Iteracion: "+i+
-                                            "\nXa: "+inferior+
-                                            "\n Xb: "+superior+
-                                            "\n Xr: "+valorR+
-                                            "\n f(a): "+valorTotalFA+
-                                            "\n f(r): "+valorTotalFR+
-                                            "\n f(a)*f(r): "+valorFAxFR+
-                                            "\n Ea% "+errorAbsoluto);  
-                                System.out.println("es negativo izquierdo Xb=Xr\n");
-                            }
-                            else{
-                                valorTotalFA=0;
-                                valorTotalFR=0;
-                                inferior=valorR;
-                                valorAlmacenableR=valorR;
-                                valorR=(inferior+superior)/2;
-                                for (int j = 0; j < almacenarEXP; j++) {
-                                    funcionFA=Math.pow(inferior, almacenarExponente[j]);
-                                    funcionFR=Math.pow(valorR, almacenarExponente[j]);
-                                    valorTotalFA=valorTotalFA+almacenarResulX[j]*(funcionFA);
-                                    valorTotalFR=valorTotalFR+almacenarResulX[j]*(funcionFR);
-                                }
-                                valorFAxFR=valorTotalFA*valorTotalFR;
-                                errorAbsoluto=Math.abs((valorR-valorAlmacenableR)/valorR)*100;
-                                System.out.println("Iteracion: "+i+
-                                            "\nXa: "+inferior+
-                                            "\n Xb: "+superior+
-                                            "\n Xr: "+valorR+
-                                            "\n f(a): "+valorTotalFA+
-                                            "\n f(r): "+valorTotalFR+
-                                            "\n f(a)*f(r): "+valorFAxFR+
-                                            "\n Ea% "+errorAbsoluto);
-                                System.out.println("es positivo derecho Xa=Xr\n");
-                            }
-                        }
-                        
-                    }
-                    if (indicador!=2&indicador!=1){
-                        JOptionPane.showMessageDialog(null, "Error escribe valor válido");
-                        indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
-                    }
-                }catch(Exception e){
-                    JOptionPane.showMessageDialog(null, "Error escribe valor válido");
-                    indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
-                }
-                                                  
-            }catch(Exception e){
-                JOptionPane.showMessageDialog(null, "Error escribe valor válido");
-                indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
-            }
-            
-        }
-         String[] nombresColumnas = {"Iteraciones", "xa", "xb", "xr", "f(a)", "f(r)", "f(a)f(r)", "Ea(%)", "Et(%)"};
-         Object[][] datosFila = {
-            {1, superior, inferior, valorR, valorTotalFA, valorTotalFR, valorFAxFR}
-
-        };
-         JTable tabla=new JTable(datosFila, nombresColumnas);
-         tabla=biseccionTable;
-        add(new JScrollPane(tabla), BorderLayout.CENTER);
-        
-    }//GEN-LAST:event_BenviarButtonActionPerformed
-
     private void SalirDelSistemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalirDelSistemaActionPerformed
         JOptionPane.showMessageDialog(null, "Vuelve pronto, que tengas buen dia");
         System.exit(0);
     }//GEN-LAST:event_SalirDelSistemaActionPerformed
 
-    private void BlimpiarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BlimpiarButtonActionPerformed
-        BerrorText.setText("");
-        BinferiorText.setText("");
-        BsuperiorText.setText("");
-    }//GEN-LAST:event_BlimpiarButtonActionPerformed
-
-    private void BerrorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BerrorTextKeyTyped
+    private void MintermedioTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_MintermedioTextKeyTyped
         //Combinacion de que la tecla se presione y se suelte
         char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
         if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
@@ -1108,9 +841,16 @@ public class Inicio extends javax.swing.JFrame {
             Toolkit.getDefaultToolkit().beep();//sonido de error
             JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
         }
-    }//GEN-LAST:event_BerrorTextKeyTyped
+    }//GEN-LAST:event_MintermedioTextKeyTyped
 
-    private void BinferiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BinferiorTextKeyTyped
+    private void MlimpiarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MlimpiarButtonActionPerformed
+        MerrorText.setText("");
+        MinferiorText.setText("");
+        MintermedioText.setText("");
+        MsuperiorText.setText("");
+    }//GEN-LAST:event_MlimpiarButtonActionPerformed
+
+    private void MsuperiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_MsuperiorTextKeyTyped
         //Combinacion de que la tecla se presione y se suelte
         char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
         if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
@@ -1118,9 +858,9 @@ public class Inicio extends javax.swing.JFrame {
             Toolkit.getDefaultToolkit().beep();//sonido de error
             JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
         }
-    }//GEN-LAST:event_BinferiorTextKeyTyped
+    }//GEN-LAST:event_MsuperiorTextKeyTyped
 
-    private void BsuperiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BsuperiorTextKeyTyped
+    private void MinferiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_MinferiorTextKeyTyped
         //Combinacion de que la tecla se presione y se suelte
         char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
         if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
@@ -1128,13 +868,23 @@ public class Inicio extends javax.swing.JFrame {
             Toolkit.getDefaultToolkit().beep();//sonido de error
             JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
         }
-    }//GEN-LAST:event_BsuperiorTextKeyTyped
+    }//GEN-LAST:event_MinferiorTextKeyTyped
 
-    private void BinferiorTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BinferiorTextActionPerformed
+    private void MinferiorTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MinferiorTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_BinferiorTextActionPerformed
+    }//GEN-LAST:event_MinferiorTextActionPerformed
 
-    private void SenviarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SenviarButtonActionPerformed
+    private void MerrorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_MerrorTextKeyTyped
+        //Combinacion de que la tecla se presione y se suelte
+        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
+        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
+            evt.consume();//el evento no permite seguir escribiendo
+            Toolkit.getDefaultToolkit().beep();//sonido de error
+            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
+        }
+    }//GEN-LAST:event_MerrorTextKeyTyped
+
+    private void MenviarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenviarButtonActionPerformed
         double resultadoValorConX = 0;
         double resultadoValorExponente = 0;
         double funcionFA;
@@ -1153,78 +903,106 @@ public class Inicio extends javax.swing.JFrame {
         double almacenarExponente[] = new double[100];
         String valorPrueba = "";
         int indicador = 1;
-        String errorRestriccion =SerrorText.getText();
-        String inferiorRestriccion=SinferiorText.getText();
-        String superiorRestriccion=SsuperiorText.getText();
-        if(errorRestriccion.isEmpty()||inferiorRestriccion.isEmpty()||superiorRestriccion.isEmpty()){
+        String errorRestriccion =MerrorText.getText();
+        String inferiorRestriccion=MinferiorText.getText();
+        String intermedioRestriccion=MsuperiorText.getText();
+        String superiorRestriccion=MsuperiorText.getText();
+        if(errorRestriccion.isEmpty()||inferiorRestriccion.isEmpty()||intermedioRestriccion.isEmpty()||superiorRestriccion.isEmpty()){
             JOptionPane.showMessageDialog(null, "No dejes casillas vacias");//Mensaje casilla vacia
         }else{
-            iteraciones= Integer.parseInt(SerrorText.getText());
-            inferior = Double.parseDouble(SinferiorText.getText());
-            superior = Double.parseDouble(SsuperiorText.getText());
-            valorR=(inferior+superior)/2;
+            iteraciones= Integer.parseInt(MerrorText.getText());
+            inferior = Double.parseDouble(MinferiorText.getText());
+            intermedio=Double.parseDouble(MintermedioText.getText());
+            superior = Double.parseDouble(MsuperiorText.getText());
             try{
                 indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
                 try{
                     while(indicador==1){
-                        resultadoValorExponente=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el exponente que tiene tu x", valorPrueba));   
+                        resultadoValorExponente=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el exponente que tiene tu x", valorPrueba));
                         funcionFA=Math.pow(inferior, resultadoValorExponente);
                         funcionFB=Math.pow(superior, resultadoValorExponente);
-                        resultadoValorConX=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el valor de la constante que acompaña a la X", valorPrueba));           
+                        funcionFR=Math.pow(intermedio, resultadoValorExponente);
+                        resultadoValorConX=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el valor de la constante que acompaña a la X", valorPrueba));
                         indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
                         valorTotalFA=valorTotalFA+resultadoValorConX*(funcionFA);
                         valorTotalFB=valorTotalFB+resultadoValorConX*(funcionFB);
+                        valorTotalFR=valorTotalFR+resultadoValorConX*(funcionFR);
                         almacenarExponente[almacenarEXP]=resultadoValorExponente;
                         almacenarResulX[almacenarEXP]=resultadoValorConX;
                         almacenarEXP++;
                     }
-                    if (indicador==2){                      
+                    if (indicador==2){
                         JOptionPane.showMessageDialog(null, "Funcion grabada");
-                        valorR=superior-((valorTotalFB*(superior-inferior))/(valorTotalFB-valorTotalFA));
-                        for (int j = 0; j < almacenarEXP; j++) {
-                                funcionFR=Math.pow(valorR, almacenarExponente[j]);
-                                valorTotalFR=valorTotalFR+almacenarResulX[j]*(funcionFR);
-                            }
-                        valorFAxFR=valorTotalFA*valorTotalFR;
+                        valorHO=intermedio-inferior;
+                        valorH1=superior-intermedio;
+                        valorDeltaO=(valorTotalFR-valorTotalFA)/(intermedio -inferior);
+                        valorDelta1=(valorTotalFB-valorTotalFR)/(superior -intermedio);
+                        vA=(valorDelta1-valorDeltaO)/(valorH1+valorHO);
+                        vB=vA*(valorH1)+valorDelta1;
+                        vC=valorTotalFB;
+                        if(vB>0){
+                            valorR=superior+((-2*vC)/(vB+Math.sqrt(Math.pow(vB, 2)-4*(vA*vC))));
+                        }else{
+                            valorR=superior+((-2*vC)/(vB-Math.sqrt(Math.pow(vB, 2)-4*(vA*vC))));
+                        }           
                         System.out.println("Iteracion: 1"+
-                                            "\nXa: "+inferior+
-                                            "\n Xb: "+superior+
-                                            "\n Xr: "+valorR+
-                                            "\n f(a): "+valorTotalFA+
-                                            "\n f(r): "+valorTotalFR+
-                                            "\n f(a)*f(r): "+valorFAxFR);
+                            "\nXo: "+inferior+
+                            "\n X1: "+intermedio+
+                            "\n X2: "+superior+
+                            "\n f(Xo): "+valorTotalFA+
+                            "\n f(X1): "+valorTotalFR+
+                            "\n f(X2): "+valorTotalFB+
+                                "\n Ho: "+valorHO+
+                                "\n H1: "+valorH1+
+                                "\n δo: "+valorDeltaO+
+                                "\n δ1: "+valorDelta1+
+                                "\n a: "+vA+
+                                "\n b: "+vB+
+                                "\n c: "+vC+
+                                "\n X3: "+valorR);
                         for (int i = 2; i <= iteraciones; i++) {
-                            valorTotalFA=0;
+                            inferior=intermedio;
+                            intermedio=superior;
+                            superior=valorR;
+                            valorTotalFA=valorTotalFR;
+                            valorTotalFR=valorTotalFB;
                             valorTotalFB=0;
-                            valorTotalFR=0;
-                            inferior=superior;
-                            superior =valorR;
                             valorAlmacenableR=valorR;
                             for (int j = 0; j < almacenarEXP; j++) {
-                                funcionFA=Math.pow(inferior, almacenarExponente[j]);
-                                valorTotalFA=valorTotalFA+almacenarResulX[j]*(funcionFA);
                                 funcionFB=Math.pow(superior, almacenarExponente[j]);
                                 valorTotalFB=valorTotalFB+almacenarResulX[j]*(funcionFB);
                             }
-                            valorR=superior-((valorTotalFB*(superior-inferior))/(valorTotalFB-valorTotalFA));
-                            for (int j = 0; j < almacenarEXP; j++) {
-                                funcionFR=Math.pow(valorR, almacenarExponente[j]);
-                                valorTotalFR=valorTotalFR+almacenarResulX[j]*(funcionFR);
+                            valorHO=intermedio-inferior;
+                            valorH1=superior-intermedio;
+                            valorDeltaO=(valorTotalFR-valorTotalFA)/(intermedio -inferior);
+                            valorDelta1=(valorTotalFB-valorTotalFR)/(superior -intermedio);
+                            vA=(valorDelta1-valorDeltaO)/(valorH1+valorHO);
+                            vB=vA*(valorH1)+valorDelta1;
+                            vC=valorTotalFB;
+                            if(vB>0){
+                                valorR=superior+((-2*vC)/(vB+Math.sqrt(Math.pow(vB, 2)-4*(vA*vC))));
+                            }else{
+                                valorR=superior+((-2*vC)/(vB-Math.sqrt(Math.pow(vB, 2)-4*(vA*vC))));
                             }
-                            valorFAxFR=valorTotalFA*valorTotalFR;
                             errorAbsoluto=Math.abs((valorR-valorAlmacenableR)/valorR)*100;
                             System.out.println("Iteracion: "+i+
-                                        "\nXa: "+inferior+
-                                        "\n Xb: "+superior+
-                                        "\n Xr: "+valorR+
-                                        "\n f(a): "+valorTotalFA+
-                                        "\n f(b): "+valorTotalFB+
-                                        "\n f(r): "+valorTotalFR+
-                                        "\n f(a)*f(r): "+valorFAxFR+
-                                        "\n Ea% "+errorAbsoluto);  
+                                "\nXo: "+inferior+
+                                "\n X1: "+intermedio+
+                                "\n X2: "+superior+
+                                "\n f(Xo): "+valorTotalFA+
+                                "\n f(X1): "+valorTotalFR+
+                                "\n f(X2): "+valorTotalFB+
+                                "\n Ho: "+valorHO+
+                                "\n H1: "+valorH1+
+                                "\n δo: "+valorDeltaO+
+                                "\n δ1: "+valorDelta1+
+                                "\n a: "+vA+
+                                "\n b: "+vB+
+                                "\n c: "+vC+
+                                "\n X3: "+valorR+
+                                "\n Ea% "+errorAbsoluto);
                             System.out.println("--------------------------\n");
                         }
-                        
                     }
                     if (indicador!=2&indicador!=1){
                         JOptionPane.showMessageDialog(null, "Error escribe valor válido");
@@ -1234,24 +1012,29 @@ public class Inicio extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(null, "Error escribe valor válido");
                     indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
                 }
-                                                  
+
             }catch(Exception e){
                 JOptionPane.showMessageDialog(null, "Error escribe valor válido");
                 indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
             }
-            
+
         }
-         String[] nombresColumnas = {"Iteraciones", "xa", "xb", "xr", "f(a)", "f(r)", "f(a)f(r)", "Ea(%)", "Et(%)"};
-         Object[][] datosFila = {
+        String[] nombresColumnas = {"Iteraciones", "xa", "xb", "xr", "f(a)", "f(r)", "f(a)f(r)", "Ea(%)", "Et(%)"};
+        Object[][] datosFila = {
             {1, superior, inferior, valorR, valorTotalFA, valorTotalFR, valorFAxFR}
 
         };
-         JTable tabla=new JTable(datosFila, nombresColumnas);
-         tabla=biseccionTable;
+        JTable tabla=new JTable(datosFila, nombresColumnas);
+        tabla=biseccionTable;
         add(new JScrollPane(tabla), BorderLayout.CENTER);
-    }//GEN-LAST:event_SenviarButtonActionPerformed
+    }//GEN-LAST:event_MenviarButtonActionPerformed
 
-    private void SerrorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SerrorTextKeyTyped
+    private void NlimpiarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NlimpiarButtonActionPerformed
+        NerrorText.setText("");
+        NinferiorText.setText("");
+    }//GEN-LAST:event_NlimpiarButtonActionPerformed
+
+    private void NinferiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_NinferiorTextKeyTyped
         //Combinacion de que la tecla se presione y se suelte
         char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
         if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
@@ -1259,13 +1042,13 @@ public class Inicio extends javax.swing.JFrame {
             Toolkit.getDefaultToolkit().beep();//sonido de error
             JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
         }
-    }//GEN-LAST:event_SerrorTextKeyTyped
+    }//GEN-LAST:event_NinferiorTextKeyTyped
 
-    private void SinferiorTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SinferiorTextActionPerformed
+    private void NinferiorTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NinferiorTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_SinferiorTextActionPerformed
+    }//GEN-LAST:event_NinferiorTextActionPerformed
 
-    private void SinferiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SinferiorTextKeyTyped
+    private void NerrorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_NerrorTextKeyTyped
         //Combinacion de que la tecla se presione y se suelte
         char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
         if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
@@ -1273,9 +1056,112 @@ public class Inicio extends javax.swing.JFrame {
             Toolkit.getDefaultToolkit().beep();//sonido de error
             JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
         }
-    }//GEN-LAST:event_SinferiorTextKeyTyped
+    }//GEN-LAST:event_NerrorTextKeyTyped
 
-    private void SsuperiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SsuperiorTextKeyTyped
+    private void NenviarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NenviarButtonActionPerformed
+        double resultadoValorConX = 0;
+        double resultadoValorExponente = 0;
+        double funcionFA;
+        double funcionFR;
+        double valorR = 0;
+        double valorFAxFR = 0;
+        double valorTotalFA = 0;
+        double valorTotalFR = 0;
+        double errorAbsoluto=0;
+        double valorAlmacenableR=0;
+        int almacenarEXP=0;
+        int iteraciones=0;
+        double almacenarResulX[]=new double[100];
+        double almacenarExponente[] = new double[100];
+        String valorPrueba = "";
+        int indicador = 1;
+        String errorRestriccion =NerrorText.getText();
+        String inferiorRestriccion=NinferiorText.getText();
+        if(errorRestriccion.isEmpty()||inferiorRestriccion.isEmpty()){
+            JOptionPane.showMessageDialog(null, "No dejes casillas vacias");//Mensaje casilla vacia
+        }else{
+            iteraciones= Integer.parseInt(NerrorText.getText());
+            inferior = Double.parseDouble(NinferiorText.getText());
+            valorR=inferior;
+            try{
+                indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
+                try{
+                    while(indicador==1){
+                        resultadoValorExponente=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el exponente que tiene tu x", valorPrueba));
+                        funcionFA=Math.pow(inferior, resultadoValorExponente);
+                        funcionFR=Math.pow(valorR, resultadoValorExponente-1);
+                        resultadoValorConX=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el valor de la constante que acompaña a la X", valorPrueba));
+                        indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
+                        valorTotalFA=valorTotalFA+resultadoValorConX*(funcionFA);
+                        valorTotalFR=valorTotalFR+resultadoValorExponente*resultadoValorConX*(funcionFR);
+                        almacenarExponente[almacenarEXP]=resultadoValorExponente;
+                        almacenarResulX[almacenarEXP]=resultadoValorConX;
+                        almacenarEXP++;
+                    }
+                    if (indicador==2){
+                        JOptionPane.showMessageDialog(null, "Funcion grabada");
+                        valorFAxFR=valorTotalFA/valorTotalFR;
+                        System.out.println("Iteracion: 1"+
+                            "\nXi: "+inferior+
+                            "\n f(xi): "+valorTotalFA+
+                            "\n f'(xi): "+valorTotalFR+
+                            "\n f(xi)/f'(xi): "+valorFAxFR);
+                        for (int i = 2; i <= iteraciones; i++) {
+                            valorAlmacenableR=inferior;
+                            inferior=inferior-valorFAxFR;
+                            valorTotalFA=0;
+                            valorTotalFR=0;
+                            valorR=inferior;
+                            for (int j = 0; j < almacenarEXP; j++) {
+                                funcionFA=Math.pow(inferior, almacenarExponente[j]);
+                                funcionFR=Math.pow(valorR, almacenarExponente[j]-1);
+                                valorTotalFA=valorTotalFA+almacenarResulX[j]*(funcionFA);
+                                valorTotalFR=valorTotalFR+almacenarResulX[j]*almacenarExponente[j]*(funcionFR);
+                            }
+                            valorFAxFR=valorTotalFA/valorTotalFR;
+                            errorAbsoluto=Math.abs((valorR-valorAlmacenableR)/valorR)*100;
+                            System.out.println("Iteracion: "+i+
+                                "\nXa: "+inferior+
+                                "\n f(xi): "+valorTotalFA+
+                                "\n f'(xi): "+valorTotalFR+
+                                "\n f(xi)/f'(xi): "+valorFAxFR+
+                                "\n Ea% "+errorAbsoluto);
+
+                        }
+
+                    }
+                    if (indicador!=2&indicador!=1){
+                        JOptionPane.showMessageDialog(null, "Error escribe valor válido");
+                        indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
+                    }
+                }catch(Exception e){
+                    JOptionPane.showMessageDialog(null, "Error escribe valor válido");
+                    indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
+                }
+
+            }catch(Exception e){
+                JOptionPane.showMessageDialog(null, "Error escribe valor válido");
+                indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
+            }
+
+        }
+        String[] nombresColumnas = {"Iteraciones", "xa", "xb", "xr", "f(a)", "f(r)", "f(a)f(r)", "Ea(%)", "Et(%)"};
+        Object[][] datosFila = {
+            {1, superior, inferior, valorR, valorTotalFA, valorTotalFR, valorFAxFR}
+
+        };
+        JTable tabla=new JTable(datosFila, nombresColumnas);
+        tabla=biseccionTable;
+        add(new JScrollPane(tabla), BorderLayout.CENTER);
+    }//GEN-LAST:event_NenviarButtonActionPerformed
+
+    private void FlimpiarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FlimpiarButtonActionPerformed
+        FerrorText.setText("");
+        FinferiorText.setText("");
+        FsuperiorText.setText("");
+    }//GEN-LAST:event_FlimpiarButtonActionPerformed
+
+    private void FsuperiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_FsuperiorTextKeyTyped
         //Combinacion de que la tecla se presione y se suelte
         char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
         if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
@@ -1283,13 +1169,31 @@ public class Inicio extends javax.swing.JFrame {
             Toolkit.getDefaultToolkit().beep();//sonido de error
             JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
         }
-    }//GEN-LAST:event_SsuperiorTextKeyTyped
+    }//GEN-LAST:event_FsuperiorTextKeyTyped
 
-    private void SlimpiarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SlimpiarButtonActionPerformed
-        SerrorText.setText("");
-        SinferiorText.setText("");
-        SsuperiorText.setText("");
-    }//GEN-LAST:event_SlimpiarButtonActionPerformed
+    private void FinferiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_FinferiorTextKeyTyped
+        //Combinacion de que la tecla se presione y se suelte
+        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
+        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
+            evt.consume();//el evento no permite seguir escribiendo
+            Toolkit.getDefaultToolkit().beep();//sonido de error
+            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
+        }
+    }//GEN-LAST:event_FinferiorTextKeyTyped
+
+    private void FinferiorTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FinferiorTextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FinferiorTextActionPerformed
+
+    private void FerrorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_FerrorTextKeyTyped
+        //Combinacion de que la tecla se presione y se suelte
+        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
+        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
+            evt.consume();//el evento no permite seguir escribiendo
+            Toolkit.getDefaultToolkit().beep();//sonido de error
+            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
+        }
+    }//GEN-LAST:event_FerrorTextKeyTyped
 
     private void FenviarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FenviarButtonActionPerformed
         double resultadoValorConX = 0;
@@ -1324,11 +1228,11 @@ public class Inicio extends javax.swing.JFrame {
                 indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
                 try{
                     while(indicador==1){
-                        resultadoValorExponente=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el exponente que tiene tu x", valorPrueba));   
+                        resultadoValorExponente=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el exponente que tiene tu x", valorPrueba));
                         funcionFA=Math.pow(inferior, resultadoValorExponente);
                         funcionFB=Math.pow(superior, resultadoValorExponente);
                         funcionFR=Math.pow(valorR, resultadoValorExponente);
-                        resultadoValorConX=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el valor de la constante que acompaña a la X", valorPrueba));           
+                        resultadoValorConX=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el valor de la constante que acompaña a la X", valorPrueba));
                         indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
                         valorTotalFA=valorTotalFA+resultadoValorConX*(funcionFA);
                         valorTotalFB=valorTotalFB+resultadoValorConX*(funcionFB);
@@ -1337,17 +1241,17 @@ public class Inicio extends javax.swing.JFrame {
                         almacenarResulX[almacenarEXP]=resultadoValorConX;
                         almacenarEXP++;
                     }
-                    if (indicador==2){     
+                    if (indicador==2){
                         JOptionPane.showMessageDialog(null, "Funcion grabada");
                         valorR=superior-((valorTotalFB*(superior-inferior))/(valorTotalFB-valorTotalFA));
                         valorFAxFR=valorTotalFA*valorTotalFR;
                         System.out.println("Iteracion: 1"+
-                                            "\nXa: "+inferior+
-                                            "\n Xb: "+superior+
-                                            "\n Xr: "+valorR+
-                                            "\n f(a): "+valorTotalFA+
-                                            "\n f(r): "+valorTotalFR+
-                                            "\n f(a)*f(r): "+valorFAxFR);
+                            "\nXa: "+inferior+
+                            "\n Xb: "+superior+
+                            "\n Xr: "+valorR+
+                            "\n f(a): "+valorTotalFA+
+                            "\n f(r): "+valorTotalFR+
+                            "\n f(a)*f(r): "+valorFAxFR);
                         for (int i = 2; i <= iteraciones; i++) {
                             valorTotalFA=0;
                             valorTotalFR=0;
@@ -1366,17 +1270,17 @@ public class Inicio extends javax.swing.JFrame {
                             valorFAxFR=valorTotalFA*valorTotalFR;
                             errorAbsoluto=Math.abs((valorR-valorAlmacenableR)/valorR)*100;
                             System.out.println("Iteracion: "+i+
-                                        "\nXa: "+inferior+
-                                        "\n Xb: "+superior+
-                                        "\n Xr: "+valorR+
-                                        "\n f(a): "+valorTotalFA+
-                                        "\n f(b): "+valorTotalFB+
-                                        "\n f(r): "+valorTotalFR+
-                                        "\n f(a)*f(r): "+valorFAxFR+
-                                        "\n Ea% "+errorAbsoluto);  
+                                "\nXa: "+inferior+
+                                "\n Xb: "+superior+
+                                "\n Xr: "+valorR+
+                                "\n f(a): "+valorTotalFA+
+                                "\n f(b): "+valorTotalFB+
+                                "\n f(r): "+valorTotalFR+
+                                "\n f(a)*f(r): "+valorFAxFR+
+                                "\n Ea% "+errorAbsoluto);
                             System.out.println("--------------------------\n");
                         }
-                        
+
                     }
                     if (indicador!=2&indicador!=1){
                         JOptionPane.showMessageDialog(null, "Error escribe valor válido");
@@ -1386,24 +1290,30 @@ public class Inicio extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(null, "Error escribe valor válido");
                     indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
                 }
-                                                  
+
             }catch(Exception e){
                 JOptionPane.showMessageDialog(null, "Error escribe valor válido");
                 indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
             }
-            
+
         }
-         String[] nombresColumnas = {"Iteraciones", "xa", "xb", "xr", "f(a)", "f(r)", "f(a)f(r)", "Ea(%)", "Et(%)"};
-         Object[][] datosFila = {
+        String[] nombresColumnas = {"Iteraciones", "xa", "xb", "xr", "f(a)", "f(r)", "f(a)f(r)", "Ea(%)", "Et(%)"};
+        Object[][] datosFila = {
             {1, superior, inferior, valorR, valorTotalFA, valorTotalFR, valorFAxFR}
 
         };
-         JTable tabla=new JTable(datosFila, nombresColumnas);
-         tabla=biseccionTable;
+        JTable tabla=new JTable(datosFila, nombresColumnas);
+        tabla=biseccionTable;
         add(new JScrollPane(tabla), BorderLayout.CENTER);
     }//GEN-LAST:event_FenviarButtonActionPerformed
 
-    private void FerrorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_FerrorTextKeyTyped
+    private void SlimpiarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SlimpiarButtonActionPerformed
+        SerrorText.setText("");
+        SinferiorText.setText("");
+        SsuperiorText.setText("");
+    }//GEN-LAST:event_SlimpiarButtonActionPerformed
+
+    private void SsuperiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SsuperiorTextKeyTyped
         //Combinacion de que la tecla se presione y se suelte
         char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
         if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
@@ -1411,13 +1321,23 @@ public class Inicio extends javax.swing.JFrame {
             Toolkit.getDefaultToolkit().beep();//sonido de error
             JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
         }
-    }//GEN-LAST:event_FerrorTextKeyTyped
+    }//GEN-LAST:event_SsuperiorTextKeyTyped
 
-    private void FinferiorTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FinferiorTextActionPerformed
+    private void SinferiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SinferiorTextKeyTyped
+        //Combinacion de que la tecla se presione y se suelte
+        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
+        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
+            evt.consume();//el evento no permite seguir escribiendo
+            Toolkit.getDefaultToolkit().beep();//sonido de error
+            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
+        }
+    }//GEN-LAST:event_SinferiorTextKeyTyped
+
+    private void SinferiorTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SinferiorTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_FinferiorTextActionPerformed
+    }//GEN-LAST:event_SinferiorTextActionPerformed
 
-    private void FinferiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_FinferiorTextKeyTyped
+    private void SerrorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SerrorTextKeyTyped
         //Combinacion de que la tecla se presione y se suelte
         char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
         if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
@@ -1425,9 +1345,132 @@ public class Inicio extends javax.swing.JFrame {
             Toolkit.getDefaultToolkit().beep();//sonido de error
             JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
         }
-    }//GEN-LAST:event_FinferiorTextKeyTyped
+    }//GEN-LAST:event_SerrorTextKeyTyped
 
-    private void FsuperiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_FsuperiorTextKeyTyped
+    private void SenviarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SenviarButtonActionPerformed
+        double resultadoValorConX = 0;
+        double resultadoValorExponente = 0;
+        double funcionFA;
+        double funcionFB = 0;
+        double funcionFR;
+        double valorR = 0;
+        double valorFAxFR = 0;
+        double valorTotalFA = 0;
+        double valorTotalFB = 0;
+        double valorTotalFR = 0;
+        double errorAbsoluto=0;
+        double valorAlmacenableR=0;
+        int almacenarEXP=0;
+        int iteraciones=0;
+        double almacenarResulX[]=new double[100];
+        double almacenarExponente[] = new double[100];
+        String valorPrueba = "";
+        int indicador = 1;
+        String errorRestriccion =SerrorText.getText();
+        String inferiorRestriccion=SinferiorText.getText();
+        String superiorRestriccion=SsuperiorText.getText();
+        if(errorRestriccion.isEmpty()||inferiorRestriccion.isEmpty()||superiorRestriccion.isEmpty()){
+            JOptionPane.showMessageDialog(null, "No dejes casillas vacias");//Mensaje casilla vacia
+        }else{
+            iteraciones= Integer.parseInt(SerrorText.getText());
+            inferior = Double.parseDouble(SinferiorText.getText());
+            superior = Double.parseDouble(SsuperiorText.getText());
+            valorR=(inferior+superior)/2;
+            try{
+                indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
+                try{
+                    while(indicador==1){
+                        resultadoValorExponente=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el exponente que tiene tu x", valorPrueba));
+                        funcionFA=Math.pow(inferior, resultadoValorExponente);
+                        funcionFB=Math.pow(superior, resultadoValorExponente);
+                        resultadoValorConX=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el valor de la constante que acompaña a la X", valorPrueba));
+                        indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
+                        valorTotalFA=valorTotalFA+resultadoValorConX*(funcionFA);
+                        valorTotalFB=valorTotalFB+resultadoValorConX*(funcionFB);
+                        almacenarExponente[almacenarEXP]=resultadoValorExponente;
+                        almacenarResulX[almacenarEXP]=resultadoValorConX;
+                        almacenarEXP++;
+                    }
+                    if (indicador==2){
+                        JOptionPane.showMessageDialog(null, "Funcion grabada");
+                        valorR=superior-((valorTotalFB*(superior-inferior))/(valorTotalFB-valorTotalFA));
+                        for (int j = 0; j < almacenarEXP; j++) {
+                            funcionFR=Math.pow(valorR, almacenarExponente[j]);
+                            valorTotalFR=valorTotalFR+almacenarResulX[j]*(funcionFR);
+                        }
+                        valorFAxFR=valorTotalFA*valorTotalFR;
+                        System.out.println("Iteracion: 1"+
+                            "\nXa: "+inferior+
+                            "\n Xb: "+superior+
+                            "\n Xr: "+valorR+
+                            "\n f(a): "+valorTotalFA+
+                            "\n f(r): "+valorTotalFR+
+                            "\n f(a)*f(r): "+valorFAxFR);
+                        for (int i = 2; i <= iteraciones; i++) {
+                            valorTotalFA=0;
+                            valorTotalFB=0;
+                            valorTotalFR=0;
+                            inferior=superior;
+                            superior =valorR;
+                            valorAlmacenableR=valorR;
+                            for (int j = 0; j < almacenarEXP; j++) {
+                                funcionFA=Math.pow(inferior, almacenarExponente[j]);
+                                valorTotalFA=valorTotalFA+almacenarResulX[j]*(funcionFA);
+                                funcionFB=Math.pow(superior, almacenarExponente[j]);
+                                valorTotalFB=valorTotalFB+almacenarResulX[j]*(funcionFB);
+                            }
+                            valorR=superior-((valorTotalFB*(superior-inferior))/(valorTotalFB-valorTotalFA));
+                            for (int j = 0; j < almacenarEXP; j++) {
+                                funcionFR=Math.pow(valorR, almacenarExponente[j]);
+                                valorTotalFR=valorTotalFR+almacenarResulX[j]*(funcionFR);
+                            }
+                            valorFAxFR=valorTotalFA*valorTotalFR;
+                            errorAbsoluto=Math.abs((valorR-valorAlmacenableR)/valorR)*100;
+                            System.out.println("Iteracion: "+i+
+                                "\nXa: "+inferior+
+                                "\n Xb: "+superior+
+                                "\n Xr: "+valorR+
+                                "\n f(a): "+valorTotalFA+
+                                "\n f(b): "+valorTotalFB+
+                                "\n f(r): "+valorTotalFR+
+                                "\n f(a)*f(r): "+valorFAxFR+
+                                "\n Ea% "+errorAbsoluto);
+                            System.out.println("--------------------------\n");
+                        }
+
+                    }
+                    if (indicador!=2&indicador!=1){
+                        JOptionPane.showMessageDialog(null, "Error escribe valor válido");
+                        indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
+                    }
+                }catch(Exception e){
+                    JOptionPane.showMessageDialog(null, "Error escribe valor válido");
+                    indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
+                }
+
+            }catch(Exception e){
+                JOptionPane.showMessageDialog(null, "Error escribe valor válido");
+                indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
+            }
+
+        }
+        String[] nombresColumnas = {"Iteraciones", "xa", "xb", "xr", "f(a)", "f(r)", "f(a)f(r)", "Ea(%)", "Et(%)"};
+        Object[][] datosFila = {
+            {1, superior, inferior, valorR, valorTotalFA, valorTotalFR, valorFAxFR}
+
+        };
+        JTable tabla=new JTable(datosFila, nombresColumnas);
+        tabla=biseccionTable;
+        add(new JScrollPane(tabla), BorderLayout.CENTER);
+    }//GEN-LAST:event_SenviarButtonActionPerformed
+
+    private void BlimpiarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BlimpiarButtonActionPerformed
+        BerrorText.setText("");
+        BinferiorText.setText("");
+        BsuperiorText.setText("");
+    }//GEN-LAST:event_BlimpiarButtonActionPerformed
+
+    private void BsuperiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BsuperiorTextKeyTyped
         //Combinacion de que la tecla se presione y se suelte
         char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
         if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
@@ -1435,19 +1478,23 @@ public class Inicio extends javax.swing.JFrame {
             Toolkit.getDefaultToolkit().beep();//sonido de error
             JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
         }
-    }//GEN-LAST:event_FsuperiorTextKeyTyped
+    }//GEN-LAST:event_BsuperiorTextKeyTyped
 
-    private void FlimpiarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FlimpiarButtonActionPerformed
-        FerrorText.setText("");
-        FinferiorText.setText("");
-        FsuperiorText.setText("");
-    }//GEN-LAST:event_FlimpiarButtonActionPerformed
+    private void BinferiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BinferiorTextKeyTyped
+        //Combinacion de que la tecla se presione y se suelte
+        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
+        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
+            evt.consume();//el evento no permite seguir escribiendo
+            Toolkit.getDefaultToolkit().beep();//sonido de error
+            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
+        }
+    }//GEN-LAST:event_BinferiorTextKeyTyped
 
-    private void PenviarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PenviarButtonActionPerformed
+    private void BinferiorTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BinferiorTextActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_PenviarButtonActionPerformed
+    }//GEN-LAST:event_BinferiorTextActionPerformed
 
-    private void PerrorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_PerrorTextKeyTyped
+    private void BerrorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_BerrorTextKeyTyped
         //Combinacion de que la tecla se presione y se suelte
         char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
         if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
@@ -1455,39 +1502,9 @@ public class Inicio extends javax.swing.JFrame {
             Toolkit.getDefaultToolkit().beep();//sonido de error
             JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
         }
-    }//GEN-LAST:event_PerrorTextKeyTyped
+    }//GEN-LAST:event_BerrorTextKeyTyped
 
-    private void PinferiorTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PinferiorTextActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_PinferiorTextActionPerformed
-
-    private void PinferiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_PinferiorTextKeyTyped
-        //Combinacion de que la tecla se presione y se suelte
-        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
-        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
-            evt.consume();//el evento no permite seguir escribiendo
-            Toolkit.getDefaultToolkit().beep();//sonido de error
-            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
-        }
-    }//GEN-LAST:event_PinferiorTextKeyTyped
-
-    private void PsuperiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_PsuperiorTextKeyTyped
-        //Combinacion de que la tecla se presione y se suelte
-        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
-        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
-            evt.consume();//el evento no permite seguir escribiendo
-            Toolkit.getDefaultToolkit().beep();//sonido de error
-            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
-        }
-    }//GEN-LAST:event_PsuperiorTextKeyTyped
-
-    private void PlimpiarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PlimpiarButtonActionPerformed
-        PerrorText.setText("");
-        PinferiorText.setText("");
-        PsuperiorText.setText("");
-    }//GEN-LAST:event_PlimpiarButtonActionPerformed
-
-    private void NenviarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NenviarButtonActionPerformed
+    private void BenviarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BenviarButtonActionPerformed
         double resultadoValorConX = 0;
         double resultadoValorExponente = 0;
         double funcionFA;
@@ -1504,60 +1521,93 @@ public class Inicio extends javax.swing.JFrame {
         double almacenarExponente[] = new double[100];
         String valorPrueba = "";
         int indicador = 1;
-        String errorRestriccion =NerrorText.getText();
-        String inferiorRestriccion=NinferiorText.getText();
-        if(errorRestriccion.isEmpty()||inferiorRestriccion.isEmpty()){
+        String errorRestriccion =BerrorText.getText();
+        String inferiorRestriccion=BinferiorText.getText();
+        String superiorRestriccion=BsuperiorText.getText();
+        if(errorRestriccion.isEmpty()||inferiorRestriccion.isEmpty()||superiorRestriccion.isEmpty()){
             JOptionPane.showMessageDialog(null, "No dejes casillas vacias");//Mensaje casilla vacia
         }else{
-            iteraciones= Integer.parseInt(NerrorText.getText());
-            inferior = Double.parseDouble(NinferiorText.getText());
-            valorR=inferior;
+            iteraciones= Integer.parseInt(BerrorText.getText());
+            inferior = Double.parseDouble(BinferiorText.getText());
+            superior = Double.parseDouble(BsuperiorText.getText());
+            valorR=(inferior+superior)/2;
             try{
                 indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
                 try{
                     while(indicador==1){
-                        resultadoValorExponente=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el exponente que tiene tu x", valorPrueba));   
+                        resultadoValorExponente=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el exponente que tiene tu x", valorPrueba));
                         funcionFA=Math.pow(inferior, resultadoValorExponente);
-                        funcionFR=Math.pow(valorR, resultadoValorExponente-1);
-                        resultadoValorConX=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el valor de la constante que acompaña a la X", valorPrueba));           
+                        funcionFR=Math.pow(valorR, resultadoValorExponente);
+                        resultadoValorConX=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el valor de la constante que acompaña a la X", valorPrueba));
                         indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
                         valorTotalFA=valorTotalFA+resultadoValorConX*(funcionFA);
-                        valorTotalFR=valorTotalFR+resultadoValorExponente*resultadoValorConX*(funcionFR);
+                        valorTotalFR=valorTotalFR+resultadoValorConX*(funcionFR);
                         almacenarExponente[almacenarEXP]=resultadoValorExponente;
                         almacenarResulX[almacenarEXP]=resultadoValorConX;
                         almacenarEXP++;
                     }
-                    if (indicador==2){     
+                    if (indicador==2){
                         JOptionPane.showMessageDialog(null, "Funcion grabada");
-                        valorFAxFR=valorTotalFA/valorTotalFR;
-                        System.out.println("Iteracion: 1"+
-                                            "\nXi: "+inferior+
-                                            "\n f(xi): "+valorTotalFA+
-                                            "\n f'(xi): "+valorTotalFR+
-                                            "\n f(xi)/f'(xi): "+valorFAxFR);
-                        for (int i = 2; i <= iteraciones; i++) {
-                            valorAlmacenableR=inferior;
-                            inferior=inferior-valorFAxFR;
-                            valorTotalFA=0;
-                            valorTotalFR=0;
-                            valorR=inferior;
-                            for (int j = 0; j < almacenarEXP; j++) {
-                                funcionFA=Math.pow(inferior, almacenarExponente[j]);
-                                funcionFR=Math.pow(valorR, almacenarExponente[j]-1);
-                                valorTotalFA=valorTotalFA+almacenarResulX[j]*(funcionFA);
-                                valorTotalFR=valorTotalFR+almacenarResulX[j]*almacenarExponente[j]*(funcionFR);
-                            }
-                            valorFAxFR=valorTotalFA/valorTotalFR;
-                            errorAbsoluto=Math.abs((valorR-valorAlmacenableR)/valorR)*100;
-                            System.out.println("Iteracion: "+i+
-                                        "\nXa: "+inferior+
-                                        "\n f(xi): "+valorTotalFA+
-                                        "\n f'(xi): "+valorTotalFR+
-                                        "\n f(xi)/f'(xi): "+valorFAxFR+
-                                        "\n Ea% "+errorAbsoluto);  
 
+                        valorFAxFR=valorTotalFA*valorTotalFR;
+                        System.out.println("Iteracion: 1"+
+                            "\nXa: "+inferior+
+                            "\n Xb: "+superior+
+                            "\n Xr: "+valorR+
+                            "\n f(a): "+valorTotalFA+
+                            "\n f(r): "+valorTotalFR+
+                            "\n f(a)*f(r): "+valorFAxFR);
+                        for (int i = 2; i <= iteraciones; i++) {
+                            if(valorFAxFR<0){
+                                valorTotalFA=0;
+                                valorTotalFR=0;
+                                superior=valorR;
+                                valorAlmacenableR=valorR;
+                                valorR=(inferior+superior)/2;
+                                for (int j = 0; j < almacenarEXP; j++) {
+                                    funcionFA=Math.pow(inferior, almacenarExponente[j]);
+                                    funcionFR=Math.pow(valorR, almacenarExponente[j]);
+                                    valorTotalFA=valorTotalFA+almacenarResulX[j]*(funcionFA);
+                                    valorTotalFR=valorTotalFR+almacenarResulX[j]*(funcionFR);
+                                }
+                                valorFAxFR=valorTotalFA*valorTotalFR;
+                                errorAbsoluto=Math.abs((valorR-valorAlmacenableR)/valorR)*100;
+                                System.out.println("Iteracion: "+i+
+                                    "\nXa: "+inferior+
+                                    "\n Xb: "+superior+
+                                    "\n Xr: "+valorR+
+                                    "\n f(a): "+valorTotalFA+
+                                    "\n f(r): "+valorTotalFR+
+                                    "\n f(a)*f(r): "+valorFAxFR+
+                                    "\n Ea% "+errorAbsoluto);
+                                System.out.println("es negativo izquierdo Xb=Xr\n");
+                            }
+                            else{
+                                valorTotalFA=0;
+                                valorTotalFR=0;
+                                inferior=valorR;
+                                valorAlmacenableR=valorR;
+                                valorR=(inferior+superior)/2;
+                                for (int j = 0; j < almacenarEXP; j++) {
+                                    funcionFA=Math.pow(inferior, almacenarExponente[j]);
+                                    funcionFR=Math.pow(valorR, almacenarExponente[j]);
+                                    valorTotalFA=valorTotalFA+almacenarResulX[j]*(funcionFA);
+                                    valorTotalFR=valorTotalFR+almacenarResulX[j]*(funcionFR);
+                                }
+                                valorFAxFR=valorTotalFA*valorTotalFR;
+                                errorAbsoluto=Math.abs((valorR-valorAlmacenableR)/valorR)*100;
+                                System.out.println("Iteracion: "+i+
+                                    "\nXa: "+inferior+
+                                    "\n Xb: "+superior+
+                                    "\n Xr: "+valorR+
+                                    "\n f(a): "+valorTotalFA+
+                                    "\n f(r): "+valorTotalFR+
+                                    "\n f(a)*f(r): "+valorFAxFR+
+                                    "\n Ea% "+errorAbsoluto);
+                                System.out.println("es positivo derecho Xa=Xr\n");
+                            }
                         }
-                        
+
                     }
                     if (indicador!=2&indicador!=1){
                         JOptionPane.showMessageDialog(null, "Error escribe valor válido");
@@ -1567,106 +1617,22 @@ public class Inicio extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(null, "Error escribe valor válido");
                     indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
                 }
-                                                  
+
             }catch(Exception e){
                 JOptionPane.showMessageDialog(null, "Error escribe valor válido");
                 indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
             }
-            
+
         }
-         String[] nombresColumnas = {"Iteraciones", "xa", "xb", "xr", "f(a)", "f(r)", "f(a)f(r)", "Ea(%)", "Et(%)"};
-         Object[][] datosFila = {
+        String[] nombresColumnas = {"Iteraciones", "xa", "xb", "xr", "f(a)", "f(r)", "f(a)f(r)", "Ea(%)", "Et(%)"};
+        Object[][] datosFila = {
             {1, superior, inferior, valorR, valorTotalFA, valorTotalFR, valorFAxFR}
 
         };
-         JTable tabla=new JTable(datosFila, nombresColumnas);
-         tabla=biseccionTable;
+        JTable tabla=new JTable(datosFila, nombresColumnas);
+        tabla=biseccionTable;
         add(new JScrollPane(tabla), BorderLayout.CENTER);
-    }//GEN-LAST:event_NenviarButtonActionPerformed
-
-    private void NerrorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_NerrorTextKeyTyped
-        //Combinacion de que la tecla se presione y se suelte
-        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
-        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
-            evt.consume();//el evento no permite seguir escribiendo
-            Toolkit.getDefaultToolkit().beep();//sonido de error
-            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
-        }
-    }//GEN-LAST:event_NerrorTextKeyTyped
-
-    private void NinferiorTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NinferiorTextActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_NinferiorTextActionPerformed
-
-    private void NinferiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_NinferiorTextKeyTyped
-        //Combinacion de que la tecla se presione y se suelte
-        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
-        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
-            evt.consume();//el evento no permite seguir escribiendo
-            Toolkit.getDefaultToolkit().beep();//sonido de error
-            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
-        }
-    }//GEN-LAST:event_NinferiorTextKeyTyped
-
-    private void NlimpiarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NlimpiarButtonActionPerformed
-        NerrorText.setText("");
-        NinferiorText.setText("");
-    }//GEN-LAST:event_NlimpiarButtonActionPerformed
-
-    private void MenviarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenviarButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_MenviarButtonActionPerformed
-
-    private void MerrorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_MerrorTextKeyTyped
-        //Combinacion de que la tecla se presione y se suelte
-        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
-        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
-            evt.consume();//el evento no permite seguir escribiendo
-            Toolkit.getDefaultToolkit().beep();//sonido de error
-            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
-        }
-    }//GEN-LAST:event_MerrorTextKeyTyped
-
-    private void MinferiorTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MinferiorTextActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_MinferiorTextActionPerformed
-
-    private void MinferiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_MinferiorTextKeyTyped
-        //Combinacion de que la tecla se presione y se suelte
-        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
-        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
-            evt.consume();//el evento no permite seguir escribiendo
-            Toolkit.getDefaultToolkit().beep();//sonido de error
-            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
-        }
-    }//GEN-LAST:event_MinferiorTextKeyTyped
-
-    private void MsuperiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_MsuperiorTextKeyTyped
-        //Combinacion de que la tecla se presione y se suelte
-        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
-        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
-            evt.consume();//el evento no permite seguir escribiendo
-            Toolkit.getDefaultToolkit().beep();//sonido de error
-            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
-        }
-    }//GEN-LAST:event_MsuperiorTextKeyTyped
-
-    private void MlimpiarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MlimpiarButtonActionPerformed
-        MerrorText.setText("");
-        MinferiorText.setText("");
-        MintermedioText.setText("");
-        MsuperiorText.setText("");
-    }//GEN-LAST:event_MlimpiarButtonActionPerformed
-
-    private void MintermedioTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_MintermedioTextKeyTyped
-        //Combinacion de que la tecla se presione y se suelte
-        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
-        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
-            evt.consume();//el evento no permite seguir escribiendo
-            Toolkit.getDefaultToolkit().beep();//sonido de error
-            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
-        }
-    }//GEN-LAST:event_MintermedioTextKeyTyped
+    }//GEN-LAST:event_BenviarButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BenviarButton;
@@ -1705,15 +1671,6 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JLabel Niteraciones;
     private javax.swing.JLabel NlimInferior;
     private javax.swing.JButton NlimpiarButton;
-    private javax.swing.JButton PenviarButton;
-    private javax.swing.JTextField PerrorText;
-    private javax.swing.JTextField PinferiorText;
-    private javax.swing.JLabel Pingreso;
-    private javax.swing.JLabel Piteraciones;
-    private javax.swing.JLabel PlimInferior;
-    private javax.swing.JLabel PlimSuperior;
-    private javax.swing.JButton PlimpiarButton;
-    private javax.swing.JTextField PsuperiorText;
     private javax.swing.JButton SalirDelSistema;
     private javax.swing.JButton SenviarButton;
     private javax.swing.JTextField SerrorText;
@@ -1727,7 +1684,6 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JLabel T1;
     private javax.swing.JLabel T2;
     private javax.swing.JLabel T3;
-    private javax.swing.JLabel T4;
     private javax.swing.JLabel T5;
     private javax.swing.JLabel T6;
     private javax.swing.JTable biseccionTable;
@@ -1736,7 +1692,6 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JDesktopPane jDesktopPane2;
     private javax.swing.JDesktopPane jDesktopPane3;
     private javax.swing.JDesktopPane jDesktopPane4;
-    private javax.swing.JDesktopPane jDesktopPane5;
     private javax.swing.JDesktopPane jDesktopPane6;
     private javax.swing.JDesktopPane jDesktopPane7;
     private javax.swing.JLabel jLabel6;
@@ -1745,13 +1700,11 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JTabbedPane jTabbedPane6;
@@ -1761,7 +1714,6 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JLabel logo3;
     private javax.swing.JTable mullerTable;
     private javax.swing.JTable newtonTable;
-    private javax.swing.JTable puntoFijoTable;
     private javax.swing.JTable secanteTable;
     // End of variables declaration//GEN-END:variables
 
