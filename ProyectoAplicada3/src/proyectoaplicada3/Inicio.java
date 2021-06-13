@@ -61,26 +61,98 @@ public class Inicio extends javax.swing.JFrame {
         biseccionTable = new javax.swing.JTable();
         jPanel2 = new javax.swing.JPanel();
         BenviarButton = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        Bingreso = new javax.swing.JLabel();
+        Biteraciones = new javax.swing.JLabel();
         BerrorText = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
+        BlimInferior = new javax.swing.JLabel();
         BinferiorText = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
+        BlimSuperior = new javax.swing.JLabel();
         BsuperiorText = new javax.swing.JTextField();
         BlimpiarButton = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         jLayeredPane1 = new javax.swing.JLayeredPane();
-        formulaErrorVerdadero = new javax.swing.JLabel();
         formulaErrorAbsoluto1 = new javax.swing.JLabel();
+        T1 = new javax.swing.JLabel();
         jDesktopPane3 = new javax.swing.JDesktopPane();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        secanteTable = new javax.swing.JTable();
+        jPanel3 = new javax.swing.JPanel();
+        SenviarButton = new javax.swing.JButton();
+        Singreso = new javax.swing.JLabel();
+        Siteraciones = new javax.swing.JLabel();
+        SerrorText = new javax.swing.JTextField();
+        SlimInferior = new javax.swing.JLabel();
+        SinferiorText = new javax.swing.JTextField();
+        SlimSuperior = new javax.swing.JLabel();
+        SsuperiorText = new javax.swing.JTextField();
+        SlimpiarButton = new javax.swing.JButton();
+        T2 = new javax.swing.JLabel();
         jDesktopPane4 = new javax.swing.JDesktopPane();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        falsaPosicionTable = new javax.swing.JTable();
+        jPanel4 = new javax.swing.JPanel();
+        FenviarButton = new javax.swing.JButton();
+        Fingreso = new javax.swing.JLabel();
+        Fiteraciones = new javax.swing.JLabel();
+        FerrorText = new javax.swing.JTextField();
+        FlimInferior = new javax.swing.JLabel();
+        FinferiorText = new javax.swing.JTextField();
+        FlimSuperior = new javax.swing.JLabel();
+        FsuperiorText = new javax.swing.JTextField();
+        FlimpiarButton = new javax.swing.JButton();
+        T3 = new javax.swing.JLabel();
         jDesktopPane5 = new javax.swing.JDesktopPane();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        puntoFijoTable = new javax.swing.JTable();
+        jPanel5 = new javax.swing.JPanel();
+        PenviarButton = new javax.swing.JButton();
+        Pingreso = new javax.swing.JLabel();
+        Piteraciones = new javax.swing.JLabel();
+        PerrorText = new javax.swing.JTextField();
+        PlimInferior = new javax.swing.JLabel();
+        PinferiorText = new javax.swing.JTextField();
+        PlimSuperior = new javax.swing.JLabel();
+        PsuperiorText = new javax.swing.JTextField();
+        PlimpiarButton = new javax.swing.JButton();
+        T4 = new javax.swing.JLabel();
         jDesktopPane6 = new javax.swing.JDesktopPane();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        newtonTable = new javax.swing.JTable();
+        jPanel6 = new javax.swing.JPanel();
+        NenviarButton = new javax.swing.JButton();
+        Ningreso = new javax.swing.JLabel();
+        Niteraciones = new javax.swing.JLabel();
+        NerrorText = new javax.swing.JTextField();
+        NlimInferior = new javax.swing.JLabel();
+        NinferiorText = new javax.swing.JTextField();
+        NlimpiarButton = new javax.swing.JButton();
+        T5 = new javax.swing.JLabel();
         jDesktopPane7 = new javax.swing.JDesktopPane();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        mullerTable = new javax.swing.JTable();
+        jPanel7 = new javax.swing.JPanel();
+        MenviarButton = new javax.swing.JButton();
+        Mingreso = new javax.swing.JLabel();
+        Miteraciones = new javax.swing.JLabel();
+        MerrorText = new javax.swing.JTextField();
+        MlimInferior = new javax.swing.JLabel();
+        MinferiorText = new javax.swing.JTextField();
+        MlimSuperior = new javax.swing.JLabel();
+        MsuperiorText = new javax.swing.JTextField();
+        MlimpiarButton = new javax.swing.JButton();
+        MlimIntermedio = new javax.swing.JLabel();
+        MintermedioText = new javax.swing.JTextField();
+        T6 = new javax.swing.JLabel();
         SalirDelSistema = new javax.swing.JButton();
+        logo = new javax.swing.JLabel();
+        logo1 = new javax.swing.JLabel();
+        logo3 = new javax.swing.JLabel();
+        logo2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setBackground(new java.awt.Color(153, 255, 153));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jDesktopPane2.setBackground(new java.awt.Color(51, 255, 255));
         jDesktopPane2.setForeground(new java.awt.Color(255, 255, 255));
@@ -99,7 +171,7 @@ public class Inicio extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(biseccionTable);
 
-        jDesktopPane2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(449, 46, 760, 270));
+        jDesktopPane2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(449, 96, 760, 410));
 
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -110,9 +182,9 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setText("Ingrese los siguientes datos");
+        Bingreso.setText("Ingrese los siguientes datos");
 
-        jLabel3.setText("Error absoluto permitido:");
+        Biteraciones.setText("Iteraciones a realizar");
 
         BerrorText.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -120,7 +192,7 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setText("Limite Inferior:");
+        BlimInferior.setText("Limite Inferior:");
 
         BinferiorText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -133,7 +205,7 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setText("Limite Superior:");
+        BlimSuperior.setText("Limite Superior:");
 
         BsuperiorText.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -154,7 +226,7 @@ public class Inicio extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(88, 88, 88)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Bingreso, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(15, 15, 15)
@@ -165,9 +237,9 @@ public class Inicio extends javax.swing.JFrame {
                         .addComponent(BlimpiarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5))
+                            .addComponent(Biteraciones, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(BlimInferior)
+                            .addComponent(BlimSuperior))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(BerrorText)
@@ -179,27 +251,27 @@ public class Inicio extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(Bingreso)
                 .addGap(27, 27, 27)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
+                    .addComponent(Biteraciones)
                     .addComponent(BerrorText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
+                    .addComponent(BlimInferior)
                     .addComponent(BinferiorText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5)
+                    .addComponent(BlimSuperior)
                     .addComponent(BsuperiorText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BenviarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(BlimpiarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(140, 140, 140))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
-        jDesktopPane2.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 46, 377, -1));
+        jDesktopPane2.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 377, 270));
         jDesktopPane2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(324, 498, -1, -1));
 
         javax.swing.GroupLayout jLayeredPane1Layout = new javax.swing.GroupLayout(jLayeredPane1);
@@ -215,88 +287,638 @@ public class Inicio extends javax.swing.JFrame {
 
         jDesktopPane2.add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 558, -1, -1));
 
-        formulaErrorVerdadero.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/2.jpeg"))); // NOI18N
-        jDesktopPane2.add(formulaErrorVerdadero, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 500, 400, -1));
-
         formulaErrorAbsoluto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/1.jpeg"))); // NOI18N
-        jDesktopPane2.add(formulaErrorAbsoluto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 450, 300, 50));
+        jDesktopPane2.add(formulaErrorAbsoluto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 420, 300, 50));
+
+        T1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Bisec.png"))); // NOI18N
+        T1.setToolTipText("");
+        jDesktopPane2.add(T1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 10, 550, 60));
 
         jTabbedPane6.addTab("Método de Bisección", jDesktopPane2);
 
         jDesktopPane3.setBackground(new java.awt.Color(51, 255, 255));
+        jDesktopPane3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout jDesktopPane3Layout = new javax.swing.GroupLayout(jDesktopPane3);
-        jDesktopPane3.setLayout(jDesktopPane3Layout);
-        jDesktopPane3Layout.setHorizontalGroup(
-            jDesktopPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1212, Short.MAX_VALUE)
+        secanteTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane3.setViewportView(secanteTable);
+
+        jDesktopPane3.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(449, 96, 760, 410));
+
+        jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        SenviarButton.setText("Ingresar Funcion");
+        SenviarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SenviarButtonActionPerformed(evt);
+            }
+        });
+
+        Singreso.setText("Ingrese los siguientes datos");
+
+        Siteraciones.setText("Iteraciones a realizar");
+
+        SerrorText.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                SerrorTextKeyTyped(evt);
+            }
+        });
+
+        SlimInferior.setText("Limite Inferior:");
+
+        SinferiorText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SinferiorTextActionPerformed(evt);
+            }
+        });
+        SinferiorText.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                SinferiorTextKeyTyped(evt);
+            }
+        });
+
+        SlimSuperior.setText("Limite Superior:");
+
+        SsuperiorText.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                SsuperiorTextKeyTyped(evt);
+            }
+        });
+
+        SlimpiarButton.setText("LIMPIAR");
+        SlimpiarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SlimpiarButtonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addComponent(Singreso, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(SenviarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(SlimpiarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Siteraciones, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SlimInferior)
+                            .addComponent(SlimSuperior))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(SerrorText)
+                            .addComponent(SinferiorText)
+                            .addComponent(SsuperiorText, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap())
         );
-        jDesktopPane3Layout.setVerticalGroup(
-            jDesktopPane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 534, Short.MAX_VALUE)
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Singreso)
+                .addGap(27, 27, 27)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Siteraciones)
+                    .addComponent(SerrorText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(SlimInferior)
+                    .addComponent(SinferiorText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(SlimSuperior)
+                    .addComponent(SsuperiorText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(SenviarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SlimpiarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
+
+        jDesktopPane3.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 377, 270));
+
+        T2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Sec.png"))); // NOI18N
+        T2.setToolTipText("");
+        jDesktopPane3.add(T2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 10, 690, 60));
 
         jTabbedPane6.addTab("Método de Recta Secante", jDesktopPane3);
 
         jDesktopPane4.setBackground(new java.awt.Color(51, 255, 255));
+        jDesktopPane4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout jDesktopPane4Layout = new javax.swing.GroupLayout(jDesktopPane4);
-        jDesktopPane4.setLayout(jDesktopPane4Layout);
-        jDesktopPane4Layout.setHorizontalGroup(
-            jDesktopPane4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1215, Short.MAX_VALUE)
+        falsaPosicionTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane2.setViewportView(falsaPosicionTable);
+
+        jDesktopPane4.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(449, 96, 760, 410));
+
+        jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        FenviarButton.setText("Ingresar Funcion");
+        FenviarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FenviarButtonActionPerformed(evt);
+            }
+        });
+
+        Fingreso.setText("Ingrese los siguientes datos");
+
+        Fiteraciones.setText("Iteraciones a realizar");
+
+        FerrorText.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                FerrorTextKeyTyped(evt);
+            }
+        });
+
+        FlimInferior.setText("Limite Inferior:");
+
+        FinferiorText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FinferiorTextActionPerformed(evt);
+            }
+        });
+        FinferiorText.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                FinferiorTextKeyTyped(evt);
+            }
+        });
+
+        FlimSuperior.setText("Limite Superior:");
+
+        FsuperiorText.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                FsuperiorTextKeyTyped(evt);
+            }
+        });
+
+        FlimpiarButton.setText("LIMPIAR");
+        FlimpiarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FlimpiarButtonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addComponent(Fingreso, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(FenviarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(FlimpiarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Fiteraciones, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(FlimInferior)
+                            .addComponent(FlimSuperior))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(FerrorText)
+                            .addComponent(FinferiorText)
+                            .addComponent(FsuperiorText, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap())
         );
-        jDesktopPane4Layout.setVerticalGroup(
-            jDesktopPane4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 538, Short.MAX_VALUE)
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Fingreso)
+                .addGap(27, 27, 27)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Fiteraciones)
+                    .addComponent(FerrorText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(FlimInferior)
+                    .addComponent(FinferiorText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(FlimSuperior)
+                    .addComponent(FsuperiorText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(FenviarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(FlimpiarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
+
+        jDesktopPane4.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 377, 270));
+
+        T3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PosFalsa.png"))); // NOI18N
+        T3.setToolTipText("");
+        jDesktopPane4.add(T3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 10, 690, 60));
 
         jTabbedPane6.addTab("Método de Falsa Posición", jDesktopPane4);
 
         jDesktopPane5.setBackground(new java.awt.Color(51, 255, 255));
+        jDesktopPane5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout jDesktopPane5Layout = new javax.swing.GroupLayout(jDesktopPane5);
-        jDesktopPane5.setLayout(jDesktopPane5Layout);
-        jDesktopPane5Layout.setHorizontalGroup(
-            jDesktopPane5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1215, Short.MAX_VALUE)
+        puntoFijoTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane4.setViewportView(puntoFijoTable);
+
+        jDesktopPane5.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(449, 96, 760, 410));
+
+        jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        PenviarButton.setText("Ingresar Funcion");
+        PenviarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PenviarButtonActionPerformed(evt);
+            }
+        });
+
+        Pingreso.setText("Ingrese los siguientes datos");
+
+        Piteraciones.setText("Iteraciones a realizar");
+
+        PerrorText.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                PerrorTextKeyTyped(evt);
+            }
+        });
+
+        PlimInferior.setText("Limite Inferior:");
+
+        PinferiorText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PinferiorTextActionPerformed(evt);
+            }
+        });
+        PinferiorText.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                PinferiorTextKeyTyped(evt);
+            }
+        });
+
+        PlimSuperior.setText("Limite Superior:");
+
+        PsuperiorText.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                PsuperiorTextKeyTyped(evt);
+            }
+        });
+
+        PlimpiarButton.setText("LIMPIAR");
+        PlimpiarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PlimpiarButtonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addComponent(Pingreso, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(PenviarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(PlimpiarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Piteraciones, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(PlimInferior)
+                            .addComponent(PlimSuperior))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(PerrorText)
+                            .addComponent(PinferiorText)
+                            .addComponent(PsuperiorText, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap())
         );
-        jDesktopPane5Layout.setVerticalGroup(
-            jDesktopPane5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 538, Short.MAX_VALUE)
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Pingreso)
+                .addGap(27, 27, 27)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Piteraciones)
+                    .addComponent(PerrorText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(PlimInferior)
+                    .addComponent(PinferiorText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(PlimSuperior)
+                    .addComponent(PsuperiorText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(PenviarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(PlimpiarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
+
+        jDesktopPane5.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 377, 270));
+
+        T4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoFijo.png"))); // NOI18N
+        T4.setToolTipText("");
+        jDesktopPane5.add(T4, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 10, 560, 60));
 
         jTabbedPane6.addTab("Método de Punto Fijo", jDesktopPane5);
 
         jDesktopPane6.setBackground(new java.awt.Color(51, 255, 255));
+        jDesktopPane6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout jDesktopPane6Layout = new javax.swing.GroupLayout(jDesktopPane6);
-        jDesktopPane6.setLayout(jDesktopPane6Layout);
-        jDesktopPane6Layout.setHorizontalGroup(
-            jDesktopPane6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1215, Short.MAX_VALUE)
+        newtonTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane5.setViewportView(newtonTable);
+
+        jDesktopPane6.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(449, 96, 760, 410));
+
+        jPanel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        NenviarButton.setText("Ingresar Funcion");
+        NenviarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NenviarButtonActionPerformed(evt);
+            }
+        });
+
+        Ningreso.setText("Ingrese los siguientes datos");
+
+        Niteraciones.setText("Iteraciones a realizar");
+
+        NerrorText.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                NerrorTextKeyTyped(evt);
+            }
+        });
+
+        NlimInferior.setText("Punto inicial:");
+
+        NinferiorText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NinferiorTextActionPerformed(evt);
+            }
+        });
+        NinferiorText.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                NinferiorTextKeyTyped(evt);
+            }
+        });
+
+        NlimpiarButton.setText("LIMPIAR");
+        NlimpiarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NlimpiarButtonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addComponent(Ningreso, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(NenviarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(NlimpiarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Niteraciones, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(NlimInferior))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(NerrorText, javax.swing.GroupLayout.DEFAULT_SIZE, 152, Short.MAX_VALUE)
+                            .addComponent(NinferiorText))))
+                .addContainerGap())
         );
-        jDesktopPane6Layout.setVerticalGroup(
-            jDesktopPane6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 538, Short.MAX_VALUE)
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Ningreso)
+                .addGap(27, 27, 27)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Niteraciones)
+                    .addComponent(NerrorText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(NlimInferior)
+                    .addComponent(NinferiorText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(NenviarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(NlimpiarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(25, Short.MAX_VALUE))
         );
+
+        jDesktopPane6.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 377, 230));
+
+        T5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Newton.png"))); // NOI18N
+        T5.setToolTipText("");
+        jDesktopPane6.add(T5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 10, -1, 60));
 
         jTabbedPane6.addTab("Método de Newton-Raphson", jDesktopPane6);
 
         jDesktopPane7.setBackground(new java.awt.Color(51, 255, 255));
+        jDesktopPane7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout jDesktopPane7Layout = new javax.swing.GroupLayout(jDesktopPane7);
-        jDesktopPane7.setLayout(jDesktopPane7Layout);
-        jDesktopPane7Layout.setHorizontalGroup(
-            jDesktopPane7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1215, Short.MAX_VALUE)
+        mullerTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane6.setViewportView(mullerTable);
+
+        jDesktopPane7.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(449, 96, 760, 410));
+
+        jPanel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        MenviarButton.setText("Ingresar Funcion");
+        MenviarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenviarButtonActionPerformed(evt);
+            }
+        });
+
+        Mingreso.setText("Ingrese los siguientes datos");
+
+        Miteraciones.setText("Iteraciones a realizar");
+
+        MerrorText.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                MerrorTextKeyTyped(evt);
+            }
+        });
+
+        MlimInferior.setText("Limite Inferior:");
+
+        MinferiorText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MinferiorTextActionPerformed(evt);
+            }
+        });
+        MinferiorText.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                MinferiorTextKeyTyped(evt);
+            }
+        });
+
+        MlimSuperior.setText("Limite Superior:");
+
+        MsuperiorText.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                MsuperiorTextKeyTyped(evt);
+            }
+        });
+
+        MlimpiarButton.setText("LIMPIAR");
+        MlimpiarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MlimpiarButtonActionPerformed(evt);
+            }
+        });
+
+        MlimIntermedio.setText("Limite Intermedio:");
+
+        MintermedioText.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                MintermedioTextKeyTyped(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addComponent(Mingreso, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(15, 15, 15)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addComponent(MlimIntermedio, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(MintermedioText, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addComponent(MenviarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(MlimpiarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Miteraciones, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(MlimInferior)
+                            .addComponent(MlimSuperior))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(MerrorText)
+                            .addComponent(MinferiorText)
+                            .addComponent(MsuperiorText, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap())
         );
-        jDesktopPane7Layout.setVerticalGroup(
-            jDesktopPane7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 538, Short.MAX_VALUE)
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Mingreso)
+                .addGap(27, 27, 27)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Miteraciones)
+                    .addComponent(MerrorText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(MlimInferior)
+                    .addComponent(MinferiorText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(MintermedioText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MlimIntermedio))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(MlimSuperior)
+                    .addComponent(MsuperiorText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(MenviarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MlimpiarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
+
+        jDesktopPane7.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 377, 310));
+
+        T6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Muller.png"))); // NOI18N
+        T6.setToolTipText("");
+        jDesktopPane7.add(T6, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 10, 550, 60));
 
         jTabbedPane6.addTab("Método de Müller", jDesktopPane7);
+
+        jPanel1.add(jTabbedPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 18, -1, 564));
 
         SalirDelSistema.setBackground(new java.awt.Color(255, 0, 0));
         SalirDelSistema.setFont(new java.awt.Font("Engravers MT", 1, 14)); // NOI18N
@@ -307,30 +929,19 @@ public class Inicio extends javax.swing.JFrame {
                 SalirDelSistemaActionPerformed(evt);
             }
         });
+        jPanel1.add(SalirDelSistema, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 589, 158, 44));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(jTabbedPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 1217, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(536, 536, 536)
-                        .addComponent(SalirDelSistema, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(24, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(jTabbedPane6, javax.swing.GroupLayout.PREFERRED_SIZE, 564, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(SalirDelSistema, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(13, Short.MAX_VALUE))
-        );
+        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Mlogo.jpg"))); // NOI18N
+        jPanel1.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 600, -1, -1));
+
+        logo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Mlogo.jpg"))); // NOI18N
+        jPanel1.add(logo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 600, -1, -1));
+
+        logo3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Metodos.png"))); // NOI18N
+        jPanel1.add(logo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 590, -1, 50));
+
+        logo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Numericos.png"))); // NOI18N
+        jPanel1.add(logo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 580, -1, 60));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -522,32 +1133,425 @@ public class Inicio extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_BinferiorTextActionPerformed
 
+    private void SenviarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SenviarButtonActionPerformed
+        //
+    }//GEN-LAST:event_SenviarButtonActionPerformed
+
+    private void SerrorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SerrorTextKeyTyped
+        //Combinacion de que la tecla se presione y se suelte
+        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
+        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
+            evt.consume();//el evento no permite seguir escribiendo
+            Toolkit.getDefaultToolkit().beep();//sonido de error
+            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
+        }
+    }//GEN-LAST:event_SerrorTextKeyTyped
+
+    private void SinferiorTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SinferiorTextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SinferiorTextActionPerformed
+
+    private void SinferiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SinferiorTextKeyTyped
+        //Combinacion de que la tecla se presione y se suelte
+        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
+        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
+            evt.consume();//el evento no permite seguir escribiendo
+            Toolkit.getDefaultToolkit().beep();//sonido de error
+            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
+        }
+    }//GEN-LAST:event_SinferiorTextKeyTyped
+
+    private void SsuperiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SsuperiorTextKeyTyped
+        //Combinacion de que la tecla se presione y se suelte
+        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
+        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
+            evt.consume();//el evento no permite seguir escribiendo
+            Toolkit.getDefaultToolkit().beep();//sonido de error
+            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
+        }
+    }//GEN-LAST:event_SsuperiorTextKeyTyped
+
+    private void SlimpiarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SlimpiarButtonActionPerformed
+        SerrorText.setText("");
+        SinferiorText.setText("");
+        SsuperiorText.setText("");
+    }//GEN-LAST:event_SlimpiarButtonActionPerformed
+
+    private void FenviarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FenviarButtonActionPerformed
+        double resultadoValorConX = 0;
+        double resultadoValorExponente = 0;
+        double funcionFA;
+        double funcionFB;
+        double funcionFR;
+        double valorR = 0;
+        double valorFAxFR = 0;
+        double valorTotalFA = 0;
+        double valorTotalFB=0;
+    double valorTotalFR = 0;
+        double errorAbsoluto=0;
+        double valorAlmacenableR=0;
+        int almacenarEXP=0;
+        int iteraciones=0;
+        double almacenarResulX[]=new double[100];
+        double almacenarExponente[] = new double[100];
+        String valorPrueba = "";
+        int indicador = 1;
+        String errorRestriccion =FerrorText.getText();
+        String inferiorRestriccion=FinferiorText.getText();
+        String superiorRestriccion=FsuperiorText.getText();
+        if(errorRestriccion.isEmpty()||inferiorRestriccion.isEmpty()||superiorRestriccion.isEmpty()){
+            JOptionPane.showMessageDialog(null, "No dejes casillas vacias");//Mensaje casilla vacia
+        }else{
+            iteraciones= Integer.parseInt(FerrorText.getText());
+            inferior = Double.parseDouble(FinferiorText.getText());
+            superior = Double.parseDouble(FsuperiorText.getText());
+            valorR=(inferior+superior)/2;
+            try{
+                indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
+                try{
+                    while(indicador==1){
+                        resultadoValorExponente=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el exponente que tiene tu x", valorPrueba));   
+                        funcionFA=Math.pow(inferior, resultadoValorExponente);
+                        funcionFB=Math.pow(valorR, resultadoValorExponente);
+                        funcionFR=Math.pow(valorR, resultadoValorExponente);
+                        resultadoValorConX=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el valor de la constante que acompaña a la X", valorPrueba));           
+                        indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
+                        valorTotalFA=valorTotalFA+resultadoValorConX*(funcionFA);
+                        valorTotalFB=valorTotalFB+resultadoValorConX*(funcionFB);
+                        valorTotalFR=valorTotalFR+resultadoValorConX*(funcionFR);  
+                        almacenarExponente[almacenarEXP]=resultadoValorExponente;
+                        almacenarResulX[almacenarEXP]=resultadoValorConX;
+                        almacenarEXP++;
+                    }
+                    if (indicador==2){     
+                        JOptionPane.showMessageDialog(null, "Funcion grabada");
+                        
+                        valorFAxFR=valorTotalFA*valorTotalFR;
+                        System.out.println("Iteracion: 1"+
+                                            "\nXa: "+inferior+
+                                            "\n Xb: "+superior+
+                                            "\n Xr: "+valorR+
+                                            "\n f(a): "+valorTotalFA+
+                                            "\n f(r): "+valorTotalFR+
+                                            "\n f(a)*f(r): "+valorFAxFR);
+                        for (int i = 2; i <= iteraciones; i++) {
+                            valorTotalFA=0;
+                            valorTotalFR=0;
+                            inferior=valorR;
+                            valorAlmacenableR=valorR;
+                            for (int j = 0; j < almacenarEXP; j++) {
+                                funcionFA=Math.pow(inferior, almacenarExponente[j]);
+                                funcionFR=Math.pow(valorR, almacenarExponente[j]);
+                                valorTotalFA=valorTotalFA+almacenarResulX[j]*(funcionFA);
+                                valorTotalFR=valorTotalFR+almacenarResulX[j]*(funcionFR);
+                            }
+                            valorR=superior;
+                            valorFAxFR=valorTotalFA*valorTotalFR;
+                            errorAbsoluto=Math.abs((valorR-valorAlmacenableR)/valorR)*100;
+                            System.out.println("Iteracion: "+i+
+                                        "\nXa: "+inferior+
+                                        "\n Xb: "+superior+
+                                        "\n Xr: "+valorR+
+                                        "\n f(a): "+valorTotalFA+
+                                        "\n f(r): "+valorTotalFR+
+                                        "\n f(a)*f(r): "+valorFAxFR+
+                                        "\n Ea% "+errorAbsoluto);  
+                            System.out.println("es negativo izquierdo Xb=Xr\n");
+                        }
+                        
+                    }
+                    if (indicador!=2&indicador!=1){
+                        JOptionPane.showMessageDialog(null, "Error escribe valor válido");
+                        indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
+                    }
+                }catch(Exception e){
+                    JOptionPane.showMessageDialog(null, "Error escribe valor válido");
+                    indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
+                }
+                                                  
+            }catch(Exception e){
+                JOptionPane.showMessageDialog(null, "Error escribe valor válido");
+                indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
+            }
+            
+        }
+         String[] nombresColumnas = {"Iteraciones", "xa", "xb", "xr", "f(a)", "f(r)", "f(a)f(r)", "Ea(%)", "Et(%)"};
+         Object[][] datosFila = {
+            {1, superior, inferior, valorR, valorTotalFA, valorTotalFR, valorFAxFR}
+
+        };
+         JTable tabla=new JTable(datosFila, nombresColumnas);
+         tabla=biseccionTable;
+        add(new JScrollPane(tabla), BorderLayout.CENTER);
+    }//GEN-LAST:event_FenviarButtonActionPerformed
+
+    private void FerrorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_FerrorTextKeyTyped
+        //Combinacion de que la tecla se presione y se suelte
+        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
+        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
+            evt.consume();//el evento no permite seguir escribiendo
+            Toolkit.getDefaultToolkit().beep();//sonido de error
+            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
+        }
+    }//GEN-LAST:event_FerrorTextKeyTyped
+
+    private void FinferiorTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FinferiorTextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FinferiorTextActionPerformed
+
+    private void FinferiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_FinferiorTextKeyTyped
+        //Combinacion de que la tecla se presione y se suelte
+        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
+        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
+            evt.consume();//el evento no permite seguir escribiendo
+            Toolkit.getDefaultToolkit().beep();//sonido de error
+            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
+        }
+    }//GEN-LAST:event_FinferiorTextKeyTyped
+
+    private void FsuperiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_FsuperiorTextKeyTyped
+        //Combinacion de que la tecla se presione y se suelte
+        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
+        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
+            evt.consume();//el evento no permite seguir escribiendo
+            Toolkit.getDefaultToolkit().beep();//sonido de error
+            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
+        }
+    }//GEN-LAST:event_FsuperiorTextKeyTyped
+
+    private void FlimpiarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FlimpiarButtonActionPerformed
+        FerrorText.setText("");
+        FinferiorText.setText("");
+        FsuperiorText.setText("");
+    }//GEN-LAST:event_FlimpiarButtonActionPerformed
+
+    private void PenviarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PenviarButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PenviarButtonActionPerformed
+
+    private void PerrorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_PerrorTextKeyTyped
+        //Combinacion de que la tecla se presione y se suelte
+        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
+        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
+            evt.consume();//el evento no permite seguir escribiendo
+            Toolkit.getDefaultToolkit().beep();//sonido de error
+            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
+        }
+    }//GEN-LAST:event_PerrorTextKeyTyped
+
+    private void PinferiorTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PinferiorTextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PinferiorTextActionPerformed
+
+    private void PinferiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_PinferiorTextKeyTyped
+        //Combinacion de que la tecla se presione y se suelte
+        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
+        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
+            evt.consume();//el evento no permite seguir escribiendo
+            Toolkit.getDefaultToolkit().beep();//sonido de error
+            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
+        }
+    }//GEN-LAST:event_PinferiorTextKeyTyped
+
+    private void PsuperiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_PsuperiorTextKeyTyped
+        //Combinacion de que la tecla se presione y se suelte
+        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
+        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
+            evt.consume();//el evento no permite seguir escribiendo
+            Toolkit.getDefaultToolkit().beep();//sonido de error
+            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
+        }
+    }//GEN-LAST:event_PsuperiorTextKeyTyped
+
+    private void PlimpiarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PlimpiarButtonActionPerformed
+        PerrorText.setText("");
+        PinferiorText.setText("");
+        PsuperiorText.setText("");
+    }//GEN-LAST:event_PlimpiarButtonActionPerformed
+
+    private void NenviarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NenviarButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NenviarButtonActionPerformed
+
+    private void NerrorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_NerrorTextKeyTyped
+        //Combinacion de que la tecla se presione y se suelte
+        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
+        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
+            evt.consume();//el evento no permite seguir escribiendo
+            Toolkit.getDefaultToolkit().beep();//sonido de error
+            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
+        }
+    }//GEN-LAST:event_NerrorTextKeyTyped
+
+    private void NinferiorTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NinferiorTextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NinferiorTextActionPerformed
+
+    private void NinferiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_NinferiorTextKeyTyped
+        //Combinacion de que la tecla se presione y se suelte
+        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
+        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
+            evt.consume();//el evento no permite seguir escribiendo
+            Toolkit.getDefaultToolkit().beep();//sonido de error
+            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
+        }
+    }//GEN-LAST:event_NinferiorTextKeyTyped
+
+    private void NlimpiarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NlimpiarButtonActionPerformed
+        NerrorText.setText("");
+        NinferiorText.setText("");
+    }//GEN-LAST:event_NlimpiarButtonActionPerformed
+
+    private void MenviarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenviarButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MenviarButtonActionPerformed
+
+    private void MerrorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_MerrorTextKeyTyped
+        //Combinacion de que la tecla se presione y se suelte
+        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
+        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
+            evt.consume();//el evento no permite seguir escribiendo
+            Toolkit.getDefaultToolkit().beep();//sonido de error
+            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
+        }
+    }//GEN-LAST:event_MerrorTextKeyTyped
+
+    private void MinferiorTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MinferiorTextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MinferiorTextActionPerformed
+
+    private void MinferiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_MinferiorTextKeyTyped
+        //Combinacion de que la tecla se presione y se suelte
+        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
+        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
+            evt.consume();//el evento no permite seguir escribiendo
+            Toolkit.getDefaultToolkit().beep();//sonido de error
+            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
+        }
+    }//GEN-LAST:event_MinferiorTextKeyTyped
+
+    private void MsuperiorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_MsuperiorTextKeyTyped
+        //Combinacion de que la tecla se presione y se suelte
+        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
+        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
+            evt.consume();//el evento no permite seguir escribiendo
+            Toolkit.getDefaultToolkit().beep();//sonido de error
+            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
+        }
+    }//GEN-LAST:event_MsuperiorTextKeyTyped
+
+    private void MlimpiarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MlimpiarButtonActionPerformed
+        MerrorText.setText("");
+        MinferiorText.setText("");
+        MintermedioText.setText("");
+        MsuperiorText.setText("");
+    }//GEN-LAST:event_MlimpiarButtonActionPerformed
+
+    private void MintermedioTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_MintermedioTextKeyTyped
+        //Combinacion de que la tecla se presione y se suelte
+        char comprobarSiEsLetra = evt.getKeyChar();//Creamos variable tipo caracter para que no pueda escribir letras
+        if(Character.isLetter(comprobarSiEsLetra)){//Comprobamos si el usuario escribe letras
+            evt.consume();//el evento no permite seguir escribiendo
+            Toolkit.getDefaultToolkit().beep();//sonido de error
+            JOptionPane.showMessageDialog(null, "No puedes escribir letras, unicamente digitos");//Mensaje condicional no escribir letras
+        }
+    }//GEN-LAST:event_MintermedioTextKeyTyped
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BenviarButton;
     private javax.swing.JTextField BerrorText;
     private javax.swing.JTextField BinferiorText;
+    private javax.swing.JLabel Bingreso;
+    private javax.swing.JLabel Biteraciones;
+    private javax.swing.JLabel BlimInferior;
+    private javax.swing.JLabel BlimSuperior;
     private javax.swing.JButton BlimpiarButton;
     private javax.swing.JTextField BsuperiorText;
+    private javax.swing.JButton FenviarButton;
+    private javax.swing.JTextField FerrorText;
+    private javax.swing.JTextField FinferiorText;
+    private javax.swing.JLabel Fingreso;
+    private javax.swing.JLabel Fiteraciones;
+    private javax.swing.JLabel FlimInferior;
+    private javax.swing.JLabel FlimSuperior;
+    private javax.swing.JButton FlimpiarButton;
+    private javax.swing.JTextField FsuperiorText;
+    private javax.swing.JButton MenviarButton;
+    private javax.swing.JTextField MerrorText;
+    private javax.swing.JTextField MinferiorText;
+    private javax.swing.JLabel Mingreso;
+    private javax.swing.JTextField MintermedioText;
+    private javax.swing.JLabel Miteraciones;
+    private javax.swing.JLabel MlimInferior;
+    private javax.swing.JLabel MlimIntermedio;
+    private javax.swing.JLabel MlimSuperior;
+    private javax.swing.JButton MlimpiarButton;
+    private javax.swing.JTextField MsuperiorText;
+    private javax.swing.JButton NenviarButton;
+    private javax.swing.JTextField NerrorText;
+    private javax.swing.JTextField NinferiorText;
+    private javax.swing.JLabel Ningreso;
+    private javax.swing.JLabel Niteraciones;
+    private javax.swing.JLabel NlimInferior;
+    private javax.swing.JButton NlimpiarButton;
+    private javax.swing.JButton PenviarButton;
+    private javax.swing.JTextField PerrorText;
+    private javax.swing.JTextField PinferiorText;
+    private javax.swing.JLabel Pingreso;
+    private javax.swing.JLabel Piteraciones;
+    private javax.swing.JLabel PlimInferior;
+    private javax.swing.JLabel PlimSuperior;
+    private javax.swing.JButton PlimpiarButton;
+    private javax.swing.JTextField PsuperiorText;
     private javax.swing.JButton SalirDelSistema;
+    private javax.swing.JButton SenviarButton;
+    private javax.swing.JTextField SerrorText;
+    private javax.swing.JTextField SinferiorText;
+    private javax.swing.JLabel Singreso;
+    private javax.swing.JLabel Siteraciones;
+    private javax.swing.JLabel SlimInferior;
+    private javax.swing.JLabel SlimSuperior;
+    private javax.swing.JButton SlimpiarButton;
+    private javax.swing.JTextField SsuperiorText;
+    private javax.swing.JLabel T1;
+    private javax.swing.JLabel T2;
+    private javax.swing.JLabel T3;
+    private javax.swing.JLabel T4;
+    private javax.swing.JLabel T5;
+    private javax.swing.JLabel T6;
     private javax.swing.JTable biseccionTable;
+    private javax.swing.JTable falsaPosicionTable;
     private javax.swing.JLabel formulaErrorAbsoluto1;
-    private javax.swing.JLabel formulaErrorVerdadero;
     private javax.swing.JDesktopPane jDesktopPane2;
     private javax.swing.JDesktopPane jDesktopPane3;
     private javax.swing.JDesktopPane jDesktopPane4;
     private javax.swing.JDesktopPane jDesktopPane5;
     private javax.swing.JDesktopPane jDesktopPane6;
     private javax.swing.JDesktopPane jDesktopPane7;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JTabbedPane jTabbedPane6;
+    private javax.swing.JLabel logo;
+    private javax.swing.JLabel logo1;
+    private javax.swing.JLabel logo2;
+    private javax.swing.JLabel logo3;
+    private javax.swing.JTable mullerTable;
+    private javax.swing.JTable newtonTable;
+    private javax.swing.JTable puntoFijoTable;
+    private javax.swing.JTable secanteTable;
     // End of variables declaration//GEN-END:variables
 
 }

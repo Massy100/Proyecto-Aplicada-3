@@ -34,39 +34,22 @@
   </Layout>
   <SubComponents>
     <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="ff" red="99" type="rgb"/>
+        </Property>
+      </Properties>
 
-      <Layout>
-        <DimensionLayout dim="0">
-          <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                          <Component id="jTabbedPane6" min="-2" pref="1217" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="536" max="-2" attributes="0"/>
-                          <Component id="SalirDelSistema" min="-2" pref="158" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <EmptySpace pref="24" max="32767" attributes="0"/>
-              </Group>
-          </Group>
-        </DimensionLayout>
-        <DimensionLayout dim="1">
-          <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                  <Component id="jTabbedPane6" min="-2" pref="564" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="SalirDelSistema" min="-2" pref="44" max="-2" attributes="0"/>
-                  <EmptySpace pref="13" max="32767" attributes="0"/>
-              </Group>
-          </Group>
-        </DimensionLayout>
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="false"/>
       </Layout>
       <SubComponents>
         <Container class="javax.swing.JTabbedPane" name="jTabbedPane6">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="24" y="18" width="-1" height="564"/>
+            </Constraint>
+          </Constraints>
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
           <SubComponents>
@@ -97,7 +80,7 @@
                   </AuxValues>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="449" y="46" width="760" height="270"/>
+                      <AbsoluteConstraints x="449" y="96" width="760" height="410"/>
                     </Constraint>
                   </Constraints>
 
@@ -127,7 +110,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="54" y="46" width="377" height="-1"/>
+                      <AbsoluteConstraints x="30" y="100" width="377" height="270"/>
                     </Constraint>
                   </Constraints>
 
@@ -136,7 +119,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
-                              <Component id="jLabel1" min="-2" pref="194" max="-2" attributes="0"/>
+                              <Component id="Bingreso" min="-2" pref="194" max="-2" attributes="0"/>
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -149,9 +132,9 @@
                                   </Group>
                                   <Group type="102" attributes="0">
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel3" min="-2" pref="165" max="-2" attributes="0"/>
-                                          <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="Biteraciones" min="-2" pref="165" max="-2" attributes="0"/>
+                                          <Component id="BlimInferior" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="BlimSuperior" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace pref="37" max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -169,28 +152,28 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                              <Component id="Bingreso" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Biteraciones" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="BerrorText" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="BlimInferior" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="BinferiorText" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                  <Component id="BlimSuperior" min="-2" max="-2" attributes="0"/>
                                   <Component id="BsuperiorText" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace pref="26" max="32767" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="BenviarButton" alignment="3" min="-2" pref="70" max="-2" attributes="0"/>
                                   <Component id="BlimpiarButton" alignment="3" min="-2" pref="70" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="140" max="-2" attributes="0"/>
+                              <EmptySpace pref="23" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -204,12 +187,12 @@
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BenviarButtonActionPerformed"/>
                       </Events>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel1">
+                    <Component class="javax.swing.JLabel" name="Bingreso">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="Ingrese los siguientes datos"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel3">
+                    <Component class="javax.swing.JLabel" name="Biteraciones">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="Iteraciones a realizar"/>
                       </Properties>
@@ -219,7 +202,7 @@
                         <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="BerrorTextKeyTyped"/>
                       </Events>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel4">
+                    <Component class="javax.swing.JLabel" name="BlimInferior">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="Limite Inferior:"/>
                       </Properties>
@@ -230,7 +213,7 @@
                         <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="BinferiorTextKeyTyped"/>
                       </Events>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel5">
+                    <Component class="javax.swing.JLabel" name="BlimSuperior">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="Limite Superior:"/>
                       </Properties>
@@ -277,18 +260,6 @@
                     </DimensionLayout>
                   </Layout>
                 </Container>
-                <Component class="javax.swing.JLabel" name="formulaErrorVerdadero">
-                  <Properties>
-                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/imagenes/2.jpeg"/>
-                    </Property>
-                  </Properties>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="40" y="500" width="400" height="-1"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
                 <Component class="javax.swing.JLabel" name="formulaErrorAbsoluto1">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
@@ -297,7 +268,20 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="80" y="450" width="300" height="50"/>
+                      <AbsoluteConstraints x="60" y="420" width="300" height="50"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
+                <Component class="javax.swing.JLabel" name="T1">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/imagenes/Bisec.png"/>
+                    </Property>
+                    <Property name="toolTipText" type="java.lang.String" value=""/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="330" y="10" width="550" height="60"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -317,18 +301,183 @@
                 </Constraint>
               </Constraints>
 
-              <Layout>
-                <DimensionLayout dim="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="1212" max="32767" attributes="0"/>
-                  </Group>
-                </DimensionLayout>
-                <DimensionLayout dim="1">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="534" max="32767" attributes="0"/>
-                  </Group>
-                </DimensionLayout>
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                <Property name="useNullLayout" type="boolean" value="false"/>
               </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="449" y="96" width="760" height="410"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTable" name="secanteTable">
+                      <Properties>
+                        <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                          <Table columnCount="4" rowCount="4">
+                            <Column editable="true" title="Title 1" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 2" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 3" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 4" type="java.lang.Object"/>
+                          </Table>
+                        </Property>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel3">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="30" y="100" width="377" height="270"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
+                              <Component id="Singreso" min="-2" pref="194" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="SenviarButton" min="-2" pref="156" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="SlimpiarButton" min="-2" pref="156" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="Siteraciones" alignment="0" min="-2" pref="165" max="-2" attributes="0"/>
+                                          <Component id="SlimInferior" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="SlimSuperior" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace pref="37" max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="SerrorText" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="SinferiorText" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="SsuperiorText" alignment="0" min="-2" pref="152" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="Singreso" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="Siteraciones" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="SerrorText" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="SlimInferior" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="SinferiorText" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="SlimSuperior" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="SsuperiorText" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="SenviarButton" alignment="3" min="-2" pref="70" max="-2" attributes="0"/>
+                                  <Component id="SlimpiarButton" alignment="3" min="-2" pref="70" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="23" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JButton" name="SenviarButton">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Ingresar Funcion"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SenviarButtonActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="Singreso">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Ingrese los siguientes datos"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="Siteraciones">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Iteraciones a realizar"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="SerrorText">
+                      <Events>
+                        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="SerrorTextKeyTyped"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="SlimInferior">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Limite Inferior:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="SinferiorText">
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SinferiorTextActionPerformed"/>
+                        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="SinferiorTextKeyTyped"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="SlimSuperior">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Limite Superior:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="SsuperiorText">
+                      <Events>
+                        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="SsuperiorTextKeyTyped"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="SlimpiarButton">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="LIMPIAR"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SlimpiarButtonActionPerformed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Component class="javax.swing.JLabel" name="T2">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/imagenes/Sec.png"/>
+                    </Property>
+                    <Property name="toolTipText" type="java.lang.String" value=""/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="240" y="10" width="690" height="60"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
+              </SubComponents>
             </Container>
             <Container class="javax.swing.JDesktopPane" name="jDesktopPane4">
               <Properties>
@@ -344,18 +493,183 @@
                 </Constraint>
               </Constraints>
 
-              <Layout>
-                <DimensionLayout dim="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="1215" max="32767" attributes="0"/>
-                  </Group>
-                </DimensionLayout>
-                <DimensionLayout dim="1">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="538" max="32767" attributes="0"/>
-                  </Group>
-                </DimensionLayout>
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                <Property name="useNullLayout" type="boolean" value="false"/>
               </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="449" y="96" width="760" height="410"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTable" name="falsaPosicionTable">
+                      <Properties>
+                        <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                          <Table columnCount="4" rowCount="4">
+                            <Column editable="true" title="Title 1" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 2" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 3" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 4" type="java.lang.Object"/>
+                          </Table>
+                        </Property>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel4">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="30" y="100" width="377" height="270"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
+                              <Component id="Fingreso" min="-2" pref="194" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="FenviarButton" min="-2" pref="156" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="FlimpiarButton" min="-2" pref="156" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="Fiteraciones" alignment="0" min="-2" pref="165" max="-2" attributes="0"/>
+                                          <Component id="FlimInferior" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="FlimSuperior" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace pref="37" max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="FerrorText" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="FinferiorText" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="FsuperiorText" alignment="0" min="-2" pref="152" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="Fingreso" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="Fiteraciones" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="FerrorText" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="FlimInferior" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="FinferiorText" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="FlimSuperior" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="FsuperiorText" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="FenviarButton" alignment="3" min="-2" pref="70" max="-2" attributes="0"/>
+                                  <Component id="FlimpiarButton" alignment="3" min="-2" pref="70" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="23" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JButton" name="FenviarButton">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Ingresar Funcion"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="FenviarButtonActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="Fingreso">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Ingrese los siguientes datos"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="Fiteraciones">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Iteraciones a realizar"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="FerrorText">
+                      <Events>
+                        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="FerrorTextKeyTyped"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="FlimInferior">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Limite Inferior:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="FinferiorText">
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="FinferiorTextActionPerformed"/>
+                        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="FinferiorTextKeyTyped"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="FlimSuperior">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Limite Superior:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="FsuperiorText">
+                      <Events>
+                        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="FsuperiorTextKeyTyped"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="FlimpiarButton">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="LIMPIAR"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="FlimpiarButtonActionPerformed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Component class="javax.swing.JLabel" name="T3">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/imagenes/PosFalsa.png"/>
+                    </Property>
+                    <Property name="toolTipText" type="java.lang.String" value=""/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="220" y="10" width="690" height="60"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
+              </SubComponents>
             </Container>
             <Container class="javax.swing.JDesktopPane" name="jDesktopPane5">
               <Properties>
@@ -371,18 +685,183 @@
                 </Constraint>
               </Constraints>
 
-              <Layout>
-                <DimensionLayout dim="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="1215" max="32767" attributes="0"/>
-                  </Group>
-                </DimensionLayout>
-                <DimensionLayout dim="1">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="538" max="32767" attributes="0"/>
-                  </Group>
-                </DimensionLayout>
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                <Property name="useNullLayout" type="boolean" value="false"/>
               </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane4">
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="449" y="96" width="760" height="410"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTable" name="puntoFijoTable">
+                      <Properties>
+                        <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                          <Table columnCount="4" rowCount="4">
+                            <Column editable="true" title="Title 1" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 2" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 3" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 4" type="java.lang.Object"/>
+                          </Table>
+                        </Property>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel5">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="30" y="100" width="377" height="270"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
+                              <Component id="Pingreso" min="-2" pref="194" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="PenviarButton" min="-2" pref="156" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="PlimpiarButton" min="-2" pref="156" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="Piteraciones" alignment="0" min="-2" pref="165" max="-2" attributes="0"/>
+                                          <Component id="PlimInferior" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="PlimSuperior" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace pref="37" max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="PerrorText" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="PinferiorText" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="PsuperiorText" alignment="0" min="-2" pref="152" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="Pingreso" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="Piteraciones" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="PerrorText" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="PlimInferior" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="PinferiorText" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="PlimSuperior" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="PsuperiorText" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="PenviarButton" alignment="3" min="-2" pref="70" max="-2" attributes="0"/>
+                                  <Component id="PlimpiarButton" alignment="3" min="-2" pref="70" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="23" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JButton" name="PenviarButton">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Ingresar Funcion"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PenviarButtonActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="Pingreso">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Ingrese los siguientes datos"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="Piteraciones">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Iteraciones a realizar"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="PerrorText">
+                      <Events>
+                        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="PerrorTextKeyTyped"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="PlimInferior">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Limite Inferior:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="PinferiorText">
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PinferiorTextActionPerformed"/>
+                        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="PinferiorTextKeyTyped"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="PlimSuperior">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Limite Superior:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="PsuperiorText">
+                      <Events>
+                        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="PsuperiorTextKeyTyped"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="PlimpiarButton">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="LIMPIAR"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PlimpiarButtonActionPerformed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Component class="javax.swing.JLabel" name="T4">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/imagenes/PuntoFijo.png"/>
+                    </Property>
+                    <Property name="toolTipText" type="java.lang.String" value=""/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="330" y="10" width="560" height="60"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
+              </SubComponents>
             </Container>
             <Container class="javax.swing.JDesktopPane" name="jDesktopPane6">
               <Properties>
@@ -398,18 +877,166 @@
                 </Constraint>
               </Constraints>
 
-              <Layout>
-                <DimensionLayout dim="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="1215" max="32767" attributes="0"/>
-                  </Group>
-                </DimensionLayout>
-                <DimensionLayout dim="1">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="538" max="32767" attributes="0"/>
-                  </Group>
-                </DimensionLayout>
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                <Property name="useNullLayout" type="boolean" value="false"/>
               </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane5">
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="449" y="96" width="760" height="410"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTable" name="newtonTable">
+                      <Properties>
+                        <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                          <Table columnCount="4" rowCount="4">
+                            <Column editable="true" title="Title 1" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 2" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 3" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 4" type="java.lang.Object"/>
+                          </Table>
+                        </Property>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel6">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="30" y="100" width="377" height="230"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
+                              <Component id="Ningreso" min="-2" pref="194" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="NenviarButton" min="-2" pref="156" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="NlimpiarButton" min="-2" pref="156" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="Niteraciones" alignment="0" min="-2" pref="165" max="-2" attributes="0"/>
+                                          <Component id="NlimInferior" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace pref="37" max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="NerrorText" alignment="0" pref="152" max="32767" attributes="0"/>
+                                          <Component id="NinferiorText" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="Ningreso" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="Niteraciones" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="NerrorText" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="NlimInferior" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="NinferiorText" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="NenviarButton" alignment="3" min="-2" pref="70" max="-2" attributes="0"/>
+                                  <Component id="NlimpiarButton" alignment="3" min="-2" pref="70" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="25" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JButton" name="NenviarButton">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Ingresar Funcion"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="NenviarButtonActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="Ningreso">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Ingrese los siguientes datos"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="Niteraciones">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Iteraciones a realizar"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="NerrorText">
+                      <Events>
+                        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="NerrorTextKeyTyped"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="NlimInferior">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Punto inicial:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="NinferiorText">
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="NinferiorTextActionPerformed"/>
+                        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="NinferiorTextKeyTyped"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="NlimpiarButton">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="LIMPIAR"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="NlimpiarButtonActionPerformed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Component class="javax.swing.JLabel" name="T5">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/imagenes/Newton.png"/>
+                    </Property>
+                    <Property name="toolTipText" type="java.lang.String" value=""/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="230" y="10" width="-1" height="60"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
+              </SubComponents>
             </Container>
             <Container class="javax.swing.JDesktopPane" name="jDesktopPane7">
               <Properties>
@@ -425,18 +1052,203 @@
                 </Constraint>
               </Constraints>
 
-              <Layout>
-                <DimensionLayout dim="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="1215" max="32767" attributes="0"/>
-                  </Group>
-                </DimensionLayout>
-                <DimensionLayout dim="1">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="538" max="32767" attributes="0"/>
-                  </Group>
-                </DimensionLayout>
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+                <Property name="useNullLayout" type="boolean" value="false"/>
               </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane6">
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="449" y="96" width="760" height="410"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTable" name="mullerTable">
+                      <Properties>
+                        <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                          <Table columnCount="4" rowCount="4">
+                            <Column editable="true" title="Title 1" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 2" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 3" type="java.lang.Object"/>
+                            <Column editable="true" title="Title 4" type="java.lang.Object"/>
+                          </Table>
+                        </Property>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="jPanel7">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder/>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="30" y="100" width="377" height="310"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
+                              <Component id="Mingreso" min="-2" pref="194" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="MlimIntermedio" min="-2" pref="113" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="MintermedioText" min="-2" pref="152" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="MenviarButton" min="-2" pref="156" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="MlimpiarButton" min="-2" pref="156" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="Miteraciones" alignment="0" min="-2" pref="165" max="-2" attributes="0"/>
+                                          <Component id="MlimInferior" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="MlimSuperior" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace pref="37" max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="MerrorText" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="MinferiorText" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="MsuperiorText" alignment="0" min="-2" pref="152" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="Mingreso" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="Miteraciones" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="MerrorText" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="MlimInferior" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="MinferiorText" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="MintermedioText" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="MlimIntermedio" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="MlimSuperior" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="MsuperiorText" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="MenviarButton" alignment="3" min="-2" pref="70" max="-2" attributes="0"/>
+                                  <Component id="MlimpiarButton" alignment="3" min="-2" pref="70" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="21" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JButton" name="MenviarButton">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Ingresar Funcion"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenviarButtonActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="Mingreso">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Ingrese los siguientes datos"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="Miteraciones">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Iteraciones a realizar"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="MerrorText">
+                      <Events>
+                        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="MerrorTextKeyTyped"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="MlimInferior">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Limite Inferior:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="MinferiorText">
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MinferiorTextActionPerformed"/>
+                        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="MinferiorTextKeyTyped"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="MlimSuperior">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Limite Superior:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="MsuperiorText">
+                      <Events>
+                        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="MsuperiorTextKeyTyped"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="MlimpiarButton">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="LIMPIAR"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MlimpiarButtonActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="MlimIntermedio">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Limite Intermedio:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="MintermedioText">
+                      <Events>
+                        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="MintermedioTextKeyTyped"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Component class="javax.swing.JLabel" name="T6">
+                  <Properties>
+                    <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                      <Image iconType="3" name="/imagenes/Muller.png"/>
+                    </Property>
+                    <Property name="toolTipText" type="java.lang.String" value=""/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="350" y="10" width="550" height="60"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
+              </SubComponents>
             </Container>
           </SubComponents>
         </Container>
@@ -456,6 +1268,59 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SalirDelSistemaActionPerformed"/>
           </Events>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="540" y="589" width="158" height="44"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="logo">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/imagenes/Mlogo.jpg"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="1220" y="600" width="-1" height="-1"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="logo1">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/imagenes/Mlogo.jpg"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="0" y="600" width="-1" height="-1"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="logo3">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/imagenes/Metodos.png"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="170" y="590" width="-1" height="50"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JLabel" name="logo2">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/imagenes/Numericos.png"/>
+            </Property>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="830" y="580" width="-1" height="60"/>
+            </Constraint>
+          </Constraints>
         </Component>
       </SubComponents>
     </Container>
