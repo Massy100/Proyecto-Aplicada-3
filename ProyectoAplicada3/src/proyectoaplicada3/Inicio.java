@@ -706,7 +706,7 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
-        NlimInferior.setText("Punto inicial:");
+        NlimInferior.setText("Valor cercano a raiz:");
 
         NinferiorText.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1488,7 +1488,100 @@ public class Inicio extends javax.swing.JFrame {
     }//GEN-LAST:event_PlimpiarButtonActionPerformed
 
     private void NenviarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NenviarButtonActionPerformed
-        // TODO add your handling code here:
+        double resultadoValorConX = 0;
+        double resultadoValorExponente = 0;
+        double funcionFA;
+        double funcionFR;
+        double valorR = 0;
+        double valorFAxFR = 0;
+        double valorTotalFA = 0;
+        double valorTotalFR = 0;
+        double errorAbsoluto=0;
+        double valorAlmacenableR=0;
+        int almacenarEXP=0;
+        int iteraciones=0;
+        double almacenarResulX[]=new double[100];
+        double almacenarExponente[] = new double[100];
+        String valorPrueba = "";
+        int indicador = 1;
+        String errorRestriccion =NerrorText.getText();
+        String inferiorRestriccion=NinferiorText.getText();
+        if(errorRestriccion.isEmpty()||inferiorRestriccion.isEmpty()){
+            JOptionPane.showMessageDialog(null, "No dejes casillas vacias");//Mensaje casilla vacia
+        }else{
+            iteraciones= Integer.parseInt(NerrorText.getText());
+            inferior = Double.parseDouble(NinferiorText.getText());
+            valorR=inferior;
+            try{
+                indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
+                try{
+                    while(indicador==1){
+                        resultadoValorExponente=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el exponente que tiene tu x", valorPrueba));   
+                        funcionFA=Math.pow(inferior, resultadoValorExponente);
+                        funcionFR=Math.pow(valorR, resultadoValorExponente-1);
+                        resultadoValorConX=Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa el valor de la constante que acompaña a la X", valorPrueba));           
+                        indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
+                        valorTotalFA=valorTotalFA+resultadoValorConX*(funcionFA);
+                        valorTotalFR=valorTotalFR+resultadoValorExponente*resultadoValorConX*(funcionFR);
+                        almacenarExponente[almacenarEXP]=resultadoValorExponente;
+                        almacenarResulX[almacenarEXP]=resultadoValorConX;
+                        almacenarEXP++;
+                    }
+                    if (indicador==2){     
+                        JOptionPane.showMessageDialog(null, "Funcion grabada");
+                        valorFAxFR=valorTotalFA/valorTotalFR;
+                        System.out.println("Iteracion: 1"+
+                                            "\nXi: "+inferior+
+                                            "\n f(xi): "+valorTotalFA+
+                                            "\n f'(xi): "+valorTotalFR+
+                                            "\n f(xi)/f'(xi): "+valorFAxFR);
+                        for (int i = 2; i <= iteraciones; i++) {
+                            valorAlmacenableR=inferior;
+                            inferior=inferior-valorFAxFR;
+                            valorTotalFA=0;
+                            valorTotalFR=0;
+                            valorR=inferior;
+                            for (int j = 0; j < almacenarEXP; j++) {
+                                funcionFA=Math.pow(inferior, almacenarExponente[j]);
+                                funcionFR=Math.pow(valorR, almacenarExponente[j]-1);
+                                valorTotalFA=valorTotalFA+almacenarResulX[j]*(funcionFA);
+                                valorTotalFR=valorTotalFR+almacenarResulX[j]*almacenarExponente[j]*(funcionFR);
+                            }
+                            valorFAxFR=valorTotalFA/valorTotalFR;
+                            errorAbsoluto=Math.abs((valorR-valorAlmacenableR)/valorR)*100;
+                            System.out.println("Iteracion: "+i+
+                                        "\nXa: "+inferior+
+                                        "\n f(xi): "+valorTotalFA+
+                                        "\n f'(xi): "+valorTotalFR+
+                                        "\n f(xi)/f'(xi): "+valorFAxFR+
+                                        "\n Ea% "+errorAbsoluto);  
+
+                        }
+                        
+                    }
+                    if (indicador!=2&indicador!=1){
+                        JOptionPane.showMessageDialog(null, "Error escribe valor válido");
+                        indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
+                    }
+                }catch(Exception e){
+                    JOptionPane.showMessageDialog(null, "Error escribe valor válido");
+                    indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
+                }
+                                                  
+            }catch(Exception e){
+                JOptionPane.showMessageDialog(null, "Error escribe valor válido");
+                indicador=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa 1 si quieres añadir un valor y 2 si quieres dejar de ingresar", valorPrueba));
+            }
+            
+        }
+         String[] nombresColumnas = {"Iteraciones", "xa", "xb", "xr", "f(a)", "f(r)", "f(a)f(r)", "Ea(%)", "Et(%)"};
+         Object[][] datosFila = {
+            {1, superior, inferior, valorR, valorTotalFA, valorTotalFR, valorFAxFR}
+
+        };
+         JTable tabla=new JTable(datosFila, nombresColumnas);
+         tabla=biseccionTable;
+        add(new JScrollPane(tabla), BorderLayout.CENTER);
     }//GEN-LAST:event_NenviarButtonActionPerformed
 
     private void NerrorTextKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_NerrorTextKeyTyped

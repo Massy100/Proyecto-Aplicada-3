@@ -1004,7 +1004,7 @@
                     </Component>
                     <Component class="javax.swing.JLabel" name="NlimInferior">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="Punto inicial:"/>
+                        <Property name="text" type="java.lang.String" value="Valor cercano a raiz:"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JTextField" name="NinferiorText">
