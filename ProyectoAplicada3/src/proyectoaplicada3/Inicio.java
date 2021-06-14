@@ -66,8 +66,6 @@ public class Inicio extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jTabbedPane6 = new javax.swing.JTabbedPane();
         jDesktopPane2 = new javax.swing.JDesktopPane();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        biseccionTable = new javax.swing.JTable();
         jPanel2 = new javax.swing.JPanel();
         BenviarButton = new javax.swing.JButton();
         Bingreso = new javax.swing.JLabel();
@@ -82,6 +80,12 @@ public class Inicio extends javax.swing.JFrame {
         jLayeredPane1 = new javax.swing.JLayeredPane();
         formulaErrorAbsoluto1 = new javax.swing.JLabel();
         T1 = new javax.swing.JLabel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        biseccionTable = new javax.swing.JTextArea();
+        botonLimpiar = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        textoExtra = new javax.swing.JTextArea();
+        tituloTextoExtra = new javax.swing.JLabel();
         jDesktopPane3 = new javax.swing.JDesktopPane();
         jScrollPane3 = new javax.swing.JScrollPane();
         secanteTable = new javax.swing.JTable();
@@ -153,23 +157,11 @@ public class Inicio extends javax.swing.JFrame {
         jDesktopPane2.setForeground(new java.awt.Color(255, 255, 255));
         jDesktopPane2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        biseccionTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane1.setViewportView(biseccionTable);
-
-        jDesktopPane2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(449, 96, 760, 410));
-
+        jPanel2.setBackground(new java.awt.Color(204, 255, 255));
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
+        BenviarButton.setBackground(new java.awt.Color(255, 255, 0));
+        BenviarButton.setForeground(new java.awt.Color(0, 0, 0));
         BenviarButton.setText("Ingresar Funcion");
         BenviarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -177,8 +169,10 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
+        Bingreso.setForeground(new java.awt.Color(0, 0, 0));
         Bingreso.setText("Ingrese los siguientes datos");
 
+        Biteraciones.setForeground(new java.awt.Color(0, 0, 0));
         Biteraciones.setText("Iteraciones a realizar");
 
         BerrorText.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -187,6 +181,7 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
+        BlimInferior.setForeground(new java.awt.Color(0, 0, 0));
         BlimInferior.setText("Limite Inferior:");
 
         BinferiorText.addActionListener(new java.awt.event.ActionListener() {
@@ -200,6 +195,7 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
+        BlimSuperior.setForeground(new java.awt.Color(0, 0, 0));
         BlimSuperior.setText("Limite Superior:");
 
         BsuperiorText.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -208,7 +204,9 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
-        BlimpiarButton.setText("LIMPIAR");
+        BlimpiarButton.setBackground(new java.awt.Color(255, 255, 0));
+        BlimpiarButton.setForeground(new java.awt.Color(0, 0, 0));
+        BlimpiarButton.setText("LIMPIAR DATOS");
         BlimpiarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BlimpiarButtonActionPerformed(evt);
@@ -288,6 +286,32 @@ public class Inicio extends javax.swing.JFrame {
         T1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Bisec.png"))); // NOI18N
         T1.setToolTipText("");
         jDesktopPane2.add(T1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 10, 550, 60));
+
+        biseccionTable.setColumns(20);
+        biseccionTable.setRows(5);
+        jScrollPane4.setViewportView(biseccionTable);
+
+        jDesktopPane2.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, 480, 410));
+
+        botonLimpiar.setBackground(new java.awt.Color(255, 255, 0));
+        botonLimpiar.setForeground(new java.awt.Color(0, 0, 0));
+        botonLimpiar.setText("Limpiar Resultados");
+        botonLimpiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonLimpiarActionPerformed(evt);
+            }
+        });
+        jDesktopPane2.add(botonLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 410, -1, 70));
+
+        textoExtra.setColumns(20);
+        textoExtra.setRows(5);
+        jScrollPane1.setViewportView(textoExtra);
+
+        jDesktopPane2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 140, -1, 240));
+
+        tituloTextoExtra.setForeground(new java.awt.Color(0, 0, 0));
+        tituloTextoExtra.setText("Anotaciones propias");
+        jDesktopPane2.add(tituloTextoExtra, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 110, -1, -1));
 
         jTabbedPane6.addTab("Método de Bisección", jDesktopPane2);
 
@@ -1025,7 +1049,7 @@ public class Inicio extends javax.swing.JFrame {
 
         };
         JTable tabla=new JTable(datosFila, nombresColumnas);
-        tabla=biseccionTable;
+        //tabla=biseccionTable;
         add(new JScrollPane(tabla), BorderLayout.CENTER);
     }//GEN-LAST:event_MenviarButtonActionPerformed
 
@@ -1151,7 +1175,7 @@ public class Inicio extends javax.swing.JFrame {
 
         };
         JTable tabla=new JTable(datosFila, nombresColumnas);
-        tabla=biseccionTable;
+        //tabla=biseccionTable;
         add(new JScrollPane(tabla), BorderLayout.CENTER);
     }//GEN-LAST:event_NenviarButtonActionPerformed
 
@@ -1303,7 +1327,7 @@ public class Inicio extends javax.swing.JFrame {
 
         };
         JTable tabla=new JTable(datosFila, nombresColumnas);
-        tabla=biseccionTable;
+        //tabla=biseccionTable;
         add(new JScrollPane(tabla), BorderLayout.CENTER);
     }//GEN-LAST:event_FenviarButtonActionPerformed
 
@@ -1460,7 +1484,7 @@ public class Inicio extends javax.swing.JFrame {
 
         };
         JTable tabla=new JTable(datosFila, nombresColumnas);
-        tabla=biseccionTable;
+        //tabla=biseccionTable;
         add(new JScrollPane(tabla), BorderLayout.CENTER);
     }//GEN-LAST:event_SenviarButtonActionPerformed
 
@@ -1550,13 +1574,18 @@ public class Inicio extends javax.swing.JFrame {
                         JOptionPane.showMessageDialog(null, "Funcion grabada");
 
                         valorFAxFR=valorTotalFA*valorTotalFR;
-                        System.out.println("Iteracion: 1"+
-                            "\nXa: "+inferior+
+                        biseccionTable.setText(biseccionTable.getText()+" Iteracion: 1"+
+                            "\n Xa: "+inferior+
                             "\n Xb: "+superior+
                             "\n Xr: "+valorR+
                             "\n f(a): "+valorTotalFA+
                             "\n f(r): "+valorTotalFR+
-                            "\n f(a)*f(r): "+valorFAxFR);
+                            "\n f(a)*f(r): "+valorFAxFR+"\n");
+                            if(valorFAxFR<0){
+                                biseccionTable.setText(biseccionTable.getText()+"es negativo izquierdo Xb=Xr\n");
+                            }else{
+                                biseccionTable.setText(biseccionTable.getText()+"es positivo derecho Xa=Xr\n");
+                            }
                         for (int i = 2; i <= iteraciones; i++) {
                             if(valorFAxFR<0){
                                 valorTotalFA=0;
@@ -1572,15 +1601,19 @@ public class Inicio extends javax.swing.JFrame {
                                 }
                                 valorFAxFR=valorTotalFA*valorTotalFR;
                                 errorAbsoluto=Math.abs((valorR-valorAlmacenableR)/valorR)*100;
-                                System.out.println("Iteracion: "+i+
-                                    "\nXa: "+inferior+
+                                biseccionTable.setText(biseccionTable.getText()+"\nIteracion: "+i+
+                                    "\n Xa: "+inferior+
                                     "\n Xb: "+superior+
                                     "\n Xr: "+valorR+
                                     "\n f(a): "+valorTotalFA+
                                     "\n f(r): "+valorTotalFR+
                                     "\n f(a)*f(r): "+valorFAxFR+
                                     "\n Ea% "+errorAbsoluto);
-                                System.out.println("es negativo izquierdo Xb=Xr\n");
+                                if(valorFAxFR<0){
+                                    biseccionTable.setText(biseccionTable.getText()+"\nes negativo izquierdo Xb=Xr\n");
+                                }else{
+                                    biseccionTable.setText(biseccionTable.getText()+"\nes positivo derecho Xa=Xr\n");
+                                }
                             }
                             else{
                                 valorTotalFA=0;
@@ -1596,15 +1629,19 @@ public class Inicio extends javax.swing.JFrame {
                                 }
                                 valorFAxFR=valorTotalFA*valorTotalFR;
                                 errorAbsoluto=Math.abs((valorR-valorAlmacenableR)/valorR)*100;
-                                System.out.println("Iteracion: "+i+
-                                    "\nXa: "+inferior+
+                                biseccionTable.setText(biseccionTable.getText()+"\nIteracion: "+i+
+                                    "\n Xa: "+inferior+
                                     "\n Xb: "+superior+
                                     "\n Xr: "+valorR+
                                     "\n f(a): "+valorTotalFA+
                                     "\n f(r): "+valorTotalFR+
                                     "\n f(a)*f(r): "+valorFAxFR+
                                     "\n Ea% "+errorAbsoluto);
-                                System.out.println("es positivo derecho Xa=Xr\n");
+                                if(valorFAxFR<0){
+                                    biseccionTable.setText(biseccionTable.getText()+"\nes negativo izquierdo Xb=Xr\n");
+                                }else{
+                                    biseccionTable.setText(biseccionTable.getText()+"\nes positivo derecho Xa=Xr\n");
+                                }
                             }
                         }
 
@@ -1629,10 +1666,16 @@ public class Inicio extends javax.swing.JFrame {
             {1, superior, inferior, valorR, valorTotalFA, valorTotalFR, valorFAxFR}
 
         };
+        
         JTable tabla=new JTable(datosFila, nombresColumnas);
-        tabla=biseccionTable;
+        //tabla=biseccionTable;
         add(new JScrollPane(tabla), BorderLayout.CENTER);
+        
     }//GEN-LAST:event_BenviarButtonActionPerformed
+
+    private void botonLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonLimpiarActionPerformed
+        biseccionTable.setText("");
+    }//GEN-LAST:event_botonLimpiarActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BenviarButton;
@@ -1686,7 +1729,8 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JLabel T3;
     private javax.swing.JLabel T5;
     private javax.swing.JLabel T6;
-    private javax.swing.JTable biseccionTable;
+    private javax.swing.JTextArea biseccionTable;
+    private javax.swing.JButton botonLimpiar;
     private javax.swing.JTable falsaPosicionTable;
     private javax.swing.JLabel formulaErrorAbsoluto1;
     private javax.swing.JDesktopPane jDesktopPane2;
@@ -1705,6 +1749,7 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JTabbedPane jTabbedPane6;
@@ -1715,6 +1760,8 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JTable mullerTable;
     private javax.swing.JTable newtonTable;
     private javax.swing.JTable secanteTable;
+    private javax.swing.JTextArea textoExtra;
+    private javax.swing.JLabel tituloTextoExtra;
     // End of variables declaration//GEN-END:variables
 
 }
