@@ -54,7 +54,7 @@ public class Inicio extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);//Centramos nuestro frame
 
         setTitle("Metodos Numericos");
-
+        //hola
         
     }
 
