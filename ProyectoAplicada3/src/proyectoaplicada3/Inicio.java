@@ -11,6 +11,10 @@ import java.awt.Image;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.regex.Pattern;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -163,6 +167,7 @@ public class Inicio extends javax.swing.JFrame {
         logo1 = new javax.swing.JLabel();
         logo3 = new javax.swing.JLabel();
         logo2 = new javax.swing.JLabel();
+        SalirDelSistema1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -920,7 +925,7 @@ public class Inicio extends javax.swing.JFrame {
                 SalirDelSistemaActionPerformed(evt);
             }
         });
-        jPanel1.add(SalirDelSistema, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 589, 158, 44));
+        jPanel1.add(SalirDelSistema, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 590, 158, 44));
 
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Mlogo.jpg"))); // NOI18N
         jPanel1.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(1220, 600, -1, -1));
@@ -929,10 +934,21 @@ public class Inicio extends javax.swing.JFrame {
         jPanel1.add(logo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 600, -1, -1));
 
         logo3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Metodos.png"))); // NOI18N
-        jPanel1.add(logo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 590, -1, 50));
+        jPanel1.add(logo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 590, -1, 50));
 
         logo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Numericos.png"))); // NOI18N
-        jPanel1.add(logo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 580, -1, 60));
+        jPanel1.add(logo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 580, -1, 60));
+
+        SalirDelSistema1.setBackground(new java.awt.Color(0, 153, 0));
+        SalirDelSistema1.setFont(new java.awt.Font("Engravers MT", 1, 14)); // NOI18N
+        SalirDelSistema1.setForeground(new java.awt.Color(0, 0, 0));
+        SalirDelSistema1.setText("Formulario excel");
+        SalirDelSistema1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SalirDelSistema1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(SalirDelSistema1, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 590, 260, 44));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -1791,6 +1807,23 @@ public class Inicio extends javax.swing.JFrame {
         mullerTable.setText("");
     }//GEN-LAST:event_botonLimpiar4ActionPerformed
 
+    private void SalirDelSistema1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalirDelSistema1ActionPerformed
+        JOptionPane.showMessageDialog(null, "Abriendo excel");       
+        if(java.awt.Desktop.isDesktopSupported()){//Revisamos las cosas por defecto
+            java.awt.Desktop escritorio = java.awt.Desktop.getDesktop();
+            if(escritorio.isSupported(java.awt.Desktop.Action.BROWSE)){ //Seleccionamos un navegador
+                try {
+                    java.net.URI link = new java.net.URI("https://docs.google.com/spreadsheets/d/15sIbfcTUcF_a_iJYbw1DSIXZa2ZoVYhXPq1uOF0HD44/edit#gid=1582561436");//Establecemos el link
+                    escritorio.browse(link);//Hacemos que nos envie al link ingresado
+                } catch (URISyntaxException ex) {
+                    Logger.getLogger(Inicio.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (IOException ex) {
+                    Logger.getLogger(Inicio.class.getName()).log(Level.SEVERE, null, ex);
+                }                        
+            }
+        }
+    }//GEN-LAST:event_SalirDelSistema1ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BenviarButton;
     private javax.swing.JTextField BerrorText;
@@ -1829,6 +1862,7 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JLabel NlimInferior;
     private javax.swing.JButton NlimpiarButton;
     private javax.swing.JButton SalirDelSistema;
+    private javax.swing.JButton SalirDelSistema1;
     private javax.swing.JButton SenviarButton;
     private javax.swing.JTextField SerrorText;
     private javax.swing.JTextField SinferiorText;
