@@ -87,8 +87,6 @@ public class Inicio extends javax.swing.JFrame {
         textoExtra = new javax.swing.JTextArea();
         tituloTextoExtra = new javax.swing.JLabel();
         jDesktopPane3 = new javax.swing.JDesktopPane();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        secanteTable = new javax.swing.JTable();
         jPanel3 = new javax.swing.JPanel();
         SenviarButton = new javax.swing.JButton();
         Singreso = new javax.swing.JLabel();
@@ -100,9 +98,13 @@ public class Inicio extends javax.swing.JFrame {
         SsuperiorText = new javax.swing.JTextField();
         SlimpiarButton = new javax.swing.JButton();
         T2 = new javax.swing.JLabel();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        secanteTable = new javax.swing.JTextArea();
+        botonLimpiar1 = new javax.swing.JButton();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        textoExtra1 = new javax.swing.JTextArea();
+        tituloTextoExtra1 = new javax.swing.JLabel();
         jDesktopPane4 = new javax.swing.JDesktopPane();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        falsaPosicionTable = new javax.swing.JTable();
         jPanel4 = new javax.swing.JPanel();
         FenviarButton = new javax.swing.JButton();
         Fingreso = new javax.swing.JLabel();
@@ -114,9 +116,13 @@ public class Inicio extends javax.swing.JFrame {
         FsuperiorText = new javax.swing.JTextField();
         FlimpiarButton = new javax.swing.JButton();
         T3 = new javax.swing.JLabel();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        falsaPosicionTable = new javax.swing.JTextArea();
+        botonLimpiar2 = new javax.swing.JButton();
+        jScrollPane10 = new javax.swing.JScrollPane();
+        textoExtra2 = new javax.swing.JTextArea();
+        tituloTextoExtra2 = new javax.swing.JLabel();
         jDesktopPane6 = new javax.swing.JDesktopPane();
-        jScrollPane5 = new javax.swing.JScrollPane();
-        newtonTable = new javax.swing.JTable();
         jPanel6 = new javax.swing.JPanel();
         NenviarButton = new javax.swing.JButton();
         Ningreso = new javax.swing.JLabel();
@@ -126,9 +132,13 @@ public class Inicio extends javax.swing.JFrame {
         NinferiorText = new javax.swing.JTextField();
         NlimpiarButton = new javax.swing.JButton();
         T5 = new javax.swing.JLabel();
+        jScrollPane11 = new javax.swing.JScrollPane();
+        newtonTable = new javax.swing.JTextArea();
+        botonLimpiar3 = new javax.swing.JButton();
+        jScrollPane12 = new javax.swing.JScrollPane();
+        textoExtra3 = new javax.swing.JTextArea();
+        tituloTextoExtra3 = new javax.swing.JLabel();
         jDesktopPane7 = new javax.swing.JDesktopPane();
-        jScrollPane6 = new javax.swing.JScrollPane();
-        mullerTable = new javax.swing.JTable();
         jPanel7 = new javax.swing.JPanel();
         MenviarButton = new javax.swing.JButton();
         Mingreso = new javax.swing.JLabel();
@@ -142,6 +152,12 @@ public class Inicio extends javax.swing.JFrame {
         MlimIntermedio = new javax.swing.JLabel();
         MintermedioText = new javax.swing.JTextField();
         T6 = new javax.swing.JLabel();
+        jScrollPane13 = new javax.swing.JScrollPane();
+        mullerTable = new javax.swing.JTextArea();
+        botonLimpiar4 = new javax.swing.JButton();
+        jScrollPane14 = new javax.swing.JScrollPane();
+        textoExtra4 = new javax.swing.JTextArea();
+        tituloTextoExtra4 = new javax.swing.JLabel();
         SalirDelSistema = new javax.swing.JButton();
         logo = new javax.swing.JLabel();
         logo1 = new javax.swing.JLabel();
@@ -318,23 +334,11 @@ public class Inicio extends javax.swing.JFrame {
         jDesktopPane3.setBackground(new java.awt.Color(51, 255, 255));
         jDesktopPane3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        secanteTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane3.setViewportView(secanteTable);
-
-        jDesktopPane3.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(449, 96, 760, 410));
-
+        jPanel3.setBackground(new java.awt.Color(204, 255, 255));
         jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
+        SenviarButton.setBackground(new java.awt.Color(255, 255, 0));
+        SenviarButton.setForeground(new java.awt.Color(0, 0, 0));
         SenviarButton.setText("Ingresar Funcion");
         SenviarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -342,8 +346,10 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
+        Singreso.setForeground(new java.awt.Color(0, 0, 0));
         Singreso.setText("Ingrese los siguientes datos");
 
+        Siteraciones.setForeground(new java.awt.Color(0, 0, 0));
         Siteraciones.setText("Iteraciones a realizar");
 
         SerrorText.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -352,6 +358,7 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
+        SlimInferior.setForeground(new java.awt.Color(0, 0, 0));
         SlimInferior.setText("Limite Inferior:");
 
         SinferiorText.addActionListener(new java.awt.event.ActionListener() {
@@ -365,6 +372,7 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
+        SlimSuperior.setForeground(new java.awt.Color(0, 0, 0));
         SlimSuperior.setText("Limite Superior:");
 
         SsuperiorText.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -373,7 +381,9 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
-        SlimpiarButton.setText("LIMPIAR");
+        SlimpiarButton.setBackground(new java.awt.Color(255, 255, 0));
+        SlimpiarButton.setForeground(new java.awt.Color(0, 0, 0));
+        SlimpiarButton.setText("LIMPIAR DATOS");
         SlimpiarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SlimpiarButtonActionPerformed(evt);
@@ -437,28 +447,42 @@ public class Inicio extends javax.swing.JFrame {
         T2.setToolTipText("");
         jDesktopPane3.add(T2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 10, 690, 60));
 
+        secanteTable.setColumns(20);
+        secanteTable.setRows(5);
+        jScrollPane7.setViewportView(secanteTable);
+
+        jDesktopPane3.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, 480, 410));
+
+        botonLimpiar1.setBackground(new java.awt.Color(255, 255, 0));
+        botonLimpiar1.setForeground(new java.awt.Color(0, 0, 0));
+        botonLimpiar1.setText("Limpiar Resultados");
+        botonLimpiar1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonLimpiar1ActionPerformed(evt);
+            }
+        });
+        jDesktopPane3.add(botonLimpiar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 410, -1, 70));
+
+        textoExtra1.setColumns(20);
+        textoExtra1.setRows(5);
+        jScrollPane8.setViewportView(textoExtra1);
+
+        jDesktopPane3.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 140, -1, 240));
+
+        tituloTextoExtra1.setForeground(new java.awt.Color(0, 0, 0));
+        tituloTextoExtra1.setText("Anotaciones propias");
+        jDesktopPane3.add(tituloTextoExtra1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 110, -1, -1));
+
         jTabbedPane6.addTab("Método de Recta Secante", jDesktopPane3);
 
         jDesktopPane4.setBackground(new java.awt.Color(51, 255, 255));
         jDesktopPane4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        falsaPosicionTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane2.setViewportView(falsaPosicionTable);
-
-        jDesktopPane4.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(449, 96, 760, 410));
-
+        jPanel4.setBackground(new java.awt.Color(204, 255, 255));
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
+        FenviarButton.setBackground(new java.awt.Color(255, 255, 0));
+        FenviarButton.setForeground(new java.awt.Color(0, 0, 0));
         FenviarButton.setText("Ingresar Funcion");
         FenviarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -466,8 +490,10 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
+        Fingreso.setForeground(new java.awt.Color(0, 0, 0));
         Fingreso.setText("Ingrese los siguientes datos");
 
+        Fiteraciones.setForeground(new java.awt.Color(0, 0, 0));
         Fiteraciones.setText("Iteraciones a realizar");
 
         FerrorText.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -476,6 +502,7 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
+        FlimInferior.setForeground(new java.awt.Color(0, 0, 0));
         FlimInferior.setText("Limite Inferior:");
 
         FinferiorText.addActionListener(new java.awt.event.ActionListener() {
@@ -489,6 +516,7 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
+        FlimSuperior.setForeground(new java.awt.Color(0, 0, 0));
         FlimSuperior.setText("Limite Superior:");
 
         FsuperiorText.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -497,7 +525,9 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
-        FlimpiarButton.setText("LIMPIAR");
+        FlimpiarButton.setBackground(new java.awt.Color(255, 255, 0));
+        FlimpiarButton.setForeground(new java.awt.Color(0, 0, 0));
+        FlimpiarButton.setText("LIMPIAR DATOS");
         FlimpiarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 FlimpiarButtonActionPerformed(evt);
@@ -561,28 +591,42 @@ public class Inicio extends javax.swing.JFrame {
         T3.setToolTipText("");
         jDesktopPane4.add(T3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 10, 690, 60));
 
+        falsaPosicionTable.setColumns(20);
+        falsaPosicionTable.setRows(5);
+        jScrollPane9.setViewportView(falsaPosicionTable);
+
+        jDesktopPane4.add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, 480, 410));
+
+        botonLimpiar2.setBackground(new java.awt.Color(255, 255, 0));
+        botonLimpiar2.setForeground(new java.awt.Color(0, 0, 0));
+        botonLimpiar2.setText("Limpiar Resultados");
+        botonLimpiar2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonLimpiar2ActionPerformed(evt);
+            }
+        });
+        jDesktopPane4.add(botonLimpiar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 410, -1, 70));
+
+        textoExtra2.setColumns(20);
+        textoExtra2.setRows(5);
+        jScrollPane10.setViewportView(textoExtra2);
+
+        jDesktopPane4.add(jScrollPane10, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 140, -1, 240));
+
+        tituloTextoExtra2.setForeground(new java.awt.Color(0, 0, 0));
+        tituloTextoExtra2.setText("Anotaciones propias");
+        jDesktopPane4.add(tituloTextoExtra2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 110, -1, -1));
+
         jTabbedPane6.addTab("Método de Falsa Posición", jDesktopPane4);
 
         jDesktopPane6.setBackground(new java.awt.Color(51, 255, 255));
         jDesktopPane6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        newtonTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane5.setViewportView(newtonTable);
-
-        jDesktopPane6.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(449, 96, 760, 410));
-
+        jPanel6.setBackground(new java.awt.Color(204, 255, 255));
         jPanel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
+        NenviarButton.setBackground(new java.awt.Color(255, 255, 0));
+        NenviarButton.setForeground(new java.awt.Color(0, 0, 0));
         NenviarButton.setText("Ingresar Funcion");
         NenviarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -590,8 +634,10 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
+        Ningreso.setForeground(new java.awt.Color(0, 0, 0));
         Ningreso.setText("Ingrese los siguientes datos");
 
+        Niteraciones.setForeground(new java.awt.Color(0, 0, 0));
         Niteraciones.setText("Iteraciones a realizar");
 
         NerrorText.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -600,6 +646,7 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
+        NlimInferior.setForeground(new java.awt.Color(0, 0, 0));
         NlimInferior.setText("Valor cercano a raiz:");
 
         NinferiorText.addActionListener(new java.awt.event.ActionListener() {
@@ -613,7 +660,9 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
-        NlimpiarButton.setText("LIMPIAR");
+        NlimpiarButton.setBackground(new java.awt.Color(255, 255, 0));
+        NlimpiarButton.setForeground(new java.awt.Color(0, 0, 0));
+        NlimpiarButton.setText("LIMPIAR DATOS");
         NlimpiarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NlimpiarButtonActionPerformed(evt);
@@ -671,28 +720,42 @@ public class Inicio extends javax.swing.JFrame {
         T5.setToolTipText("");
         jDesktopPane6.add(T5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 10, -1, 60));
 
+        newtonTable.setColumns(20);
+        newtonTable.setRows(5);
+        jScrollPane11.setViewportView(newtonTable);
+
+        jDesktopPane6.add(jScrollPane11, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, 480, 410));
+
+        botonLimpiar3.setBackground(new java.awt.Color(255, 255, 0));
+        botonLimpiar3.setForeground(new java.awt.Color(0, 0, 0));
+        botonLimpiar3.setText("Limpiar Resultados");
+        botonLimpiar3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonLimpiar3ActionPerformed(evt);
+            }
+        });
+        jDesktopPane6.add(botonLimpiar3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 410, -1, 70));
+
+        textoExtra3.setColumns(20);
+        textoExtra3.setRows(5);
+        jScrollPane12.setViewportView(textoExtra3);
+
+        jDesktopPane6.add(jScrollPane12, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 140, -1, 240));
+
+        tituloTextoExtra3.setForeground(new java.awt.Color(0, 0, 0));
+        tituloTextoExtra3.setText("Anotaciones propias");
+        jDesktopPane6.add(tituloTextoExtra3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 110, -1, -1));
+
         jTabbedPane6.addTab("Método de Newton-Raphson", jDesktopPane6);
 
         jDesktopPane7.setBackground(new java.awt.Color(51, 255, 255));
         jDesktopPane7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        mullerTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane6.setViewportView(mullerTable);
-
-        jDesktopPane7.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(449, 96, 760, 410));
-
+        jPanel7.setBackground(new java.awt.Color(204, 255, 255));
         jPanel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
+        MenviarButton.setBackground(new java.awt.Color(255, 255, 0));
+        MenviarButton.setForeground(new java.awt.Color(0, 0, 0));
         MenviarButton.setText("Ingresar Funcion");
         MenviarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -700,8 +763,10 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
+        Mingreso.setForeground(new java.awt.Color(0, 0, 0));
         Mingreso.setText("Ingrese los siguientes datos");
 
+        Miteraciones.setForeground(new java.awt.Color(0, 0, 0));
         Miteraciones.setText("Iteraciones a realizar");
 
         MerrorText.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -710,6 +775,7 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
+        MlimInferior.setForeground(new java.awt.Color(0, 0, 0));
         MlimInferior.setText("Limite Inferior:");
 
         MinferiorText.addActionListener(new java.awt.event.ActionListener() {
@@ -723,6 +789,7 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
+        MlimSuperior.setForeground(new java.awt.Color(0, 0, 0));
         MlimSuperior.setText("Limite Superior:");
 
         MsuperiorText.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -731,13 +798,16 @@ public class Inicio extends javax.swing.JFrame {
             }
         });
 
-        MlimpiarButton.setText("LIMPIAR");
+        MlimpiarButton.setBackground(new java.awt.Color(255, 255, 0));
+        MlimpiarButton.setForeground(new java.awt.Color(0, 0, 0));
+        MlimpiarButton.setText("LIMPIAR DATOS");
         MlimpiarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 MlimpiarButtonActionPerformed(evt);
             }
         });
 
+        MlimIntermedio.setForeground(new java.awt.Color(0, 0, 0));
         MlimIntermedio.setText("Limite Intermedio:");
 
         MintermedioText.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -810,6 +880,32 @@ public class Inicio extends javax.swing.JFrame {
         T6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Muller.png"))); // NOI18N
         T6.setToolTipText("");
         jDesktopPane7.add(T6, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 10, 550, 60));
+
+        mullerTable.setColumns(20);
+        mullerTable.setRows(5);
+        jScrollPane13.setViewportView(mullerTable);
+
+        jDesktopPane7.add(jScrollPane13, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, 480, 410));
+
+        botonLimpiar4.setBackground(new java.awt.Color(255, 255, 0));
+        botonLimpiar4.setForeground(new java.awt.Color(0, 0, 0));
+        botonLimpiar4.setText("Limpiar Resultados");
+        botonLimpiar4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonLimpiar4ActionPerformed(evt);
+            }
+        });
+        jDesktopPane7.add(botonLimpiar4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 410, -1, 70));
+
+        textoExtra4.setColumns(20);
+        textoExtra4.setRows(5);
+        jScrollPane14.setViewportView(textoExtra4);
+
+        jDesktopPane7.add(jScrollPane14, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 140, -1, 240));
+
+        tituloTextoExtra4.setForeground(new java.awt.Color(0, 0, 0));
+        tituloTextoExtra4.setText("Anotaciones propias");
+        jDesktopPane7.add(tituloTextoExtra4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 110, -1, -1));
 
         jTabbedPane6.addTab("Método de Müller", jDesktopPane7);
 
@@ -968,8 +1064,8 @@ public class Inicio extends javax.swing.JFrame {
                             valorR=superior+((-2*vC)/(vB+Math.sqrt(Math.pow(vB, 2)-4*(vA*vC))));
                         }else{
                             valorR=superior+((-2*vC)/(vB-Math.sqrt(Math.pow(vB, 2)-4*(vA*vC))));
-                        }           
-                        System.out.println("Iteracion: 1"+
+                        }                                   
+                        mullerTable.setText(mullerTable.getText()+"\nIteracion: 1"+
                             "\nXo: "+inferior+
                             "\n X1: "+intermedio+
                             "\n X2: "+superior+
@@ -983,7 +1079,7 @@ public class Inicio extends javax.swing.JFrame {
                                 "\n a: "+vA+
                                 "\n b: "+vB+
                                 "\n c: "+vC+
-                                "\n X3: "+valorR);
+                                "\n X3: "+valorR+"\n");
                         for (int i = 2; i <= iteraciones; i++) {
                             inferior=intermedio;
                             intermedio=superior;
@@ -1009,7 +1105,7 @@ public class Inicio extends javax.swing.JFrame {
                                 valorR=superior+((-2*vC)/(vB-Math.sqrt(Math.pow(vB, 2)-4*(vA*vC))));
                             }
                             errorAbsoluto=Math.abs((valorR-valorAlmacenableR)/valorR)*100;
-                            System.out.println("Iteracion: "+i+
+                            mullerTable.setText(mullerTable.getText()+"\nIteracion: "+i+
                                 "\nXo: "+inferior+
                                 "\n X1: "+intermedio+
                                 "\n X2: "+superior+
@@ -1024,8 +1120,7 @@ public class Inicio extends javax.swing.JFrame {
                                 "\n b: "+vB+
                                 "\n c: "+vC+
                                 "\n X3: "+valorR+
-                                "\n Ea% "+errorAbsoluto);
-                            System.out.println("--------------------------\n");
+                                "\n Ea% "+errorAbsoluto+"\n");
                         }
                     }
                     if (indicador!=2&indicador!=1){
@@ -1043,6 +1138,7 @@ public class Inicio extends javax.swing.JFrame {
             }
 
         }
+        mullerTable.setText(mullerTable.getText()+"\n--------------------------------------------\n");
         String[] nombresColumnas = {"Iteraciones", "xa", "xb", "xr", "f(a)", "f(r)", "f(a)f(r)", "Ea(%)", "Et(%)"};
         Object[][] datosFila = {
             {1, superior, inferior, valorR, valorTotalFA, valorTotalFR, valorFAxFR}
@@ -1124,12 +1220,12 @@ public class Inicio extends javax.swing.JFrame {
                     }
                     if (indicador==2){
                         JOptionPane.showMessageDialog(null, "Funcion grabada");
-                        valorFAxFR=valorTotalFA/valorTotalFR;
-                        System.out.println("Iteracion: 1"+
+                        valorFAxFR=valorTotalFA/valorTotalFR; 
+                        newtonTable.setText(newtonTable.getText()+"\nIteracion: 1"+
                             "\nXi: "+inferior+
                             "\n f(xi): "+valorTotalFA+
                             "\n f'(xi): "+valorTotalFR+
-                            "\n f(xi)/f'(xi): "+valorFAxFR);
+                            "\n f(xi)/f'(xi): "+valorFAxFR+"\n");
                         for (int i = 2; i <= iteraciones; i++) {
                             valorAlmacenableR=inferior;
                             inferior=inferior-valorFAxFR;
@@ -1144,12 +1240,12 @@ public class Inicio extends javax.swing.JFrame {
                             }
                             valorFAxFR=valorTotalFA/valorTotalFR;
                             errorAbsoluto=Math.abs((valorR-valorAlmacenableR)/valorR)*100;
-                            System.out.println("Iteracion: "+i+
-                                "\nXa: "+inferior+
+                            newtonTable.setText(newtonTable.getText()+"\nIteracion: "+i+
+                                "\nXi: "+inferior+
                                 "\n f(xi): "+valorTotalFA+
                                 "\n f'(xi): "+valorTotalFR+
                                 "\n f(xi)/f'(xi): "+valorFAxFR+
-                                "\n Ea% "+errorAbsoluto);
+                                "\n Ea% "+errorAbsoluto+"\n");
 
                         }
 
@@ -1169,6 +1265,7 @@ public class Inicio extends javax.swing.JFrame {
             }
 
         }
+        newtonTable.setText(newtonTable.getText()+"\n--------------------------------------------\n");
         String[] nombresColumnas = {"Iteraciones", "xa", "xb", "xr", "f(a)", "f(r)", "f(a)f(r)", "Ea(%)", "Et(%)"};
         Object[][] datosFila = {
             {1, superior, inferior, valorR, valorTotalFA, valorTotalFR, valorFAxFR}
@@ -1269,13 +1366,13 @@ public class Inicio extends javax.swing.JFrame {
                         JOptionPane.showMessageDialog(null, "Funcion grabada");
                         valorR=superior-((valorTotalFB*(superior-inferior))/(valorTotalFB-valorTotalFA));
                         valorFAxFR=valorTotalFA*valorTotalFR;
-                        System.out.println("Iteracion: 1"+
+                        falsaPosicionTable.setText(falsaPosicionTable.getText()+"\nIteracion: 1"+
                             "\nXa: "+inferior+
                             "\n Xb: "+superior+
                             "\n Xr: "+valorR+
                             "\n f(a): "+valorTotalFA+
                             "\n f(r): "+valorTotalFR+
-                            "\n f(a)*f(r): "+valorFAxFR);
+                            "\n f(a)*f(r): "+valorFAxFR+"\n");
                         for (int i = 2; i <= iteraciones; i++) {
                             valorTotalFA=0;
                             valorTotalFR=0;
@@ -1293,7 +1390,7 @@ public class Inicio extends javax.swing.JFrame {
                             }
                             valorFAxFR=valorTotalFA*valorTotalFR;
                             errorAbsoluto=Math.abs((valorR-valorAlmacenableR)/valorR)*100;
-                            System.out.println("Iteracion: "+i+
+                            falsaPosicionTable.setText(falsaPosicionTable.getText()+"\nIteracion: "+i+
                                 "\nXa: "+inferior+
                                 "\n Xb: "+superior+
                                 "\n Xr: "+valorR+
@@ -1301,8 +1398,7 @@ public class Inicio extends javax.swing.JFrame {
                                 "\n f(b): "+valorTotalFB+
                                 "\n f(r): "+valorTotalFR+
                                 "\n f(a)*f(r): "+valorFAxFR+
-                                "\n Ea% "+errorAbsoluto);
-                            System.out.println("--------------------------\n");
+                                "\n Ea% "+errorAbsoluto+"\n");
                         }
 
                     }
@@ -1321,6 +1417,7 @@ public class Inicio extends javax.swing.JFrame {
             }
 
         }
+        falsaPosicionTable.setText(falsaPosicionTable.getText()+"\n--------------------------------------------\n");
         String[] nombresColumnas = {"Iteraciones", "xa", "xb", "xr", "f(a)", "f(r)", "f(a)f(r)", "Ea(%)", "Et(%)"};
         Object[][] datosFila = {
             {1, superior, inferior, valorR, valorTotalFA, valorTotalFR, valorFAxFR}
@@ -1423,13 +1520,13 @@ public class Inicio extends javax.swing.JFrame {
                             valorTotalFR=valorTotalFR+almacenarResulX[j]*(funcionFR);
                         }
                         valorFAxFR=valorTotalFA*valorTotalFR;
-                        System.out.println("Iteracion: 1"+
+                        secanteTable.setText(secanteTable.getText()+"\nIteracion: 1"+
                             "\nXa: "+inferior+
                             "\n Xb: "+superior+
                             "\n Xr: "+valorR+
                             "\n f(a): "+valorTotalFA+
                             "\n f(r): "+valorTotalFR+
-                            "\n f(a)*f(r): "+valorFAxFR);
+                            "\n f(a)*f(r): "+valorFAxFR+"\n");
                         for (int i = 2; i <= iteraciones; i++) {
                             valorTotalFA=0;
                             valorTotalFB=0;
@@ -1450,7 +1547,7 @@ public class Inicio extends javax.swing.JFrame {
                             }
                             valorFAxFR=valorTotalFA*valorTotalFR;
                             errorAbsoluto=Math.abs((valorR-valorAlmacenableR)/valorR)*100;
-                            System.out.println("Iteracion: "+i+
+                            secanteTable.setText(secanteTable.getText()+"\nIteracion: "+i+
                                 "\nXa: "+inferior+
                                 "\n Xb: "+superior+
                                 "\n Xr: "+valorR+
@@ -1458,8 +1555,7 @@ public class Inicio extends javax.swing.JFrame {
                                 "\n f(b): "+valorTotalFB+
                                 "\n f(r): "+valorTotalFR+
                                 "\n f(a)*f(r): "+valorFAxFR+
-                                "\n Ea% "+errorAbsoluto);
-                            System.out.println("--------------------------\n");
+                                "\n Ea% "+errorAbsoluto+"\n");
                         }
 
                     }
@@ -1478,6 +1574,7 @@ public class Inicio extends javax.swing.JFrame {
             }
 
         }
+        secanteTable.setText(secanteTable.getText()+"\n--------------------------------------------\n");
         String[] nombresColumnas = {"Iteraciones", "xa", "xb", "xr", "f(a)", "f(r)", "f(a)f(r)", "Ea(%)", "Et(%)"};
         Object[][] datosFila = {
             {1, superior, inferior, valorR, valorTotalFA, valorTotalFR, valorFAxFR}
@@ -1574,7 +1671,7 @@ public class Inicio extends javax.swing.JFrame {
                         JOptionPane.showMessageDialog(null, "Funcion grabada");
 
                         valorFAxFR=valorTotalFA*valorTotalFR;
-                        biseccionTable.setText(biseccionTable.getText()+" Iteracion: 1"+
+                        biseccionTable.setText(biseccionTable.getText()+"\nIteracion: 1"+
                             "\n Xa: "+inferior+
                             "\n Xb: "+superior+
                             "\n Xr: "+valorR+
@@ -1661,6 +1758,7 @@ public class Inicio extends javax.swing.JFrame {
             }
 
         }
+        biseccionTable.setText(biseccionTable.getText()+"\n--------------------------------------------\n");
         String[] nombresColumnas = {"Iteraciones", "xa", "xb", "xr", "f(a)", "f(r)", "f(a)f(r)", "Ea(%)", "Et(%)"};
         Object[][] datosFila = {
             {1, superior, inferior, valorR, valorTotalFA, valorTotalFR, valorFAxFR}
@@ -1676,6 +1774,22 @@ public class Inicio extends javax.swing.JFrame {
     private void botonLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonLimpiarActionPerformed
         biseccionTable.setText("");
     }//GEN-LAST:event_botonLimpiarActionPerformed
+
+    private void botonLimpiar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonLimpiar1ActionPerformed
+        secanteTable.setText("");
+    }//GEN-LAST:event_botonLimpiar1ActionPerformed
+
+    private void botonLimpiar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonLimpiar2ActionPerformed
+        falsaPosicionTable.setText("");
+    }//GEN-LAST:event_botonLimpiar2ActionPerformed
+
+    private void botonLimpiar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonLimpiar3ActionPerformed
+        newtonTable.setText("");
+    }//GEN-LAST:event_botonLimpiar3ActionPerformed
+
+    private void botonLimpiar4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonLimpiar4ActionPerformed
+        mullerTable.setText("");
+    }//GEN-LAST:event_botonLimpiar4ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BenviarButton;
@@ -1731,7 +1845,11 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JLabel T6;
     private javax.swing.JTextArea biseccionTable;
     private javax.swing.JButton botonLimpiar;
-    private javax.swing.JTable falsaPosicionTable;
+    private javax.swing.JButton botonLimpiar1;
+    private javax.swing.JButton botonLimpiar2;
+    private javax.swing.JButton botonLimpiar3;
+    private javax.swing.JButton botonLimpiar4;
+    private javax.swing.JTextArea falsaPosicionTable;
     private javax.swing.JLabel formulaErrorAbsoluto1;
     private javax.swing.JDesktopPane jDesktopPane2;
     private javax.swing.JDesktopPane jDesktopPane3;
@@ -1747,21 +1865,33 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane10;
+    private javax.swing.JScrollPane jScrollPane11;
+    private javax.swing.JScrollPane jScrollPane12;
+    private javax.swing.JScrollPane jScrollPane13;
+    private javax.swing.JScrollPane jScrollPane14;
     private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JTabbedPane jTabbedPane6;
     private javax.swing.JLabel logo;
     private javax.swing.JLabel logo1;
     private javax.swing.JLabel logo2;
     private javax.swing.JLabel logo3;
-    private javax.swing.JTable mullerTable;
-    private javax.swing.JTable newtonTable;
-    private javax.swing.JTable secanteTable;
+    private javax.swing.JTextArea mullerTable;
+    private javax.swing.JTextArea newtonTable;
+    private javax.swing.JTextArea secanteTable;
     private javax.swing.JTextArea textoExtra;
+    private javax.swing.JTextArea textoExtra1;
+    private javax.swing.JTextArea textoExtra2;
+    private javax.swing.JTextArea textoExtra3;
+    private javax.swing.JTextArea textoExtra4;
     private javax.swing.JLabel tituloTextoExtra;
+    private javax.swing.JLabel tituloTextoExtra1;
+    private javax.swing.JLabel tituloTextoExtra2;
+    private javax.swing.JLabel tituloTextoExtra3;
+    private javax.swing.JLabel tituloTextoExtra4;
     // End of variables declaration//GEN-END:variables
 
 }
