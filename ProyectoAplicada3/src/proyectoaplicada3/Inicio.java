@@ -26,7 +26,7 @@ import javax.swing.JTable;
 
 /**
  *
- * @author Mariano
+ * @author Mariano&Massy
  */
 public class Inicio extends javax.swing.JFrame {
 
@@ -53,7 +53,7 @@ public class Inicio extends javax.swing.JFrame {
         initComponents();//Iniciamos los componentes del Frame
         this.setLocationRelativeTo(null);//Centramos nuestro frame
 
-        setTitle("Metodo de Biseccion");
+        setTitle("Metodos Numericos");
 
         
     }
@@ -108,6 +108,7 @@ public class Inicio extends javax.swing.JFrame {
         jScrollPane8 = new javax.swing.JScrollPane();
         textoExtra1 = new javax.swing.JTextArea();
         tituloTextoExtra1 = new javax.swing.JLabel();
+        formulaErrorAbsoluto2 = new javax.swing.JLabel();
         jDesktopPane4 = new javax.swing.JDesktopPane();
         jPanel4 = new javax.swing.JPanel();
         FenviarButton = new javax.swing.JButton();
@@ -126,6 +127,7 @@ public class Inicio extends javax.swing.JFrame {
         jScrollPane10 = new javax.swing.JScrollPane();
         textoExtra2 = new javax.swing.JTextArea();
         tituloTextoExtra2 = new javax.swing.JLabel();
+        formulaErrorAbsoluto3 = new javax.swing.JLabel();
         jDesktopPane6 = new javax.swing.JDesktopPane();
         jPanel6 = new javax.swing.JPanel();
         NenviarButton = new javax.swing.JButton();
@@ -142,6 +144,7 @@ public class Inicio extends javax.swing.JFrame {
         jScrollPane12 = new javax.swing.JScrollPane();
         textoExtra3 = new javax.swing.JTextArea();
         tituloTextoExtra3 = new javax.swing.JLabel();
+        formulaErrorAbsoluto4 = new javax.swing.JLabel();
         jDesktopPane7 = new javax.swing.JDesktopPane();
         jPanel7 = new javax.swing.JPanel();
         MenviarButton = new javax.swing.JButton();
@@ -162,6 +165,7 @@ public class Inicio extends javax.swing.JFrame {
         jScrollPane14 = new javax.swing.JScrollPane();
         textoExtra4 = new javax.swing.JTextArea();
         tituloTextoExtra4 = new javax.swing.JLabel();
+        formulaErrorAbsoluto5 = new javax.swing.JLabel();
         SalirDelSistema = new javax.swing.JButton();
         logo = new javax.swing.JLabel();
         logo1 = new javax.swing.JLabel();
@@ -183,7 +187,7 @@ public class Inicio extends javax.swing.JFrame {
 
         BenviarButton.setBackground(new java.awt.Color(255, 255, 0));
         BenviarButton.setForeground(new java.awt.Color(0, 0, 0));
-        BenviarButton.setText("Ingresar Funcion");
+        BenviarButton.setText("INGRESAR FUNCION");
         BenviarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BenviarButtonActionPerformed(evt);
@@ -302,7 +306,7 @@ public class Inicio extends javax.swing.JFrame {
         jDesktopPane2.add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 558, -1, -1));
 
         formulaErrorAbsoluto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/1.jpeg"))); // NOI18N
-        jDesktopPane2.add(formulaErrorAbsoluto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 420, 300, 50));
+        jDesktopPane2.add(formulaErrorAbsoluto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 430, 300, 50));
 
         T1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Bisec.png"))); // NOI18N
         T1.setToolTipText("");
@@ -316,7 +320,7 @@ public class Inicio extends javax.swing.JFrame {
 
         botonLimpiar.setBackground(new java.awt.Color(255, 255, 0));
         botonLimpiar.setForeground(new java.awt.Color(0, 0, 0));
-        botonLimpiar.setText("Limpiar Resultados");
+        botonLimpiar.setText("LIMPIAR DATOS");
         botonLimpiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonLimpiarActionPerformed(evt);
@@ -344,7 +348,7 @@ public class Inicio extends javax.swing.JFrame {
 
         SenviarButton.setBackground(new java.awt.Color(255, 255, 0));
         SenviarButton.setForeground(new java.awt.Color(0, 0, 0));
-        SenviarButton.setText("Ingresar Funcion");
+        SenviarButton.setText("INGRESAR FUNCION");
         SenviarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SenviarButtonActionPerformed(evt);
@@ -460,7 +464,7 @@ public class Inicio extends javax.swing.JFrame {
 
         botonLimpiar1.setBackground(new java.awt.Color(255, 255, 0));
         botonLimpiar1.setForeground(new java.awt.Color(0, 0, 0));
-        botonLimpiar1.setText("Limpiar Resultados");
+        botonLimpiar1.setText("LIMPIAR RESULTADOS");
         botonLimpiar1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonLimpiar1ActionPerformed(evt);
@@ -478,6 +482,9 @@ public class Inicio extends javax.swing.JFrame {
         tituloTextoExtra1.setText("Anotaciones propias");
         jDesktopPane3.add(tituloTextoExtra1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 110, -1, -1));
 
+        formulaErrorAbsoluto2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/secante.png"))); // NOI18N
+        jDesktopPane3.add(formulaErrorAbsoluto2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 450, 90));
+
         jTabbedPane6.addTab("Método de Recta Secante", jDesktopPane3);
 
         jDesktopPane4.setBackground(new java.awt.Color(51, 255, 255));
@@ -488,7 +495,7 @@ public class Inicio extends javax.swing.JFrame {
 
         FenviarButton.setBackground(new java.awt.Color(255, 255, 0));
         FenviarButton.setForeground(new java.awt.Color(0, 0, 0));
-        FenviarButton.setText("Ingresar Funcion");
+        FenviarButton.setText("INGRESAR FUNCION");
         FenviarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 FenviarButtonActionPerformed(evt);
@@ -604,7 +611,7 @@ public class Inicio extends javax.swing.JFrame {
 
         botonLimpiar2.setBackground(new java.awt.Color(255, 255, 0));
         botonLimpiar2.setForeground(new java.awt.Color(0, 0, 0));
-        botonLimpiar2.setText("Limpiar Resultados");
+        botonLimpiar2.setText("LIMPIAR RESULTADOS");
         botonLimpiar2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonLimpiar2ActionPerformed(evt);
@@ -622,6 +629,9 @@ public class Inicio extends javax.swing.JFrame {
         tituloTextoExtra2.setText("Anotaciones propias");
         jDesktopPane4.add(tituloTextoExtra2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 110, -1, -1));
 
+        formulaErrorAbsoluto3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/falsa.png"))); // NOI18N
+        jDesktopPane4.add(formulaErrorAbsoluto3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 410, 480, 90));
+
         jTabbedPane6.addTab("Método de Falsa Posición", jDesktopPane4);
 
         jDesktopPane6.setBackground(new java.awt.Color(51, 255, 255));
@@ -632,7 +642,7 @@ public class Inicio extends javax.swing.JFrame {
 
         NenviarButton.setBackground(new java.awt.Color(255, 255, 0));
         NenviarButton.setForeground(new java.awt.Color(0, 0, 0));
-        NenviarButton.setText("Ingresar Funcion");
+        NenviarButton.setText("INGRESAR FUNCION");
         NenviarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NenviarButtonActionPerformed(evt);
@@ -733,7 +743,7 @@ public class Inicio extends javax.swing.JFrame {
 
         botonLimpiar3.setBackground(new java.awt.Color(255, 255, 0));
         botonLimpiar3.setForeground(new java.awt.Color(0, 0, 0));
-        botonLimpiar3.setText("Limpiar Resultados");
+        botonLimpiar3.setText("LIMPIAR RESULTADOS");
         botonLimpiar3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonLimpiar3ActionPerformed(evt);
@@ -751,6 +761,9 @@ public class Inicio extends javax.swing.JFrame {
         tituloTextoExtra3.setText("Anotaciones propias");
         jDesktopPane6.add(tituloTextoExtra3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 110, -1, -1));
 
+        formulaErrorAbsoluto4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/newton_1.png"))); // NOI18N
+        jDesktopPane6.add(formulaErrorAbsoluto4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, 340, 90));
+
         jTabbedPane6.addTab("Método de Newton-Raphson", jDesktopPane6);
 
         jDesktopPane7.setBackground(new java.awt.Color(51, 255, 255));
@@ -761,7 +774,7 @@ public class Inicio extends javax.swing.JFrame {
 
         MenviarButton.setBackground(new java.awt.Color(255, 255, 0));
         MenviarButton.setForeground(new java.awt.Color(0, 0, 0));
-        MenviarButton.setText("Ingresar Funcion");
+        MenviarButton.setText("INGRESAR FUNCION");
         MenviarButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 MenviarButtonActionPerformed(evt);
@@ -880,7 +893,7 @@ public class Inicio extends javax.swing.JFrame {
                 .addContainerGap(21, Short.MAX_VALUE))
         );
 
-        jDesktopPane7.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 377, 310));
+        jDesktopPane7.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 377, 310));
 
         T6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Muller.png"))); // NOI18N
         T6.setToolTipText("");
@@ -890,11 +903,11 @@ public class Inicio extends javax.swing.JFrame {
         mullerTable.setRows(5);
         jScrollPane13.setViewportView(mullerTable);
 
-        jDesktopPane7.add(jScrollPane13, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, 480, 410));
+        jDesktopPane7.add(jScrollPane13, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 90, 480, 410));
 
         botonLimpiar4.setBackground(new java.awt.Color(255, 255, 0));
         botonLimpiar4.setForeground(new java.awt.Color(0, 0, 0));
-        botonLimpiar4.setText("Limpiar Resultados");
+        botonLimpiar4.setText("LIMPIAR RESULTADOS");
         botonLimpiar4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonLimpiar4ActionPerformed(evt);
@@ -911,6 +924,9 @@ public class Inicio extends javax.swing.JFrame {
         tituloTextoExtra4.setForeground(new java.awt.Color(0, 0, 0));
         tituloTextoExtra4.setText("Anotaciones propias");
         jDesktopPane7.add(tituloTextoExtra4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 110, -1, -1));
+
+        formulaErrorAbsoluto5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/muller02.png"))); // NOI18N
+        jDesktopPane7.add(formulaErrorAbsoluto5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 430, 770, 90));
 
         jTabbedPane6.addTab("Método de Müller", jDesktopPane7);
 
@@ -1885,6 +1901,10 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JButton botonLimpiar4;
     private javax.swing.JTextArea falsaPosicionTable;
     private javax.swing.JLabel formulaErrorAbsoluto1;
+    private javax.swing.JLabel formulaErrorAbsoluto2;
+    private javax.swing.JLabel formulaErrorAbsoluto3;
+    private javax.swing.JLabel formulaErrorAbsoluto4;
+    private javax.swing.JLabel formulaErrorAbsoluto5;
     private javax.swing.JDesktopPane jDesktopPane2;
     private javax.swing.JDesktopPane jDesktopPane3;
     private javax.swing.JDesktopPane jDesktopPane4;
