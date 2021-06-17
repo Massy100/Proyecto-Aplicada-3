@@ -1901,23 +1901,88 @@ public class Inicio extends javax.swing.JFrame {
     }//GEN-LAST:event_SalirDelSistema1ActionPerformed
 
     private void GraficaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GraficaActionPerformed
-        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "Abriendo ejemplo de Grafica");       
+        if(java.awt.Desktop.isDesktopSupported()){//Revisamos las cosas por defecto
+            java.awt.Desktop escritorio = java.awt.Desktop.getDesktop();
+            if(escritorio.isSupported(java.awt.Desktop.Action.BROWSE)){ //Seleccionamos un navegador
+                try {
+                    java.net.URI link = new java.net.URI("https://www.geogebra.org/calculator/qejm7uue");//Establecemos el link
+                    escritorio.browse(link);//Hacemos que nos envie al link ingresado
+                } catch (URISyntaxException ex) {
+                    Logger.getLogger(Inicio.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (IOException ex) {
+                    Logger.getLogger(Inicio.class.getName()).log(Level.SEVERE, null, ex);
+                }                        
+            }
+        }
     }//GEN-LAST:event_GraficaActionPerformed
 
     private void Grafica1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grafica1ActionPerformed
-        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "Abriendo ejemplo de Grafica");       
+        if(java.awt.Desktop.isDesktopSupported()){//Revisamos las cosas por defecto
+            java.awt.Desktop escritorio = java.awt.Desktop.getDesktop();
+            if(escritorio.isSupported(java.awt.Desktop.Action.BROWSE)){ //Seleccionamos un navegador
+                try {
+                    java.net.URI link = new java.net.URI("https://www.geogebra.org/classic/z4fqyhxq");//Establecemos el link
+                    escritorio.browse(link);//Hacemos que nos envie al link ingresado
+                } catch (URISyntaxException ex) {
+                    Logger.getLogger(Inicio.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (IOException ex) {
+                    Logger.getLogger(Inicio.class.getName()).log(Level.SEVERE, null, ex);
+                }                        
+            }
+        }
     }//GEN-LAST:event_Grafica1ActionPerformed
 
     private void Grafica2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grafica2ActionPerformed
-        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "Abriendo ejemplo de Grafica");       
+        if(java.awt.Desktop.isDesktopSupported()){//Revisamos las cosas por defecto
+            java.awt.Desktop escritorio = java.awt.Desktop.getDesktop();
+            if(escritorio.isSupported(java.awt.Desktop.Action.BROWSE)){ //Seleccionamos un navegador
+                try {
+                    java.net.URI link = new java.net.URI("https://www.geogebra.org/calculator/w83up7xv");//Establecemos el link
+                    escritorio.browse(link);//Hacemos que nos envie al link ingresado
+                } catch (URISyntaxException ex) {
+                    Logger.getLogger(Inicio.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (IOException ex) {
+                    Logger.getLogger(Inicio.class.getName()).log(Level.SEVERE, null, ex);
+                }                        
+            }
+        }
     }//GEN-LAST:event_Grafica2ActionPerformed
 
     private void Grafica3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grafica3ActionPerformed
-        // TODO add your handling code here:
+       JOptionPane.showMessageDialog(null, "Abriendo ejemplo de Grafica");       
+        if(java.awt.Desktop.isDesktopSupported()){//Revisamos las cosas por defecto
+            java.awt.Desktop escritorio = java.awt.Desktop.getDesktop();
+            if(escritorio.isSupported(java.awt.Desktop.Action.BROWSE)){ //Seleccionamos un navegador
+                try {
+                    java.net.URI link = new java.net.URI("https://www.geogebra.org/classic/earpcwtf");//Establecemos el link
+                    escritorio.browse(link);//Hacemos que nos envie al link ingresado
+                } catch (URISyntaxException ex) {
+                    Logger.getLogger(Inicio.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (IOException ex) {
+                    Logger.getLogger(Inicio.class.getName()).log(Level.SEVERE, null, ex);
+                }                        
+            }
+        }
     }//GEN-LAST:event_Grafica3ActionPerformed
 
     private void Grafica4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grafica4ActionPerformed
-        // TODO add your handling code here:
+         JOptionPane.showMessageDialog(null, "Abriendo ejemplo de Grafica");       
+        if(java.awt.Desktop.isDesktopSupported()){//Revisamos las cosas por defecto
+            java.awt.Desktop escritorio = java.awt.Desktop.getDesktop();
+            if(escritorio.isSupported(java.awt.Desktop.Action.BROWSE)){ //Seleccionamos un navegador
+                try {
+                    java.net.URI link = new java.net.URI("https://www.geogebra.org/classic/u5gqtpse");//Establecemos el link
+                    escritorio.browse(link);//Hacemos que nos envie al link ingresado
+                } catch (URISyntaxException ex) {
+                    Logger.getLogger(Inicio.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (IOException ex) {
+                    Logger.getLogger(Inicio.class.getName()).log(Level.SEVERE, null, ex);
+                }                        
+            }
+        }
     }//GEN-LAST:event_Grafica4ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
