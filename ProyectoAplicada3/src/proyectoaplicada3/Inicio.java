@@ -90,6 +90,7 @@ public class Inicio extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         textoExtra = new javax.swing.JTextArea();
         tituloTextoExtra = new javax.swing.JLabel();
+        Grafica = new javax.swing.JButton();
         jDesktopPane3 = new javax.swing.JDesktopPane();
         jPanel3 = new javax.swing.JPanel();
         SenviarButton = new javax.swing.JButton();
@@ -109,6 +110,7 @@ public class Inicio extends javax.swing.JFrame {
         textoExtra1 = new javax.swing.JTextArea();
         tituloTextoExtra1 = new javax.swing.JLabel();
         formulaErrorAbsoluto2 = new javax.swing.JLabel();
+        Grafica1 = new javax.swing.JButton();
         jDesktopPane4 = new javax.swing.JDesktopPane();
         jPanel4 = new javax.swing.JPanel();
         FenviarButton = new javax.swing.JButton();
@@ -128,6 +130,7 @@ public class Inicio extends javax.swing.JFrame {
         textoExtra2 = new javax.swing.JTextArea();
         tituloTextoExtra2 = new javax.swing.JLabel();
         formulaErrorAbsoluto3 = new javax.swing.JLabel();
+        Grafica2 = new javax.swing.JButton();
         jDesktopPane6 = new javax.swing.JDesktopPane();
         jPanel6 = new javax.swing.JPanel();
         NenviarButton = new javax.swing.JButton();
@@ -145,6 +148,7 @@ public class Inicio extends javax.swing.JFrame {
         textoExtra3 = new javax.swing.JTextArea();
         tituloTextoExtra3 = new javax.swing.JLabel();
         formulaErrorAbsoluto4 = new javax.swing.JLabel();
+        Grafica3 = new javax.swing.JButton();
         jDesktopPane7 = new javax.swing.JDesktopPane();
         jPanel7 = new javax.swing.JPanel();
         MenviarButton = new javax.swing.JButton();
@@ -166,6 +170,7 @@ public class Inicio extends javax.swing.JFrame {
         textoExtra4 = new javax.swing.JTextArea();
         tituloTextoExtra4 = new javax.swing.JLabel();
         formulaErrorAbsoluto5 = new javax.swing.JLabel();
+        Grafica4 = new javax.swing.JButton();
         SalirDelSistema = new javax.swing.JButton();
         logo = new javax.swing.JLabel();
         logo1 = new javax.swing.JLabel();
@@ -259,7 +264,7 @@ public class Inicio extends javax.swing.JFrame {
                             .addComponent(Biteraciones, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(BlimInferior)
                             .addComponent(BlimSuperior))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(BerrorText)
                             .addComponent(BinferiorText)
@@ -287,7 +292,7 @@ public class Inicio extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(BenviarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(BlimpiarButton, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jDesktopPane2.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 377, 270));
@@ -297,11 +302,11 @@ public class Inicio extends javax.swing.JFrame {
         jLayeredPane1.setLayout(jLayeredPane1Layout);
         jLayeredPane1Layout.setHorizontalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 324, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         jLayeredPane1Layout.setVerticalGroup(
             jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 60, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         jDesktopPane2.add(jLayeredPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 558, -1, -1));
@@ -321,7 +326,7 @@ public class Inicio extends javax.swing.JFrame {
 
         botonLimpiar.setBackground(new java.awt.Color(255, 255, 0));
         botonLimpiar.setForeground(new java.awt.Color(0, 0, 0));
-        botonLimpiar.setText("LIMPIAR DATOS");
+        botonLimpiar.setText("LIMPIAR RESULTADOS");
         botonLimpiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonLimpiarActionPerformed(evt);
@@ -333,11 +338,21 @@ public class Inicio extends javax.swing.JFrame {
         textoExtra.setRows(5);
         jScrollPane1.setViewportView(textoExtra);
 
-        jDesktopPane2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 140, -1, 240));
+        jDesktopPane2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 140, 200, 240));
 
         tituloTextoExtra.setForeground(new java.awt.Color(0, 0, 0));
         tituloTextoExtra.setText("Anotaciones propias");
         jDesktopPane2.add(tituloTextoExtra, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 110, -1, -1));
+
+        Grafica.setBackground(new java.awt.Color(255, 255, 0));
+        Grafica.setForeground(new java.awt.Color(0, 0, 0));
+        Grafica.setText("CREAR GRÁFICA");
+        Grafica.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GraficaActionPerformed(evt);
+            }
+        });
+        jDesktopPane2.add(Grafica, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 30, 140, 50));
 
         jTabbedPane6.addTab("Método de Bisección", jDesktopPane2);
 
@@ -477,7 +492,7 @@ public class Inicio extends javax.swing.JFrame {
         textoExtra1.setRows(5);
         jScrollPane8.setViewportView(textoExtra1);
 
-        jDesktopPane3.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 140, -1, 240));
+        jDesktopPane3.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 140, 200, 240));
 
         tituloTextoExtra1.setForeground(new java.awt.Color(0, 0, 0));
         tituloTextoExtra1.setText("Anotaciones propias");
@@ -485,6 +500,16 @@ public class Inicio extends javax.swing.JFrame {
 
         formulaErrorAbsoluto2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/secante.png"))); // NOI18N
         jDesktopPane3.add(formulaErrorAbsoluto2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 450, 90));
+
+        Grafica1.setBackground(new java.awt.Color(255, 255, 0));
+        Grafica1.setForeground(new java.awt.Color(0, 0, 0));
+        Grafica1.setText("CREAR GRÁFICA");
+        Grafica1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Grafica1ActionPerformed(evt);
+            }
+        });
+        jDesktopPane3.add(Grafica1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 30, 140, 50));
 
         jTabbedPane6.addTab("Método de Recta Secante", jDesktopPane3);
 
@@ -624,7 +649,7 @@ public class Inicio extends javax.swing.JFrame {
         textoExtra2.setRows(5);
         jScrollPane10.setViewportView(textoExtra2);
 
-        jDesktopPane4.add(jScrollPane10, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 140, -1, 240));
+        jDesktopPane4.add(jScrollPane10, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 140, 200, 240));
 
         tituloTextoExtra2.setForeground(new java.awt.Color(0, 0, 0));
         tituloTextoExtra2.setText("Anotaciones propias");
@@ -632,6 +657,16 @@ public class Inicio extends javax.swing.JFrame {
 
         formulaErrorAbsoluto3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/falsa.png"))); // NOI18N
         jDesktopPane4.add(formulaErrorAbsoluto3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 410, 480, 90));
+
+        Grafica2.setBackground(new java.awt.Color(255, 255, 0));
+        Grafica2.setForeground(new java.awt.Color(0, 0, 0));
+        Grafica2.setText("CREAR GRÁFICA");
+        Grafica2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Grafica2ActionPerformed(evt);
+            }
+        });
+        jDesktopPane4.add(Grafica2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 30, 140, 50));
 
         jTabbedPane6.addTab("Método de Falsa Posición", jDesktopPane4);
 
@@ -756,7 +791,7 @@ public class Inicio extends javax.swing.JFrame {
         textoExtra3.setRows(5);
         jScrollPane12.setViewportView(textoExtra3);
 
-        jDesktopPane6.add(jScrollPane12, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 140, -1, 240));
+        jDesktopPane6.add(jScrollPane12, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 140, 200, 240));
 
         tituloTextoExtra3.setForeground(new java.awt.Color(0, 0, 0));
         tituloTextoExtra3.setText("Anotaciones propias");
@@ -764,6 +799,16 @@ public class Inicio extends javax.swing.JFrame {
 
         formulaErrorAbsoluto4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/newton_1.png"))); // NOI18N
         jDesktopPane6.add(formulaErrorAbsoluto4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 390, 340, 90));
+
+        Grafica3.setBackground(new java.awt.Color(255, 255, 0));
+        Grafica3.setForeground(new java.awt.Color(0, 0, 0));
+        Grafica3.setText("CREAR GRÁFICA");
+        Grafica3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Grafica3ActionPerformed(evt);
+            }
+        });
+        jDesktopPane6.add(Grafica3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 30, 140, 50));
 
         jTabbedPane6.addTab("Método de Newton-Raphson", jDesktopPane6);
 
@@ -920,7 +965,7 @@ public class Inicio extends javax.swing.JFrame {
         textoExtra4.setRows(5);
         jScrollPane14.setViewportView(textoExtra4);
 
-        jDesktopPane7.add(jScrollPane14, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 140, -1, 240));
+        jDesktopPane7.add(jScrollPane14, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 140, 200, 240));
 
         tituloTextoExtra4.setForeground(new java.awt.Color(0, 0, 0));
         tituloTextoExtra4.setText("Anotaciones propias");
@@ -929,9 +974,19 @@ public class Inicio extends javax.swing.JFrame {
         formulaErrorAbsoluto5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/muller02.png"))); // NOI18N
         jDesktopPane7.add(formulaErrorAbsoluto5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 430, 770, 90));
 
+        Grafica4.setBackground(new java.awt.Color(255, 255, 0));
+        Grafica4.setForeground(new java.awt.Color(0, 0, 0));
+        Grafica4.setText("CREAR GRÁFICA");
+        Grafica4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Grafica4ActionPerformed(evt);
+            }
+        });
+        jDesktopPane7.add(Grafica4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 30, 140, 50));
+
         jTabbedPane6.addTab("Método de Müller", jDesktopPane7);
 
-        jPanel1.add(jTabbedPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 18, -1, 564));
+        jPanel1.add(jTabbedPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 18, 1200, 564));
 
         SalirDelSistema.setBackground(new java.awt.Color(255, 0, 0));
         SalirDelSistema.setFont(new java.awt.Font("Engravers MT", 1, 14)); // NOI18N
@@ -969,7 +1024,7 @@ public class Inicio extends javax.swing.JFrame {
 
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("© Todos los derechos reservados Mariano y Massielle");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 10, -1, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 10, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -1845,6 +1900,26 @@ public class Inicio extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_SalirDelSistema1ActionPerformed
 
+    private void GraficaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GraficaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_GraficaActionPerformed
+
+    private void Grafica1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grafica1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Grafica1ActionPerformed
+
+    private void Grafica2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grafica2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Grafica2ActionPerformed
+
+    private void Grafica3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grafica3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Grafica3ActionPerformed
+
+    private void Grafica4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Grafica4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Grafica4ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BenviarButton;
     private javax.swing.JTextField BerrorText;
@@ -1864,6 +1939,11 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JLabel FlimSuperior;
     private javax.swing.JButton FlimpiarButton;
     private javax.swing.JTextField FsuperiorText;
+    private javax.swing.JButton Grafica;
+    private javax.swing.JButton Grafica1;
+    private javax.swing.JButton Grafica2;
+    private javax.swing.JButton Grafica3;
+    private javax.swing.JButton Grafica4;
     private javax.swing.JButton MenviarButton;
     private javax.swing.JTextField MerrorText;
     private javax.swing.JTextField MinferiorText;
