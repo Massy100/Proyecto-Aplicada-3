@@ -1889,7 +1889,7 @@ public class Inicio extends javax.swing.JFrame {
             java.awt.Desktop escritorio = java.awt.Desktop.getDesktop();
             if(escritorio.isSupported(java.awt.Desktop.Action.BROWSE)){ //Seleccionamos un navegador
                 try {
-                    java.net.URI link = new java.net.URI("https://docs.google.com/spreadsheets/d/15sIbfcTUcF_a_iJYbw1DSIXZa2ZoVYhXPq1uOF0HD44/edit#gid=1582561436");//Establecemos el link
+                    java.net.URI link = new java.net.URI("https://drive.google.com/file/d/12UC0wFg6E-UIwNqwXP1Oa5tpypNHqNE0/view");//Establecemos el link
                     escritorio.browse(link);//Hacemos que nos envie al link ingresado
                 } catch (URISyntaxException ex) {
                     Logger.getLogger(Inicio.class.getName()).log(Level.SEVERE, null, ex);
